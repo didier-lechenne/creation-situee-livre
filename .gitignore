@@ -88,3 +88,5 @@ a_garder_config/
 /checkdates.mjs
 .github
 **/fonts/
+**/images/
+**/images
