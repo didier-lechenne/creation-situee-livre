@@ -1,0 +1,44 @@
+:root {
+  --heading: "PostGrotesk", sans-serif;
+  --labeur: "KingsCaslon", serif;
+  --sommaire: "PostGrotesk", sans-serif;
+  --footnote: "PostGrotesk", sans-serif;
+
+  --text-color: rgba(0, 0, 0, 1);
+
+  --heading-size: 28pt;
+  --heading-line-height: 28pt;
+  --heading-weight: normal;
+
+  --labeur-size: 9.5pt;
+  --labeur-line-height: 11.5pt;
+  --labeur-weight: 400; /* bold */
+  --labeur-bold-weight: 600;
+
+  --footnote-size: 6pt;
+  --footnote-line-height: 7.2pt;
+  --footnote-weight: 400;
+  --footnote-bold-weight: 600;
+
+  --caption: var(--labeur), serif;
+  --caption-size: 9pt;
+  --caption-line-height: 12pt;
+  --caption-weight: 300;
+  --caption-bold-weight: 400;
+
+  --baseline: 11.5pt;
+  --gutter: var(--baseline);
+
+}
+
+
+/* font-weight: 100; Thin (Hairline) */
+/* font-weight: 200; Extra Light (Ultra Light) */
+/* font-weight: 300; Light */
+/* font-weight: 400; normal */
+/* font-weight: 500; Medium */
+/* font-weight: 600; Semi Bold (Demi Bold) */
+/* font-weight: 700; gras / bold */
+/* font-weight: 800; Extra Bold (Ultra Bold) */
+/* font-weight: 900; Black (Heavy) */
+/* font-weight: 950; Extra Black (Ultra Black) */

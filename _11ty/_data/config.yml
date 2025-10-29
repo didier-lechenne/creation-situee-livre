@@ -2,48 +2,50 @@
 
 # === C'EST LA PARTIE CENTRALE DU DOCUMENT, CE SONT LES CHAPITRES/SECTIONS .md ===
 # === THIS IS THE CENTRAL PART OF THE DOCUMENT, THESE ARE THE CHAPTERS/SECTIONS .md ===
-publicFolder: "creation-sitee"
+publicFolder: "creation_sitee"
 lang: "fr"
 
 # === C'EST ICI QU'ON TRAVAILLE L'APPARENCE VISUELLE ET LA MISE EN PAGE (CSS)  ===
 # === THIS IS WHERE WE WORK ON VISUAL APPEARANCE AND LAYOUT (CSS) ===
-theme: "creation-sitee"
+theme: "creation_sitee"
 
 # === DOCUMENT INFORMATION ===
-title: "Désencombrement"
-subtitle: "Index d’une société à venir, allégée de ses objets"
+title: "les territoires de la création située"
+subtitle: ""
 
 # === AUTHORS (MULTIPLE): "name firstname, name firstname" ===
-author: "VALENTINE SAINT-MARTIN"
+author: "Aurélien Ramos, Camille de Singly. Sous la direction d'Hélène Soulier"
 year: "2025-2026"
 
 # === A PERSONNALISER / CUSTOMIZABLE ===
-meta_1: "Mémoire de Diplôme National Supérieur d’Expression Plastique"
-meta_2: "option Design "
-meta_3: "sous la direction de Jean Charles Zebo "
-meta_4: "ebabx – école supérieure des beaux-arts de Bordeaux"
+meta_1: ""
+meta_2: ""
+meta_3: ""
+meta_4: ""
 
 # === BOOK PAGE DIMENSIONS (mm) ===
-width: 165
-height: 240
+width: 200
+height: 260
 
 # === GENERAL MARGINS (mm) ===
-margin_top: 10
-margin_right: 10
-margin_bottom: 10
+margin_top: 12.5
+margin_right: 12.5
+margin_bottom: 33
 margin_left: 10
 
 # === LEFT PAGE MARGINS (mm) ===
-page_left_margin_top: 10
-page_left_margin_bottom: 10
-page_left_margin_left: 25
-page_left_margin_right: 10
+page_left_margin_top: 12.5
+page_left_margin_right: 76.7
+page_left_margin_bottom: 33
+page_left_margin_left: 12.5
+
 
 # === RIGHT PAGE MARGINS (mm) ===
-page_right_margin_top: 10
-page_right_margin_bottom: 10
-page_right_margin_left: 10
-page_right_margin_right: 25
+page_right_margin_top: 12.5
+page_right_margin_right: 12.5
+page_right_margin_bottom: 33
+page_right_margin_left: 76.7
+
 
 # === LAYOUT OPTIONS ===
 bleed: true
@@ -51,7 +53,7 @@ marks: true
 
 # === CESURES OPTIONS ===
 cesures_footnotes: "true"
-cesures_paragraphe: "false"
+cesures_paragraphe: "true"
 
 # === NOTES OPTIONS ===
 printNotes: "bottom"

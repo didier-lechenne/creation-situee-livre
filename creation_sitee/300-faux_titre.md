@@ -1,0 +1,34 @@
+---
+title: Faux titre
+template: modularGrid
+gridCol: 12
+gridRow: 36
+gridColGutter: 3mm
+gridRowGutter: 3mm
+show: print
+class: fauxtitre
+toc: ignore
+draft: false
+---
+
+{% markdown "./inclure/titre.md", { 
+  printCol: 1,
+  printWidth: 12,
+  printRow: 1,
+  printHeight: 3
+} %}
+
+{% markdown "./inclure/sous-titre.md", { 
+  printCol: 1,
+  printWidth: 12,
+  printRow: 4,
+  printHeight: 3
+} %}
+
+{% markdown "./inclure/mentions.md", { 
+  printCol: 1,
+  printWidth: 12,
+  printRow: 27,
+  printHeight: 10,
+  alignSelf: "end"
+} %}
