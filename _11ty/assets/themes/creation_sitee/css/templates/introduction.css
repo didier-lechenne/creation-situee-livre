@@ -36,9 +36,9 @@ section.introduction h2 {
 
   margin:0;
   /* supprime le folio */
-  page: clean;
+  /* page: clean; */
 
-  page-break-before: right;
+  /* page-break-before: right; */
 }
 
 [data-template="introduction"] .footnote {

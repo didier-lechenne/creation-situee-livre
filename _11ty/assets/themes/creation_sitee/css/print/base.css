@@ -73,6 +73,7 @@ table {
   margin-bottom: calc(var(--baseline) );
 } */
 
+
 main p {
   text-rendering: optimizeLegibility;
   /* font-feature-settings: "liga", "dlig"; */
@@ -82,26 +83,18 @@ main p {
 }
 
 
+
+
 section.default h2 {
   font-family: var(--heading);
-  font-size: 28pt;
-  line-height: 33.6pt;
-  font-weight: normal;
-  text-align: center;
-
+  font-size:  var(--heading-size);
+  line-height: var(--heading-line-height);
+  font-weight: var(--heading-weight);
+  text-align: left;
   margin: 0;
   padding: 0;
-  /* supprime le folio mais ajoute un suat de page*/
-  /* page: clean; */
-
 }
 
-
-
-section.default:not(.remerciements):not(.conclusion):not(.bibliographie) h2 {
-  /* demarre toujours sur une page de droite */
-  page-break-before: right;
-}
 
 
 blockquote {

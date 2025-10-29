@@ -1,5 +1,5 @@
 {
-    "plugins": [  "inlineNotes",  "footnotesFix",  "pageMove", "fullPage", "fullContent",  "floatPage",  "footnotesCol", "spread", "previewPage", "imposition", "layout", "editor", "marker",   "bgColor", "invisibleSpaces",   "tableOfContent",   "marginBox",   "hideFolios", "reloadInPlace"],
+    "plugins": [  "inlineNotes", "sidenotes",  "footnotesFix",  "pageMove", "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout", "editor", "marker",   "bgColor", "invisibleSpaces",   "tableOfContent",   "marginBox",   "hideFolios", "reloadInPlace"],
 
     "pluginsParameters":{
 
@@ -23,11 +23,19 @@
             "help": "Unnumbered pages (e.g., 80, 81)",
             "pages": [6, 16, 17, 24, 25, 29, 30, 31, 38, 39, 44, 45, 51, 52, 53, 60, 61, 68, 69, 76, 77, 86, 90, 92, 94, 95, 96]
         },
+ 
+        "inlineNotes": {
+            "input": "sup.footnote-ref",
+            "containerNotes": "section.footnotes",
+            "newClass": "sidenote"
+        },
 
-        "footnotesCol": {
-            "help": "Pages with one-column notes (e.g., 80, 81)",
-            "pages": [12, 18, 27, 28, 40, 42, 47, 62, 67, 68, 81]
+        "sidenotes": {
+            "selector": ".sidenote",
+            "position": "inside",
+            "align": "section p:first-of-type"
         }
+
 
     },
     

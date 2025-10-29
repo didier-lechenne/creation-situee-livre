@@ -4,7 +4,7 @@
  * @see { @link https://gitlab.com/csspageweaver/plugins/sidenotes/ }
  */
 
-import { Handler } from '/csspageweaver/lib/paged.esm.js';
+import { Handler } from "../../../lib/paged.esm.js";
 
 export default class sidenotes extends Handler {
 
@@ -172,7 +172,7 @@ function createCallandMarker(content, notesClass, newNotesClass){
       // marker + content note
       let marker_note = document.createElement('span');
       marker_note.className = newNotesClass + "_marker";
-      marker_note.innerHTML = num + ". ";
+      marker_note.innerHTML = num + "";
       note.prepend(marker_note);
       
   });  

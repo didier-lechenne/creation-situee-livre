@@ -19,7 +19,7 @@
   @import "templates/blankpage.css";
   @import "templates/fauxtitre.css";
   @import "templates/toc-sommaire.css";
-  @import "templates/introduction.css";
+  /* @import "templates/introduction.css"; */
   @import "templates/text-col.css";
   @import "templates/column-grid.css";
 
@@ -31,8 +31,9 @@
   @import "print/figures.css";
   @import "print/break.css";
   @import "print/spacing.css";
-  /* @import "print/sidenotes.css"; a verifier */
-  @import "print/footnotes.css";
+
+  @import "print/sidenotes.css"; 
+  /* @import "print/footnotes.css"; */
 
   @import "print/interview.css";
   @import "print/list.css";
