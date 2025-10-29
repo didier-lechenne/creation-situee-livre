@@ -5,37 +5,37 @@ module.exports = function (eleventyConfig) {
     globalImageCounter = 0;
   });
 
-  eleventyConfig.addTransform(
-    "invisibleSpaces",
-    function (content, outputPath) {
-      if (!outputPath || !outputPath.endsWith(".html")) {
-        return content;
-      }
+  // eleventyConfig.addTransform(
+  //   "invisibleSpaces",
+  //   function (content, outputPath) {
+  //     if (!outputPath || !outputPath.endsWith(".html")) {
+  //       return content;
+  //     }
 
       
-      content = content.replace(
-        /\u00A0/g,
-        '<span class="i_space no-break-space">&nbsp;</span>'
-      );
+  //     content = content.replace(
+  //       /\u00A0/g,
+  //       '<span class="i_space no-break-space">&nbsp;</span>'
+  //     );
 
-      content = content.replace(
-        /\u202F/g,
-        '<span class="i_space no-break-narrow-space">\u202F</span>'
-      );
+  //     content = content.replace(
+  //       /\u202F/g,
+  //       '<span class="i_space no-break-narrow-space">\u202F</span>'
+  //     );
 
-      content = content.replace(
-        /\u2009/g,
-        '<span class="i_space thin-space">&thinsp;</span>'
-      );
+  //     content = content.replace(
+  //       /\u2009/g,
+  //       '<span class="i_space thin-space">&thinsp;</span>'
+  //     );
 
-      content = content.replace(
-        /\u200A/g,
-        '<span class="i_space hair-space">&hairsp;</span>'
-      );
+  //     content = content.replace(
+  //       /\u200A/g,
+  //       '<span class="i_space hair-space">&hairsp;</span>'
+  //     );
 
-      return content;
-    }
-  );
+  //     return content;
+  //   }
+  // );
 
 
 

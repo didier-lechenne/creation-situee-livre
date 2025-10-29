@@ -1,3 +1,8 @@
+:root {
+--tab: 4mm;
+}
+
+
 .sidenote-container {
   font-family: var(--footnote);
   font-size: var(--footnote-size);
@@ -13,18 +18,41 @@
 
 
 .pagedjs_left_page .sidenote-container {
-    padding-left: 4.2mm;
+    padding-left: var(--tab);
     padding-right: 25.5mm;
 }
+
 .pagedjs_right_page .sidenote-container {
     padding-left: 25.5mm;
-    padding-right: 4.2mm;
+    padding-right: var(--tab);
 }
 
 .sidenote-container .sidenote {
-  display: block;
-  text-indent: -4mm; 
-  padding-left: 4mm; 
+    display: block;
+    margin-top: 2pt;
+    /* overflow: hidden; */
+}
+
+/* Pages de droite : numéro dépasse à gauche dans la marge */
+.pagedjs_right_page .sidenote-container .sidenote {
+    padding-left: var(--tab);
+}
+
+.pagedjs_right_page .pagedjs_sidenote_marker {
+    float: left;
+    width: var(--tab);
+    margin-left: calc(var(--tab) * -1);
+}
+
+/* Pages de gauche : numéro dépasse à gauche dans le padding du container */
+.pagedjs_left_page .sidenote-container .sidenote {
+    padding-left: var(--tab);
+}
+
+.pagedjs_left_page .pagedjs_sidenote_marker {
+    float: left;
+    width: var(--tab);
+    margin-left: calc(var(--tab) * -1);
 }
 
 
@@ -37,13 +65,8 @@
   padding-left: 0.2ch;
   font-weight: var(--footnote-weight);
   font-size: 0.6em !important;
-	vertical-align: super;
+  vertical-align: super;
 }
 
 
 
-.pagedjs_sidenote_marker{
-  padding-right: 2mm; 
-
-    /* padding-right: 2ch; */
-}
