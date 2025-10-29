@@ -1,0 +1,31 @@
+
+.fullpage-cover {
+  --pagedjs-full-page: 1;
+}
+
+
+[data-type="markdown"] {
+    width: 100%;
+}
+
+
+#legende-recupero {
+    padding-top: 3ch !important;
+}
+
+
+#intro-domestique {
+  padding-top: 10mm !important;
+}
+
+.figcaption-alternative2{
+  text-align:right;
+}
+
+
+.bibliographie h2,
+.default h2,
+.remerciements h2,
+.conclusion h2{
+ page: sommaire !important;
+}
