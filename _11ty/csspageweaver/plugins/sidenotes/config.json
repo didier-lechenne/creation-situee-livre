@@ -1,0 +1,8 @@
+{
+	"name": "Sidenotes",
+	"description": "Create sidenotes with call & markers",
+	"author": ["Julie Blanc"],
+	"licence": "MIT",
+	"version": "1.0",
+	"hook": "sidenotes.js"
+}
