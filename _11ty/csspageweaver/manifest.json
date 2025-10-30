@@ -15,7 +15,7 @@
 
         "ragadjust": {
             "selectors": "h1,h2,h3,h4,h5,h6,section:not([data-template='introduction']) p, section:not([data-template='introduction']) span:not(.footnotes)",
-            "exeptions": [ "short_prepositions"]
+            "exeptions": ["articles",  "short_prepositions"]
 
         },
 
