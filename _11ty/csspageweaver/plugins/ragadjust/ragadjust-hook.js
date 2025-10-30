@@ -20,7 +20,7 @@ export default class ragadjustHook extends Handler {
   }
 
   beforeParsed(content) {
-        console.log('Sections trouvées:', content.querySelectorAll('section[data-template] p').length);
+        // console.log('Sections trouvées:', content.querySelectorAll('section[data-template] p').length);
 
     ragadjust(this.parameters.selectors, this.parameters.exeptions, [], content);
   }
