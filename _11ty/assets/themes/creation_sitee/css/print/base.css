@@ -50,9 +50,9 @@ section {
 
 section p {
   text-rendering: optimizeLegibility;
-  orphans: 3;
-  widows: 2;
-  word-break: break-word;
+  /* orphans: 3;
+  widows: 2; */
+  /* word-break: break-word; */
   margin-top: 0;
   margin-bottom: 0;
   text-indent: var(--gutter);
@@ -89,9 +89,10 @@ section.default h3 {
   margin: 0;
   padding: 0;
   /* margin-bottom: calc( var(--gutter) / 4); */
+  transform: translateY(-3pt);
   margin-top: calc( var(--gutter) );
   /* margin-bottom: 3pt; */
-  letter-spacing: -0.01em; 
+  letter-spacing: 0.01em; 
 }
 
 blockquote {
