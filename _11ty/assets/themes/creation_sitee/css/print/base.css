@@ -139,6 +139,10 @@ section[data-split-from] > blockquote {
 }
 
 
+hr.footnotes-sep{
+  display:none;
+}
+
 b,
 strong {
   font-weight: var(--labeur-bold-weight);
