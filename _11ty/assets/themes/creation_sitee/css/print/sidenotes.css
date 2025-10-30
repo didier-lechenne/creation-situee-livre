@@ -29,7 +29,7 @@
 
 .sidenote-container .sidenote {
     display: block;
-    margin-top: 2pt;
+    margin-top: calc( var(--footnote-line-height) / 3);
     /* overflow: hidden; */
 }
 

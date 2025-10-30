@@ -83,7 +83,8 @@ section.default h3 {
   font-size: var(--labeur-size);
   line-height: 100%;
   font-weight: var(--labeur-bold-weight);
-  text-indent: var(--gutter);
+  /* text-indent: var(--gutter); */
+  
   text-transform: uppercase;
   text-align: left;
   margin: 0;
@@ -91,6 +92,7 @@ section.default h3 {
   /* margin-bottom: calc( var(--gutter) / 4); */
   transform: translateY(-3pt);
   margin-top: calc( var(--gutter) );
+  margin-left: calc( var(--gutter) );
   /* margin-bottom: 3pt; */
   letter-spacing: 0.01em; 
 }
