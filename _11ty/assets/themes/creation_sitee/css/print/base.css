@@ -62,6 +62,10 @@ section > p:first-of-type {
   text-indent: 0 !important;
 }
 
+section p:first-child {
+  text-indent: 0 !important;
+}
+
 .small-caps {
   font-variant-caps: all-small-caps;
   line-height: 0;
@@ -84,16 +88,14 @@ section.default h3 {
   /* line-height: 100%; */
   font-weight: var(--labeur-bold-weight);
   /* text-indent: var(--gutter); */
-  
   text-transform: uppercase;
   text-align: left;
   margin: 0;
   padding: 0;
-  /* margin-bottom: calc( var(--gutter) / 4); */
-  transform: translateY(-3pt);
-  margin-top: calc( var(--gutter) );
+  /* margin-bottom: calc( var(--gutter) / 3); */
+  transform: translateY(calc( var(--gutter) / -3));
+  margin-top: calc( var(--gutter) * 2 );
   margin-left: calc( var(--gutter) );
-  /* margin-bottom: 3pt; */
   letter-spacing: 0.01em; 
 }
 
@@ -106,8 +108,10 @@ section.default h3:nth-child(1) {
 
 section.default h3:first-child {
   margin-top: 0;
-  transform: translateY(0pt);
-  margin-bottom: 3pt;
+  transform: translateY(calc( var(--gutter) / -3));
+ /* transform: translateY(0); */
+ /* margin-bottom: calc( var(--gutter) / 3); */
+  
 }
 
 blockquote {
