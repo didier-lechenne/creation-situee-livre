@@ -59,9 +59,8 @@
 .pagedjs_sidenote_call{
   /* content: attr(data-counter-note); */
   font-family: var(--footnote);
-  padding-left: 0.1ch;
+  padding-left: 0.0ch;
   font-weight: var(--footnote-weight);
-
   top: 1px;
   position: relative;
   line-height: 0;
