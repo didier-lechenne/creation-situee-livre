@@ -15,8 +15,8 @@ export default class ragadjustHook extends Handler {
   constructor(chunker, polisher, caller) {
     super(chunker, polisher, caller);
     this.parameters = {}
-    this.parameters.selectors = cssPageWeaver.features.ragadjust.parameters?.selectors || "h1,h2,h3,h4,h5,h6,section[data-template=] p"
-    this.parameters.exeptions = cssPageWeaver.features.ragadjust.parameters?.exeptions || ["determiners", "articles", "short_prepositions", "pronouns"]
+    this.parameters.selectors = cssPageWeaver.features.ragadjust.parameters?.selectors || "h1,h2,h3,h4,h5,h6,section[data-template=] p "
+    this.parameters.exeptions = cssPageWeaver.features.ragadjust.parameters?.exeptions || ["determiners", "articles", "short_prepositions", "pronouns"] 
   }
 
   beforeParsed(content) {

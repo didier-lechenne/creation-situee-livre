@@ -1,5 +1,5 @@
 {
-    "plugins": [  "baseline", "inlineNotes", "sidenotes",  "footnotesFix",  "pageMove", "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout", "editor", "marker",   "bgColor", "invisibleSpaces",   "tableOfContent",   "marginBox",   "hideFolios", "reloadInPlace"],
+    "plugins": [  "baseline", "inlineNotes", "sidenotes",  "footnotesFix",  "pageMove", "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout", "editor", "marker",   "bgColor", "ragadjust", "invisibleSpaces",   "tableOfContent",   "marginBox",   "hideFolios", "reloadInPlace"],
 
     "pluginsParameters":{
 
@@ -14,7 +14,7 @@
         },
 
         "ragadjust": {
-            "selectors": "h1,h2,h3,h4,h5,h6,section:not([data-template='introduction']) p, section:not([data-template='introduction']) span:not(.footnotes)",
+            "selectors": "h1,h2,h3,h4,h5,h6,section:not([data-template='introduction']) p :not(em)",
             "exeptions": ["articles",  "short_prepositions"]
 
         },
