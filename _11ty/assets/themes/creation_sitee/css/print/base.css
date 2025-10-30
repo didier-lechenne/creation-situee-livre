@@ -99,6 +99,8 @@ section.default h3 {
   letter-spacing: 0.01em; 
 }
 
+
+
 /* section.default > h3:first-child,
 section.default h3:first-child,
 section.default h3:first-of-type,
@@ -113,6 +115,16 @@ section.default h3:first-child {
  /* margin-bottom: calc( var(--gutter) / 3); */
   
 }
+section.default h2 {
+  margin-bottom: calc( var(--gutter) * 1);
+  line-height:100% !important;
+}
+
+section.default h2.auteur {
+  margin-bottom: calc( var(--gutter) * 12);
+  line-height:100% !important;
+}
+
 
 blockquote {
   margin-block-start: var(--gutter);

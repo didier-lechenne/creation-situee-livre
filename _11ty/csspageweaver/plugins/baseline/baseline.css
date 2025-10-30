@@ -6,16 +6,21 @@
     --pagedjs-baseline-color: cyan;
 }
 
-@media screen{
-    .pagedjs_pagebox {
-        background: linear-gradient(transparent 0%, transparent calc(var(--pagedjs-baseline) - 1px), var(--pagedjs-baseline-color) calc(var(--pagedjs-baseline) - 1px), var(--pagedjs-baseline-color) var(--pagedjs-baseline)), transparent;
+@media screen {
+    .pagedjs_pagebox::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent 0%, transparent calc(var(--pagedjs-baseline) - 1px), var(--pagedjs-baseline-color) calc(var(--pagedjs-baseline) - 1px), var(--pagedjs-baseline-color) var(--pagedjs-baseline));
         background-size: 100% var(--pagedjs-baseline);
-        background-repeat: repeat-y;
         background-position-y: var(--pagedjs-baseline-position);
-     
+        pointer-events: none;
     }  
 
-    .no-baseline .pagedjs_pagebox{
-        background: none;
+    .no-baseline .pagedjs_pagebox::before {
+        display: none;
     }
 }
