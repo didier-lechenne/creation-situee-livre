@@ -56,7 +56,7 @@ cesures_footnotes: "false"
 cesures_paragraphe: "true"
 
 # === NOTES OPTIONS ===
-printNotes: "bottom"
+print_notes: "bottom"
 
 
 
