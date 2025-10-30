@@ -49,10 +49,13 @@ section {
 }
 
 section p {
-  /* margin-top: calc(var(--labeur-baseline)); */
-   margin-top: 0;
-   margin-bottom: 0;
-   text-indent: var(--gutter);
+  text-rendering: optimizeLegibility;
+  orphans: 3;
+  widows: 2;
+  word-break: break-word;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-indent: var(--gutter);
 }
 
 section > p:first-of-type {
@@ -65,30 +68,9 @@ section > p:first-of-type {
   font-style: inherit;
 }
 
-/* blockquote,
-figure,
-hr,
-pre,
-table {
-  margin-top: calc(var(--baseline) );
-  margin-bottom: calc(var(--baseline) );
-} */
-
-
-section  p {
-  text-rendering: optimizeLegibility;
-  /* font-feature-settings: "liga", "dlig"; */
-  orphans: 3;
-  widows: 2;
-  word-break: break-word;
-}
-
-
-
-
 section.default h2 {
   font-family: var(--heading);
-  font-size:  var(--heading-size);
+  font-size: var(--heading-size);
   line-height: var(--heading-line-height);
   font-weight: var(--heading-weight);
   text-align: left;
@@ -96,67 +78,36 @@ section.default h2 {
   padding: 0;
 }
 
-
+section.default h3 {
+  font-family: var(--heading);
+  font-size: var(--labeur-size);
+  line-height: 100%;
+  font-weight: var(--labeur-bold-weight);
+  text-indent: var(--gutter);
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
 
 blockquote {
-  /* ────────────────────────────────────────
-   Styles pour les citations longues <blockquote>
-   
-   blockquote = Élément HTML pour citations de blocs
-   Usage : <blockquote>Citation longue...</blockquote>
-   ──────────────────────────────────────── */
-
   margin-block-start: var(--gutter);
-  /* ────────────────────────────────────────
-	   Marge au DÉBUT du bloc (équivalent a margin-top)
-	   ──────────────────────────────────────── */
-
   margin-block-end: var(--gutter);
-  /* ────────────────────────────────────────
-	   Marge à la FIN du bloc (équivalent a margin-bottom)
-	   ──────────────────────────────────────── */
-
   margin-inline-start: calc(var(--gutter) * 2); /* 6mm */
-  /* ────────────────────────────────────────
-	   Marge à GAUCHE du bloc (équivalent a margin-left)
-	   ──────────────────────────────────────── */
-
   margin-inline-end: calc(var(--gutter) * 2); /* 6mm */
-  /* ────────────────────────────────────────
-	   Marge à DROITE du bloc (équivalent a margin-right)
-	   ──────────────────────────────────────── */
-
   font-style: italic;
 }
 
 section[data-split-from] > blockquote {
-  /* margin-block-start: unset !important; ???? */
+
 }
 
-/* ────────────────────────────────────────
-Contrôle l'épaisseur du éléments en gras.
-──────────────────────────────────────── */
+
 b,
 strong {
-  /* font-variation-settings: "wght" var(--font-weight-bold); */
   font-weight: var(--labeur-bold-weight);
 }
 
-/* ────────────────────────────────────────
-   font-weight : Contrôle l'épaisseur du texte.
-   Attention cela depend des graisses de votre police !
-   
-   Valeurs numériques courantes :
-   • 100, 200, 300 → Texte très fin (thin/light)
-   • 400           → Normal 
-   • 500, 600      → Medium/Semi-bold
-   • 700           → Gras (bold)
-   • 800, 900      → Très gras (extra-bold/black)
-   ──────────────────────────────────────── */
-
-/* ────────────────────────────────────────
-   Gère l'affichage des liens, hyper-texte
-   ──────────────────────────────────────── */
 a {
   text-decoration: none;
   color: var(--link-color);
@@ -199,7 +150,6 @@ sup {
   display: none;
 }
 
-
 /* ========================================
  * CLASS GENERIQUE
  * ======================================== */
@@ -207,7 +157,6 @@ sup {
 .fullcontent-page {
   --pagedjs-full-content: page;
 }
-
 
 .fullcontent-left {
   --pagedjs-full-content: left;
@@ -217,16 +166,13 @@ sup {
   --pagedjs-full-content: right;
 }
 
-
 .fullcontent-spread {
   --pagedjs-full-content: spread;
 }
 
-
 .fullpage-page {
   --pagedjs-full-page: page;
 }
-
 
 .fullpage-left {
   --pagedjs-full-page: left;
@@ -236,35 +182,32 @@ sup {
   --pagedjs-full-page: right;
 }
 
-
 .fullpage-spread {
   --pagedjs-full-page: spread;
 }
 
-.floatpage-next-page{
-	--pagedjs-float-page: next-page;
+.floatpage-next-page {
+  --pagedjs-float-page: next-page;
 }
 
-.floatpage-top{
-	--pagedjs-float-page: top;
+.floatpage-top {
+  --pagedjs-float-page: top;
 }
 
-.floatpage-bottom{
-	--pagedjs-float-page: bottom;
+.floatpage-bottom {
+  --pagedjs-float-page: bottom;
   margin-bottom: 0 !important;
 }
 
-
-.text-left{
-text-align: left;
+.text-left {
+  text-align: left;
 }
 
 .text-right,
 .text-right > * {
-    text-align: right;
+  text-align: right;
 }
 
-
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }

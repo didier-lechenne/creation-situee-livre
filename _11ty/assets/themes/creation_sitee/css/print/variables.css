@@ -14,7 +14,10 @@
   --heading-line-height: 23pt;   */
 
   --heading-size: 17.25pt;       /* 1.5 × baseline */
---heading-line-height: 23pt;   /* 2 × baseline */
+  --heading-line-height: 23pt;   /* 2 × baseline */
+
+  --heading-h3-size: var(--labeur-size); 
+ ; 
 
   --labeur-size: 9.5pt;
   --labeur-line-height: 11.5pt;
