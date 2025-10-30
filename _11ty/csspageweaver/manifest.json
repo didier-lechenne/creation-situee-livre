@@ -14,7 +14,7 @@
         },
 
         "ragadjust": {
-            "selectors": "h1,h2,h3,h4,h5,h6, p :not(em)",
+            "selectors": "h1,h2,h3,h4,h5,h6, li, ol, blockquote, section p :not(em)",
             "exeptions": ["articles",  "short_prepositions"]
 
         },
