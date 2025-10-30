@@ -81,7 +81,7 @@ section.default h2 {
 section.default h3 {
   font-family: var(--heading);
   font-size: var(--labeur-size);
-  line-height: 100%;
+  /* line-height: 100%; */
   font-weight: var(--labeur-bold-weight);
   /* text-indent: var(--gutter); */
   
@@ -95,6 +95,19 @@ section.default h3 {
   margin-left: calc( var(--gutter) );
   /* margin-bottom: 3pt; */
   letter-spacing: 0.01em; 
+}
+
+/* section.default > h3:first-child,
+section.default h3:first-child,
+section.default h3:first-of-type,
+section.default h3:nth-child(1) {
+  margin-top: 0 !important;
+} */
+
+section.default h3:first-child {
+  margin-top: 0;
+  transform: translateY(0pt);
+  margin-bottom: 3pt;
 }
 
 blockquote {
