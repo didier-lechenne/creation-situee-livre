@@ -1,5 +1,5 @@
 ---
-title: test
+title: colloque
 template: default
 class: chapter
 draft: false

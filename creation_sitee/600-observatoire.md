@@ -1,5 +1,5 @@
 ---
-title: test
+title: observatoire
 template: default
 class: chapter
 draft: false
