@@ -53,7 +53,7 @@ marks: true
 
 # === CESURES OPTIONS ===
 cesures_footnotes: "false"
-cesures_paragraphe: "true"
+cesures_paragraphe: "false"
 
 # === NOTES OPTIONS ===
 print_notes: "bottom"

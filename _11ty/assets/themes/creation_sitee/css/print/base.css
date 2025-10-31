@@ -52,10 +52,12 @@ section p {
   text-rendering: optimizeLegibility;
   /* orphans: 3;
   widows: 2; */
-  /* word-break: break-word; */
+  word-break: break-word;
   margin-top: 0;
   margin-bottom: 0;
   text-indent: var(--gutter);
+    hyphens: auto !important;
+  hyphenate-limit-chars: 6 3 2;
 }
 
 section > p:first-of-type {
