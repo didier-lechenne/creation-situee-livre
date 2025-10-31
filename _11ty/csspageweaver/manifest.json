@@ -1,5 +1,5 @@
 {
-    "plugins": [  "baseline", "inlineNotes", "sidenotes",  "footnotesFix",  "pageMove", "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak",  "invisibleSpaces",   "tableOfContent",   "marginBox",   "hideFolios", "reloadInPlace"],
+    "plugins": [  "baseline", "inlineNotes", "sidenotes",  "footnotesFix",  "pageMove", "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak", "ragadjust", "invisibleSpaces",   "tableOfContent",   "marginBox",   "hideFolios", "reloadInPlace"],
 
     "pluginsParameters":{
 
@@ -11,11 +11,11 @@
         "tableOfContent": {
             "tocContainer": "#nav-toc",
             "tocTitles": [ "h2"]
-        },
+         },
 
         "ragadjust": {
             "selectors": "h1,h2,h3,h4,h5,h6, li, ol, blockquote, section p",
-            "exeptions": ["determiners", "articles", "short_prepositions", "pronouns"]
+            "exeptions": ["short_prepositions"]
         },
 
         "hideFolios": {

@@ -23,7 +23,7 @@
   --labeur-line-height: 11.5pt;
   --labeur-weight: 400; 
   --labeur-bold-weight: 600;
-  --labeur-baseline: 11.5pt;
+  --labeur-baseline: 11.5pt; /* 4.06 mm 15.33 px (à 96 DPI standard) */
 
   --footnote-size: 6pt;
   --footnote-line-height: 7.2pt;

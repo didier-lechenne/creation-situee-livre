@@ -50,8 +50,8 @@ section {
 
 section p {
   text-rendering: optimizeLegibility;
-  /* orphans: 3;
-  widows: 2; */
+  orphans: 3;
+  widows: 2;
   word-break: break-word;
   margin-top: 0;
   margin-bottom: 0;
@@ -123,7 +123,7 @@ section.default h2 {
 }
 
 section.default h2.auteur {
-  margin-bottom: calc( var(--gutter) * 10);
+  margin-bottom: calc( var(--gutter) * 8);
   line-height:100% !important;
 }
 
