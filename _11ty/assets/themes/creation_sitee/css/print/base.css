@@ -148,6 +148,15 @@ strong {
   font-weight: var(--labeur-bold-weight);
 }
 
+em {
+    font-style: italic;
+    line-height: 9pt;
+     /* transform: translateY(calc( var(--gutter) / -4)); */
+     text-indent: 0!important;
+     /* display:inline-block; */
+}
+
+
 a {
   text-decoration: none;
   color: var(--link-color);
