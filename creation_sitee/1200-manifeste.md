@@ -1,4 +1,13 @@
-Manifeste de la création située
+---
+title: manifeste
+template: default
+class: chapter
+draft: false
+---
+
+<breakpage/>
+
+## Manifeste de la création située
 
 LA CRÉATION SITUÉE COMME PROCESSUS DE CONCEPTION   
 . Toute création située est une création unique pour un territoire unique.  

@@ -20,14 +20,16 @@
 
 <script src="./csspageweaver/lib/csstree.min.js"></script>
 <script src="./csspageweaver/main.js" type="module"></script>
+
   </head>
 
   <body class="print {{ bodyClass }}" lang="fr">
     <main class="main-content">
       <div class="container">
-        {% for p in collections.printPages %} {% set templateName =
-        p.data.template | default('default') %} {% include "templates/" +
-        templateName + ".njk" %} {% endfor %}
+        {% for p in collections.printPages %} 
+        {% set templateName = p.data.template | default('default') %} 
+        {% include "templates/" + templateName + ".njk" %} 
+        {% endfor %}
       </div>
     </main>
   </body>

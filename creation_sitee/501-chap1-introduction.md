@@ -1,10 +1,9 @@
 ---
-title: chap1
+title: introduction
 template: default
 class: chapter
 draft: false
 ---
-
 
 ## Une introduction méthodologique  
 ## Hélène Soulier {.toc-ignore .auteur}
