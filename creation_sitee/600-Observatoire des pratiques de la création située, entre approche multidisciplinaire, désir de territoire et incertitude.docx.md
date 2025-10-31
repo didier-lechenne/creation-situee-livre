@@ -1,6 +1,7 @@
 ---
 title: test
 template: default
+class: chapter
 draft: false
 ---
 <breakpage/>

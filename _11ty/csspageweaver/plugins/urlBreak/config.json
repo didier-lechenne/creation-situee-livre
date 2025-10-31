@@ -1,0 +1,8 @@
+{
+	"name": "urlBreak",
+	"description": "Adds word break opportunities (<wbr>) to URLs in links for better printing",
+	"author": ["Didier Lechenne"],
+	"licence": "MIT",
+	"version": "1.0",
+	"hook": "urlbreak.js"
+}

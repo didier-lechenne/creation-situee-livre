@@ -1,5 +1,5 @@
 :root {
---tab: 4mm;
+    --tab: 4mm;
 }
 
 
@@ -30,7 +30,14 @@
 .sidenote-container .sidenote {
     display: block;
     margin-top: calc( var(--footnote-line-height) / 3);
+    word-break: break-word;
     /* overflow: hidden; */
+}
+
+.sidenote-container .sidenote em {
+    line-height: 0 !important;
+    text-indent: 0 !important;
+    word-break: break-word;
 }
 
 /* Pages de droite : numéro dépasse à gauche dans la marge */
@@ -54,6 +61,8 @@
     width: var(--tab);
     margin-left: calc(var(--tab) * -1);
 }
+
+
 
 
 .pagedjs_sidenote_call{
