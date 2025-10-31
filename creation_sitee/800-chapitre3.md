@@ -125,7 +125,7 @@ L’ancrage socio-spatial des œuvres situées, le travail d’enquête en immer
 
 [^13]:  Jérôme Denis et David Pontille, « Le soin des choses : l’émergence des maintenance studies », *La Revue du Crieur*, no 15 (2020): 149\.
 
-[^14]:  Jérôme Denis et David Pontille, « Material Ordering and the Care of Things », *Science, Technology, & Human Values* 40, no 3 (1 mai 2015): 338‑67, https://doi.org/10.1177/0162243914553129; Sandra Laugier, « Care, environnement et éthique globale », *Cahiers du Genre* 59, no 2 (2015): 127‑52, https://doi.org/10.3917/cdge.059.0127; Claire Tollis, « Les spatialités du care Une autre géographie des espaces naturels dits " protégés " », *Éthique, politique, religions 2013 – 2, n° 3\. Prendre soin de la nature et des hommes*, 2014, 103‑20, https://doi.org/10.15122/isbn.978-2-8124-2120-4.p.0103.
+[^14]:  Jérôme Denis et David Pontille, « Material Ordering and the Care of Things », *Science, Technology, & Human Values* 40, no 3 (1 mai 2015): 338‑67, https://doi.org/10.1177/0162243914553129; Sandra Laugier, « Care, environnement et éthique globale », *Cahiers du Genre* 59, no 2 (2015): 127‑52, https://doi.org/10.3917/cdge.059.0127; Claire Tollis, « Les spatialités du care Une autre géographie des espaces naturels dits “ protégés ” », *Éthique, politique, religions 2013 – 2, n° 3\. Prendre soin de la nature et des hommes*, 2014, 103‑20, https://doi.org/10.15122/isbn.978-2-8124-2120-4.p.0103.
 
 [^15]:  Caroline Ibos, « Mierle Laderman Ukeles et l’art comme laboratoire du care. “Lundi matin, après la révolution qui s’occupera des poubelles ?” », *Cahiers du Genre* 66, no 1 (2019): 157‑79, https://doi.org/10.3917/cdge.066.0157.
 
@@ -151,7 +151,7 @@ L’ancrage socio-spatial des œuvres situées, le travail d’enquête en immer
 
 [^26]:  Martin Nadaud, « Retour sur le retour à la terre au temps du Land Art »,Inter \- Art actuel, no 131 (2019): 58‑61, https://id.erudit.org/iderudit/89888ac.
 
-[^27]:  Voir les photographies de l’œuvre de Dominique Ghesquière : [https://www.navigart.fr/fracartothequenouvelleaquitaine/artwork/dominique-ghesquiere-ombres-electriques-410000000022145](https://www.navigart.fr/fracartothequenouvelleaquitaine/artwork/dominique-ghesquiere-ombres-electriques-410000000022145) (consulté le 19 juillet 2024\)
+[^27]:  Voir les photographies de l’œuvre de Dominique Ghesquière : https://www.navigart.fr/fracartothequenouvelleaquitaine/artwork/dominique-ghesquiere-ombres-electriques-410000000022145 (consulté le 19 juillet 2024\)
 
 [^28]:  Voir la présentation de la programmation Transhumance : https://www.cnap.fr/transhumance (consulté le 19 juillet 2024\)
 
