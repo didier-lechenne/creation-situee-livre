@@ -1,15 +1,26 @@
 
-@page chapitre {
-
-}
-
 [data-template="chapitre"]  {
   page: chapitre;
   page-break-before: always;
   page-break-after: always;
-		/* width:100%; */
-/* height: calc( var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
-min-height: 0; */
+  height: calc( var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
+}
+
+
+@page chapitre {
 
 }
 
+@page chapitre:left {
+    margin-top: 15mm;
+    margin-bottom: 34mm;
+    margin-left: 15mm;
+    margin-right: 76.7mm;
+}
+
+@page chapitre:right {
+    margin-top: 15mm;
+    margin-bottom: 34mm;
+    margin-left: 76.7mm;
+    margin-right: 15mm;
+}

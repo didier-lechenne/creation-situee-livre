@@ -7,9 +7,6 @@ draft: false
 
 <breakpage/>
 
-## Mécaniques et jeux d’acteurs d’une démarche créative relationnelle, décloisonnée et hybride
-
-## Aurélien RAMOS {.toc-ignore .auteur}
 
 Après avoir observé la diversité des pratiques de la création située en donnant la parole à des concepteurs issus de différents champs de la création, la deuxième journée d’étude, organisée en octobre 2021, avait pour objet d’interroger le processus de production d’une création située.   
 Nous avons vu que les démarches de création située se positionnaient à l’interface de différents champs disciplinaires et professionnels. Selon qu’elle est mise en œuvre par un paysagiste, un photographe, un auteur ou un plasticien, la démarche de création dans un territoire n’est pas abordée de la même manière. L’objet de la deuxième journée d’étude a alors été de chercher à comprendre comment ces différences liées à des champs disciplinaires et pratiques différentes se traduisaient dans la démarche de production créative. 

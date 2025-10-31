@@ -3,7 +3,7 @@
 :root {
     --pagedjs-baseline: 12px;
     --pagedjs-baseline-position: 0px;
-    --pagedjs-baseline-color: cyan;
+    --pagedjs-baseline-color: rgba(0, 255, 255, 0.3);
 }
 
 @media screen {

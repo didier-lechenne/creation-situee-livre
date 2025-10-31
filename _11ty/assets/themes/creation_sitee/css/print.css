@@ -13,7 +13,7 @@
    LES GABARITS DE MISE EN PAGE
 =================== */
 
-  @import "print/custom.css";
+  
   
   @import "templates/fullPage.css";
   @import "templates/cover.css";
@@ -23,6 +23,7 @@
   /* @import "templates/introduction.css"; */
   @import "templates/text-col.css";
   @import "templates/column-grid.css";
+
   
 
 
@@ -42,5 +43,7 @@
 
   @import "print/interview.css";
   @import "print/list.css";
+
+  @import "print/custom.css";
   
 }
