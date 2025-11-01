@@ -2,6 +2,7 @@
 title: colloqueIntro
 draft: false
 template: introColloque
+class: introColloque-1
 ---
 
 

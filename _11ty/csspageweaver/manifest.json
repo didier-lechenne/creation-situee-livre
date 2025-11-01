@@ -14,7 +14,7 @@
          },
 
         "ragadjust": {
-            "selectors": "h1,h2,h3,h4,h5,h6, li, ol, blockquote, section.textCol p",
+            "selectors": "h1,h2,h3,h4,h5,h6, li, ol, blockquote, section.colloque p, section.colloque div",
             "exeptions": ["short_prepositions"]
          },
 

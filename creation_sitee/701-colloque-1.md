@@ -1,11 +1,12 @@
 ---
-title: colloque
+title: colloque-1
 draft: false
-template: textCol
+template: colloque1
 gridCol: 2
 gridColGutter: 4.06mm
+class: colloque
 ---
-<breakpage/>
+
 
 <div class="span-all header-colloque">
 
@@ -28,7 +29,6 @@ Les journées d’étude « Autour des pratiques de la création située. Pays
 « On peut avoir des points de convergence entre nos différentes pratiques et pour autant avoir des manières de vouloir ressentir l’espace et parfois d’être totalement mêlés dans le site avec tous les composants : par exemple, moi, les habitants et Blandine, ce besoin aussi d’être parfois immergée d’une autre manière. Mais en tout cas, effectivement, l’arpentage, qu’il soit collectif ou individuel, semble être un temps important, qui peut aussi générer des moments de questionnement, de curiosité et de doute. Et la manière de le mettre à plat semble aussi un temps de latence, presque de sédimentation, qui semble, dans le sens de la Barge, vouloir se donner lisible. Vous avez mis en place un outil en plus, qui archive toutes vos connaissances de terrain et aussi ce que vous créez au fur et à mesure. Il y a cette idée d’outil de mise à plat qui prend aussi des formes différentes, collectives ou individuelles. »
 
 
-<breakpage/>
 
 
 
@@ -44,7 +44,7 @@ phase d’arpentage, phase de gestation et phase de cristallisation. »
 
 « C’est en effet très intéressant, parce que, comme je le disais, pour moi, cette phase d’immersion, elle est justement beaucoup basée sur ce que je vais ressentir. Sentir les odeurs, la peau, suivant – justement, je le disais aussi – les saisons… ça, pour le moment, dans mon travail d’artiste pratiquant la gravure, il est vrai que j’essaie de le traduire. Je pense que c’est aussi ce qui m’attire vers le gaufrage. J’essaie de le traduire par une autre sensibilité, puisque je ne peux pas ramener – alors je pourrais, mais je ne l’ai pas fait – ramener l’humidité, ramener ces sensations-là, les odeurs… J’ai ramené lors d’une exposition le son, que je trouve plus simple à utiliser, mais sinon, le reste, je vais essayer de le traduire plutôt dans une technique, puisque la gravure me permet comme ça d’avoir différents outils, ces techniques-là, et de pouvoir chercher ce qui pourrait se rapprocher le plus… de l’odeur, ce n’est pas possible, mais en effet, plutôt de ces sensations et de toute cette partie invisible et, si on n’est pas sur le site, de tout ce que l’on ne peut pas transmettre. »
 
-<breakcolumn />
+
 
 
 ### 3. Anne Laure Boyer
@@ -64,7 +64,7 @@ phase d’arpentage, phase de gestation et phase de cristallisation. »
 
 « C’est difficile que les artistes ou les créateurs soient présents au moment où les cahiers des charges s’écrivent, en fait. Moi, je serais d’accord, mais c’est vrai qu’on appelle ça des “instances de décision” et je pense qu’on est assez absents de ces espaces-là. Pourquoi ? C’est encore un autre débat. Je ne sais pas si c’est le débat d’aujourd’hui, mais oui, moi je suis assez d’accord, mais il n’y qu’à voir le 1 %, c’est typiquement le genre de situation de travail qui existe depuis longtemps sur laquelle on a déjà fait le constat des écueils, cet écueil-là justement : que les créations artistiques arrivent après, une fois que le bâtiment est dessiné et livré. Du coup, on se dit : « Bon, ben, on va le mettre où ? À côté du pot de fleurs pour que ça ne gêne pas », alors que le choix même du lieu, c’est déjà faire œuvre, en fait… de l’espace dans lequel l’œuvre pourra arriver dans un lieu construit. C’est déjà une orientation énorme. Je ne sais pas comment on pourrait faire pour être présents dans ces instances-là. On a quelques syndicats qui bataillent et qui ne sont même pas entendus sur des questions basiques de pratiques professionnelles, donc je pense que c’est un problème. Pourtant, je trouve que ce serait une super idée, mais franchement, ça me tombe des mains. »
 
-<breakcolumn />
+
 
 
 

@@ -1,0 +1,96 @@
+ @page colloque1 {  
+  background-color: rgba(68, 78, 96, 1);
+}
+
+ @page colloque2 {  
+  background-color: rgba(84, 79, 71, 1);
+}
+
+@page colloque1:left {
+    margin-top: 15mm;
+    margin-bottom: 15mm;
+    margin-left: 15mm;
+    margin-right: 25.5mm;
+}
+
+@page colloque1:right {
+    margin-top: 15mm;
+    margin-bottom: 15mm;
+    margin-left: 25.5mm;
+    margin-right: 15mm;
+}
+
+@page colloque2:left {
+    margin-top: 15mm;
+    margin-bottom: 15mm;
+    margin-left: 15mm;
+    margin-right: 25.5mm;
+}
+
+@page colloque2:right {
+    margin-top: 15mm;
+    margin-bottom: 15mm;
+    margin-left: 25.5mm;
+    margin-right: 15mm;
+}
+
+[data-template="colloque1"] {
+  page: colloque1;
+  color: white;
+}
+
+[data-template="colloque2"]{
+  page: colloque2;
+  color: white;
+}
+
+[data-template="colloque2"],
+[data-template="colloque1"] {
+
+  page-break-after: always;
+  font-family: var(--heading);
+  font-weight: 400;
+
+  --g-column-count: var(--grid-col, 2);
+  --g-column-gutter: var(--grid-col-gutter, 0mm);
+
+  columns: var(--grid-col);
+  column-gap: var(--grid-col-gutter);
+  column-fill: auto;
+
+}
+
+[data-template="colloque2"] h3,
+[data-template="colloque1"] h3{
+  margin-top:0;
+  margin-bottom: calc(var(--gutter) / 2);
+  transform: translateY(0) !important; 
+  
+}
+
+
+[data-template="colloque1"] p + h3,
+[data-template="colloque2"] p + h3 {
+  margin-top: calc(var(--gutter) * 3) !important;
+}
+
+[data-template="colloque2"] .header-colloque,
+[data-template="colloque1"] .header-colloque{
+  margin-bottom: calc(var(--gutter) * 3);
+    max-width: 65ch;
+    font-family: var(--labeur);
+}
+
+[data-template="colloque2"] p,
+[data-template="colloque1"] p{
+  orphans: 0 !important;
+  widows: 0 !important; 
+}
+
+.span-all {
+  column-span: all;
+}
+
+.bibliographie p:first-of-type {
+  margin-top: 0 !important;
+}

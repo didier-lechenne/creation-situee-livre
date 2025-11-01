@@ -1,8 +1,8 @@
-@page introColloque { 
-  
+@page introColloque1 { 
+
 }
 
-@page introColloque:left {
+@page introColloque1:left {
     margin-top: 15mm;
     margin-bottom: 34mm;
     margin-left: 15mm;
@@ -10,7 +10,7 @@
     background-color: #444E60;
 }
 
-@page introColloque:right {
+@page introColloque1:right {
     margin-top: 15mm;
     margin-bottom: 34mm;
     margin-left: 25.5mm;
@@ -18,13 +18,49 @@
     background-color: #fff;
 }
 
-[data-template="introColloque"] {
-  page: introColloque;
+
+@page introColloque2 { 
+
+}
+
+@page introColloque2:left {
+    margin-top: 15mm;
+    margin-bottom: 34mm;
+    margin-left: 15mm;
+    margin-right: 25.5mm;
+    background-color: rgba(84, 79, 71, 1);
+}
+
+@page introColloque2:right {
+    margin-top: 15mm;
+    margin-bottom: 34mm;
+    margin-left: 25.5mm;
+    margin-right: 15mm;
+    background-color: rgba(84, 79, 71, 1);
+}
+
+.introColloque-1,
+.introColloque-2{
+  color: white;
+}
+
+[data-template="introColloque2"] {
+  page: introColloque2;
+	page-break-before: always;
+  /* page-break-after: always; */
+		/* width:100%; */
+		/* height: calc( var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
+		min-height: 0; */
+  
+}
+
+[data-template="introColloque1"] {
+  page: introColloque1;
 
 	page-break-before: always;
   /* page-break-after: always; */
 		/* width:100%; */
 		/* height: calc( var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
 		min-height: 0; */
-    color: white;
+ 
 }

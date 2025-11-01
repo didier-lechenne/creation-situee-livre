@@ -31,6 +31,7 @@
                   style="{% if p.data.bgColor %}--bg-color: {{ p.data.bgColor }}; {% endif %} {% if p.data.gridCol %}--grid-col: {{ p.data.gridCol }};{% endif %}{% if p.data.gridRow %}--grid-row: {{ p.data.gridRow }};{% endif %}{% if p.data.gridColGutter %}--grid-col-gutter: {{ p.data.gridColGutter }};{% endif %}{% if p.data.gridRowGutter %}--grid-row-gutter: {{ p.data.gridRowGutter }};{% endif %}"
                   {% if p.data.moveTo %}data-page-move-to="{{ p.data.moveTo }}" {% endif %}
                   data-template="{{ p.data.template | default('default') }}"
+                  {% if p.data.bgColor %}data-bg-color="{{ p.data.bgColor }}" {% endif %}
                   
                   {% if p.data.show %}data-show="{{ p.data.show }}"{% endif %}
                   {% if p.data.toc %}data-toc="{{ p.data.toc }}"{% endif %}

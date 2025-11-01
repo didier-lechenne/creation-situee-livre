@@ -1,6 +1,8 @@
  @page textCol {  
-  /* background-color: unset; */
+  background-color: rgba(68, 78, 96, 1);
 }
+
+
 
 @page textCol:left {
     margin-top: 15mm;
@@ -18,16 +20,20 @@
 
 [data-template="textCol"] {
   page: textCol;
+  
 
 }
 
-
+.colloque-1{
+  color: white;
+}
 
 
 [data-template="textCol"] {
 
   page-break-after: always;
   font-family: var(--heading);
+  font-weight: 400;
 
   --g-column-count: var(--grid-col, 2);
   --g-column-gutter: var(--grid-col-gutter, 0mm);
@@ -36,18 +42,20 @@
   column-gap: var(--grid-col-gutter);
   column-fill: auto;
 
-  
 }
 
 [data-template="textCol"] h3{
   margin-top:0;
   margin-bottom: calc(var(--gutter) / 2);
   transform: translateY(0) !important; 
+  
 }
 
 
 [data-template="textCol"] .header-colloque{
   margin-bottom: calc(var(--gutter) * 4);
+    max-width: 65ch;
+    font-family: var(--labeur);
 }
 
 

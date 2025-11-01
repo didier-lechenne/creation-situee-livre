@@ -43,7 +43,7 @@ html {
   scroll-behavior: smooth;
 }
 
-section:not(.textCol):not([data-template="textCol"]) {
+section:not(.textCol):not([data-template="textCol"]):not(.colloque) {
   display: block;
   padding: 0;
   height: calc(var(--pagedjs-pagebox-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top) );
@@ -58,6 +58,7 @@ section p {
   hyphens: auto !important;
   hyphenate-limit-chars: 7 4 3;
   overflow-wrap: break-word;
+
 }
 
 section > p:first-of-type {
