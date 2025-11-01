@@ -1,4 +1,4 @@
-.toc {
+[data-template="toc"] {
 	page: sommaire;
 	page-break-after: always;
 	display: flex;
@@ -7,9 +7,29 @@
 	/* font-family: 'Hershey-Futural-15'; */
 }
 
+.sidenote-container{
+	/* display: none; */
+}
+
+
+/* Table of Contents Layout */
+@page sommaire {
+    margin: 10mm !important;
+
+   @bottom-left {
+        display: none;
+    }
+    
+    @bottom-right {
+        display: none;
+    }
+}
+
+
+
 .toc #nav-toc {
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
 	height: 100%;
 	flex: 1; 
@@ -22,6 +42,8 @@
 	margin: 0; 
 	text-align: center;
 }
+
+
 
 
 

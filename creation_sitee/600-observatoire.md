@@ -1,8 +1,7 @@
 ---
 title: observatoire
-template: default
 class: chapter
-draft: false
+draft: true
 ---
 <breakpage/>
 

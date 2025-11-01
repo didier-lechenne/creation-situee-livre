@@ -1,10 +1,25 @@
 
 
-[data-template="modularGrid"],
-.modularGrid {
-  page: modularGrid !important;
+/* Modular Grid Layout */
+@page modulargrid {
+    margin: 10mm !important;
+
+    @bottom-left {
+        display: none;
+    }
+    
+    @bottom-right {
+        display: none;
+    }
+
+}
+
+
+[data-template="modularGrid"] {
+  page: modulargrid !important;
 
   page-break-before: always;
+  page-break-after: always;
 
   --g-column-count: var(--grid-col, 12);
   --g-column-gutter: var(--grid-col-gutter, 0mm);

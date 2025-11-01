@@ -1,8 +1,7 @@
 ---
 title: introduction
-template: default
 class: chapter
-draft: false
+draft: true
 ---
 
 ## Une introduction méthodologique  

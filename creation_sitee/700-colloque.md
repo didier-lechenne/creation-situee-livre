@@ -1,8 +1,7 @@
 ---
 title: colloque
-template: default
 class: chapter
-draft: false
+draft: true
 ---
 
 <breakpage/>

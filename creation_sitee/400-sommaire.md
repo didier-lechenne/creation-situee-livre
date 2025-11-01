@@ -2,9 +2,9 @@
 template: toc
 show: print
 draft: false
+class: toc
 ---
+<breakpage />
 
-<breakpage>
-
-<nav markdown="1" id="nav-toc"></nav>
+<nav  id="nav-toc"></nav>
 
