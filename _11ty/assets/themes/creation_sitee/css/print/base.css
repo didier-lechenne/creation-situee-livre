@@ -18,7 +18,7 @@ body {
 article,
 aside,
 footer,
-header,
+/* header, */
 hgroup,
 main,
 nav,
@@ -46,20 +46,20 @@ html {
 section {
   display: block;
   padding: 0;
-  height: calc(var(--pagedjs-pagebox-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top) + 5pt);
+  height: calc(var(--pagedjs-pagebox-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top) );
 }
 
 section p {
-  orphans: 3;
-  widows: 2;
-  word-break: break-word;
+  /* orphans: 3;
+  widows: 2; */
   margin-top: 0;
   margin-bottom: 0;
   text-indent: var(--gutter);
   hyphens: auto !important;
   hyphenate-limit-chars: 7 4 3;
+  overflow-wrap: break-word;
 }
-
+/*  */
 section > p:first-of-type {
   text-indent: 0 !important;
 }
@@ -74,7 +74,7 @@ section p:first-child {
   font-style: inherit;
 }
 
-section.default h2 {
+section h2 {
   font-family: var(--heading);
   font-size: var(--heading-size);
   line-height: var(--heading-line-height);
@@ -84,7 +84,7 @@ section.default h2 {
   padding: 0;
 }
 
-section.default h3 {
+section h3 {
   font-family: var(--heading);
   font-size: var(--labeur-size);
   /* line-height: 100%; */
@@ -96,7 +96,7 @@ section.default h3 {
   padding: 0;
   /* margin-bottom: calc( var(--gutter) / 3); */
   transform: translateY(calc( var(--gutter) / -3));
-  margin-top: calc( var(--gutter) * 2 );
+  margin-top: calc( var(--labeur-baseline) * 1.5 );
   margin-left: calc( var(--gutter) );
   letter-spacing: 0.05em; 
 }

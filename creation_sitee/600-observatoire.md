@@ -1,7 +1,7 @@
 ---
 title: observatoire-titre
 class: chapter
-draft: false
+draft: true
 template: chapitre
 ---
 

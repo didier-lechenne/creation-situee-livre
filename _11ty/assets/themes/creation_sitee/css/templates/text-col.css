@@ -1,10 +1,22 @@
 @page textCol {
-  page-break-before: always;
-  page-break-after: always;
+
+}
+
+@page textCol:left {
+    margin-top: 15mm;
+    margin-bottom: 34mm;
+    margin-left: 15mm;
+    margin-right: 25.5mm;
+}
+
+@page textCol:right {
+    margin-top: 15mm;
+    margin-bottom: 34mm;
+    margin-left: 25.5mm;
+    margin-right: 15mm;
 }
 
 [data-template="textCol"],
-[data-template="bibliographie"],
 .bibliographie {
   page: textCol;
   page-break-before: always;
@@ -17,12 +29,12 @@
   column-fill: auto;
   /* columnn-fill: balance; */
 
-  font-family: var(--labeur);
-  font-size: 9pt;
-  line-height: 12pt;
+
 }
 
-
+.span-all{
+  column-span: all;
+}
 
 
 [data-template="textCol"] h2,
@@ -71,7 +83,6 @@
 [data-template="bibliographie"] p,
 .bibliographie p {
   break-inside: avoid;
-  /* hyphens: none!important; */
   margin-top: 1ch;
   margin-bottom: 1ch;
 }

@@ -1,0 +1,6 @@
+.fig-call{
+  font-family: var(--heading);
+  font-size: var(--footnote-size);
+  line-height: 100%;
+  /* font-weight: var(--labeur-weight); */
+}
