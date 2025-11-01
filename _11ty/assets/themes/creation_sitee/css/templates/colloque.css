@@ -68,6 +68,15 @@
   
 }
 
+p.like-h3{
+  margin-top: calc(var(--gutter) * 1) !important;
+  margin-bottom: calc(var(--gutter) / 2);
+  transform: translateY(0) !important;
+  margin-left: calc(var(--gutter))!important;
+  letter-spacing: 0.05em;
+  text-indent:0 !important;
+  line-height: 110%;
+}
 
 [data-template="colloque1"] p + h3,
 [data-template="colloque2"] p + h3 {
