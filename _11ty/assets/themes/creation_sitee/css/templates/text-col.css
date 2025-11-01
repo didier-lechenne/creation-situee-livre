@@ -38,42 +38,19 @@
 
 
 [data-template="textCol"] h2,
-[data-template="bibliographie"] h2,
 .bibliographie h2 {
   column-span: all;
-  /* ────────────────────────────────────────
-   ↑ ÉTALEMENT SUR TOUTES LES COLONNES
-   
-   column-span : Contrôle si un élément s'étend 
-   sur plusieurs colonnes dans un layout multi-colonnes
-
-   • none → L'élément reste dans une seule colonne (défaut)
-   • all  → L'élément s'étend sur toutes les colonnes
-
-   ──────────────────────────────────────── */
-  font-family: var(--heading);
-  font-size: 28pt;
-  line-height: 33.6pt;
-  font-weight: normal;
-  text-align: center;
-
   margin: 0;
   padding: 0;
-
-
-  
 }
 
 [data-template="textCol"] h3,
-[data-template="bibliographie"] h3,
 .bibliographie h3 {
-  font-family: var(--heading);
-  font-size: ;
-  font-weight: bold;
-    /* column-span: all;
-    max-width: 100% !important; */
-}
+  margin: 0;
+  padding: 0;
+  column-span: all;
 
+}
 
 .textCol h3:first-of-type { 
   column-span: all;
@@ -83,8 +60,6 @@
 [data-template="bibliographie"] p,
 .bibliographie p {
   break-inside: avoid;
-  margin-top: 1ch;
-  margin-bottom: 1ch;
 }
 
 .bibliographie p:first-of-type {
