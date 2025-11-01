@@ -39,6 +39,8 @@
   color: white;
 }
 
+
+
 [data-template="colloque2"]{
   page: colloque2;
   color: white;
@@ -60,12 +62,22 @@
 
 }
 
+
+
+
 [data-template="colloque2"] h3,
 [data-template="colloque1"] h3{
   margin-top:0;
   margin-bottom: calc(var(--gutter) / 2);
   transform: translateY(0) !important; 
-  
+}
+
+[data-template="colloque1"] h3{
+  color: #DBD0B1;
+}
+
+[data-template="colloque2"] h3{
+  color: #DBD0B1;
 }
 
 p.like-h3{
@@ -76,6 +88,7 @@ p.like-h3{
   letter-spacing: 0.05em;
   text-indent:0 !important;
   line-height: 110%;
+   color: #DBD0B1;
 }
 
 [data-template="colloque1"] p + h3,
