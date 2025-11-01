@@ -1,6 +1,6 @@
 	@page blankpage {
 		margin: 0cm;
-		background-color: var(--bg-color, transparent);
+		background-color: white;
         
 		
 		@left-top {

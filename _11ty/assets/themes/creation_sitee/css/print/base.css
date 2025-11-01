@@ -43,14 +43,14 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+section:not(.textCol):not([data-template="textCol"]) {
   display: block;
   padding: 0;
   height: calc(var(--pagedjs-pagebox-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top) );
 }
 
 section p {
-  /* orphans: 3;
+  /* orphans: 2;
   widows: 2; */
   margin-top: 0;
   margin-bottom: 0;
@@ -59,7 +59,7 @@ section p {
   hyphenate-limit-chars: 7 4 3;
   overflow-wrap: break-word;
 }
-/*  */
+
 section > p:first-of-type {
   text-indent: 0 !important;
 }
@@ -102,29 +102,14 @@ section h3 {
 }
 
 
-
-/* section.default > h3:first-child,
-section.default h3:first-child,
-section.default h3:first-of-type,
-section.default h3:nth-child(1) {
-  margin-top: 0 !important;
-} */
-
-section.default h3:first-child {
-  margin-top: 0;
-  transform: translateY(calc( var(--gutter) / -3));
- /* transform: translateY(0); */
- /* margin-bottom: calc( var(--gutter) / 3); */
-  
-}
 section.default h2 {
   margin-bottom: calc( var(--gutter) * 1);
   line-height:100% !important;
-}
+} 
 
 section.default h2.auteur {
   margin-bottom: calc( var(--gutter) * 8);
-  line-height:100% !important;
+  /* line-height:100% !important; */
 }
 
 

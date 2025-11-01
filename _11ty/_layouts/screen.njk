@@ -78,9 +78,7 @@
     </nav>
 
       {% for p in collections.screenPages %}
-         {% set templateName =
-        p.data.template | default('default') %} {% include "templates/" +
-        templateName + ".njk" %} 
+         
       {% endfor %}
     </main>
   </body>

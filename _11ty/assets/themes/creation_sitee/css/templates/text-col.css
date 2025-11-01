@@ -1,5 +1,5 @@
-@page textCol {
-
+ @page textCol {  
+  /* background-color: unset; */
 }
 
 @page textCol:left {
@@ -16,50 +16,44 @@
     margin-right: 15mm;
 }
 
-[data-template="textCol"],
-.bibliographie {
+[data-template="textCol"] {
   page: textCol;
-  page-break-before: always;
+
+}
+
+
+
+
+[data-template="textCol"] {
+
   page-break-after: always;
+  font-family: var(--heading);
 
   --g-column-count: var(--grid-col, 2);
-  --g-column-gutter: var(--grid-col-gutter, var(--gutter));
-  columns: var(--g-column-count);
-  column-gap: var(--g-column-gutter);
+  --g-column-gutter: var(--grid-col-gutter, 0mm);
+
+  columns: var(--grid-col);
+  column-gap: var(--grid-col-gutter);
   column-fill: auto;
-  /* columnn-fill: balance; */
 
-
+  
 }
 
-.span-all{
+[data-template="textCol"] h3{
+  margin-top:0;
+  margin-bottom: calc(var(--gutter) / 2);
+  transform: translateY(0) !important; 
+}
+
+
+[data-template="textCol"] .header-colloque{
+  margin-bottom: calc(var(--gutter) * 4);
+}
+
+
+
+.span-all {
   column-span: all;
-}
-
-
-[data-template="textCol"] h2,
-.bibliographie h2 {
-  column-span: all;
-  margin: 0;
-  padding: 0;
-}
-
-[data-template="textCol"] h3,
-.bibliographie h3 {
-  margin: 0;
-  padding: 0;
-  column-span: all;
-
-}
-
-.textCol h3:first-of-type { 
-  column-span: all;
-}
-
-[data-template="textCol"] p,
-[data-template="bibliographie"] p,
-.bibliographie p {
-  break-inside: avoid;
 }
 
 .bibliographie p:first-of-type {

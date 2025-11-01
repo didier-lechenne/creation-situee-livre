@@ -17,16 +17,20 @@
 
 @media screen, pagedjs-ignore {
   .no-marker .marker,
+  .no-marker .textCol,
   .no-marker .modularGrid,
   .no-marker .pagedjs_area,
   .no-marker .pagedjs_footnote_inner_content,
   .interface-preview .marker,
+  .interface-preview .textCol,
+  .interface-preview .modularGrid,
   .interface-preview .pagedjs_area,
   .interface-preview .pagedjs_footnote_inner_content {
     background-image: none !important;
   }
 
   .marker,
+  .textCol,
   .modularGrid,
   .pagedjs_area,
   .pagedjs_footnote_inner_content {

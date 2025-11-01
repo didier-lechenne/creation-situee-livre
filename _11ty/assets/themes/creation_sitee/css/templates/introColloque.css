@@ -1,0 +1,30 @@
+@page introColloque { 
+  
+}
+
+@page introColloque:left {
+    margin-top: 15mm;
+    margin-bottom: 34mm;
+    margin-left: 15mm;
+    margin-right: 25.5mm;
+    background-color: #444E60;
+}
+
+@page introColloque:right {
+    margin-top: 15mm;
+    margin-bottom: 34mm;
+    margin-left: 25.5mm;
+    margin-right: 15mm;
+    background-color: #fff;
+}
+
+[data-template="introColloque"] {
+  page: introColloque;
+
+	page-break-before: always;
+  /* page-break-after: always; */
+		/* width:100%; */
+		/* height: calc( var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
+		min-height: 0; */
+    color: white;
+}

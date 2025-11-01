@@ -1,7 +1,7 @@
 ---
 title: observatoire
 class: chapter
-draft: true
+draft: false
 ---
 
 Si, comme décrit dans l’introduction méthodologique et scientifique, l’histoire de la création située trouve ses origines dans l’univers pédagogique issu de la rencontre entre quelques enseignants de l’Ecole Nationale Supérieure d’Architecture et de Paysage de Bordeaux (ENSAP de Bordeaux), de l’Ecole Supérieure des Beaux-Arts de Bordeaux (EBABx) et du Politechnico di Milano lors de plusieurs master classes en France et à l’étranger entre 2013 et 2017, l’intuition, première guide de cette entreprise \- et ressource permanente de la recherche-, s’est associée aux étapes nécessaires du processus scientifique engagé. « Autour des pratiques de la création située. Paysage, architecture, art, littérature » est la première journée d’étude organisée en juin 2021 à l’Ecole Nationale Supérieure d’Architecture et de Paysage de Bordeaux et marque le premier jalon de la construction d’un corpus scientifique. Une seconde a eu lieu en octobre de la même année au Centre International d’Art et de Paysage de l’île de Vassivière (CIAPV), elle-même intitulée « Retour sur des créations situées. Programmation, chantier, gestion, réception ». Ces deux colloques constituent un matériau fondamental de la recherche dans la mesure où chacun d’entre eux traite d’aspects différents et complémentaires de ce que nous avions intuitivement nommé la création située.   
@@ -141,3 +141,5 @@ Les points de synthèse que nous venons d’évoquer, le processus de conception
 [^21]:  voir Besse Jean-Marc, *La nécessité du paysage*, Ed. Parenthèses, 2018\.
 
 [^22]:  Marot Sébastien, *op. cit.*
+
+<breakpage/>
