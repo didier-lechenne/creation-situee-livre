@@ -25,9 +25,9 @@
   background-color: rgb(68, 78, 96);
 }
 
-.pagedjs_left_page.pagedjs_chapitre_page > :has(.chapitre) .pagedjs_bleed-right  {
+/* .pagedjs_left_page.pagedjs_chapitre_page > :has(.chapitre) .pagedjs_bleed-right  {
   background-color: white;
-}
+} */
 
 [data-template="chapitre"] .auteur{
   font-family: var(--heading);

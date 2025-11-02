@@ -1,4 +1,8 @@
 
+```css
+<span style="--ls:4">ipsum dolor sit amet, consectetur adipiscing elit.</span>
+```
+
 ## A - Images simple
 
 ### 1. Image flottante 

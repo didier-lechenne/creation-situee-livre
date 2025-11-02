@@ -3,30 +3,29 @@ title: colloque-2-intro
 draft: false
 template: modularGrid
 gridCol: 12
-gridRow: 26
+gridRow: 16
 gridColGutter: 0mm
 gridRowGutter: 0mm
 class: introColloque-2 colloque
 ---
 
 
-<breakpage/>
 
-{% markdown "./inclure/colloque-2-surtitre.md", { 
-  printCol: 1,
-  printWidth: 12,
-  printRow: 1,
-  printHeight: 2,
-  class: "surtitre",
-  alignSelf: "start"
+{% markdown "./inclure/colloque-2-surtitre.md", {
+printCol: 1,
+printWidth: 12,
+printRow: 1,
+printHeight: 1,
+alignSelf: "start",
+class: "surtitre"
 } %}
 
 
 {% markdown "./inclure/colloque-2-centre.md", {
 printCol: 2,
 printWidth: 10,
-printRow: 11,
-printHeight: 5,
+printRow: 6,
+printHeight: 6,
 alignSelf: "center",
 class: "centre"
 } %}
@@ -34,11 +33,10 @@ class: "centre"
 {% markdown "./inclure/colloque-2-lieu.md", {
 printCol: 1,
 printWidth: 12,
-printRow: 24,
-printHeight: 3,
+printRow: 16,
+printHeight: 1,
 alignSelf: "end",
 class: "lieu"
 } %}
 
 
-<breakpage/>
