@@ -39,4 +39,3 @@ alignSelf: "end",
 class: "lieu"
 } %}
 
-

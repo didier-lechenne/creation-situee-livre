@@ -222,10 +222,11 @@
 
   [data-template="modularGrid"],
   .modularGrid {
+   
     page: modularGrid !important;
 
   page-break-before: always !important;
-  page-break-after: always !important;
+ 
 
     --g-column-count: var(--grid-col, 12);
     --g-column-gutter: var(--grid-col-gutter, 0mm);

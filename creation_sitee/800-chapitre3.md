@@ -96,6 +96,10 @@ Ces actions sont guidées tout à la fois par la compréhension du site mais ég
 Cette réponse à une problématique locale peut également conduire à une proposition non située. C’est le cas de *La Fauvette* réalisée lors de l’édition 2019 à Faux-la-Montagne. Le village est marqué par une vie sociale très dynamique et les élus, associations et habitants se mobilisent auprès des concepteurs du Bureau Baroque pour formuler une demande : celle d’une structure mobile pouvant être déplacée au gré des événements festifs et culturels de la commune en se déployant alternativement comme estrade, gradins, bar, ou barnum <span class="fig-call">\[Fig.IV.15.\]</span>. Si l’œuvre peut s’installer n’importe où dans la commune et si, en dehors des événements où elle est utilisée, elle est remisée aux ateliers municipaux, son ancrage spatial reste tout de même étroitement associé à une demande sociale et à un mode de vie local.   
 L’ancrage socio-spatial des œuvres situées, le travail d’enquête en immersion des équipes de conception conduit à la production d’œuvres répondant à des enjeux locaux. Il y a chez les équipes de concepteurs une recherche d’utilité sociale de leur action qui passe par une connaissance du territoire de projet au travers des pratiques, du regard et des représentations de celles et ceux qui l’habitent.
 
+
+
+
+
 [^1]:  Graham Wallas, *The Art of Thought* (London: Solis Press, 1926); Brewster Ghiselin, *The Creative Process: Reflections on the Invention of Art*, Reissue édition (Berkeley: University of California Press, 1985).
 
 [^2]:  Nadia Arab, « La coproduction des opérations urbaines : coopération et conception », *Espaces et sociétés*, no 105‑106 (2001) : 57‑82 ; Joël Idt, « Le pilotage des projets d’aménagement urbain : entre technique et politique. Une analyse basée sur les cas de Paris, Lille, et Chartres » (Université Paris VIII Vincennes-Saint Denis, 2009), https://theses.hal.science/tel-00468424.

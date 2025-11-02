@@ -1,5 +1,5 @@
 ---
-title: Faux titre
+title: Faux-titre
 template: modularGrid
 gridCol: 12
 gridRow: 36
