@@ -224,7 +224,7 @@
     page: modularGrid;
     page-break-before: always;
     
-     page-break-inside: avoid !important;
+    page-break-inside: avoid !important;
      
 
     --g-column-count: var(--grid-col, 12);

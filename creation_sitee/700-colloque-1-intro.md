@@ -9,7 +9,6 @@ gridRowGutter: 0mm
 class: introColloque-1 colloque
 ---
 
-<breakpage/>
 
 
 {% markdown "./inclure/colloque-1-surtitre.md", {
@@ -40,4 +39,3 @@ alignSelf: "end",
 class: "lieu"
 } %}
 
-<breakpage/>

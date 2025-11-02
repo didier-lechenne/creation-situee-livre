@@ -35,6 +35,7 @@
   font-size: 9.5pt;
   margin-bottom: calc(var(--gutter) * 2);
   text-transform: uppercase;
+   color: white;
 }
 
 [data-template="chapitre"] h2{
@@ -44,5 +45,6 @@
   line-height: 110%;
   margin-bottom: calc(var(--gutter) * 2); */
   margin-bottom: calc(var(--gutter) * 2);
+  color: white;
 
 }
