@@ -39,28 +39,55 @@
     background-color: rgba(84, 79, 71, 1);
 }
 
-.introColloque-1,
-.introColloque-2{
-  color: white;
-}
+
 
 [data-template="introColloque2"] {
   page: introColloque2;
 	page-break-before: always;
-  /* page-break-after: always; */
-		/* width:100%; */
-		/* height: calc( var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
-		min-height: 0; */
-  
 }
 
 [data-template="introColloque1"] {
   page: introColloque1;
-
 	page-break-before: always;
-  /* page-break-after: always; */
-		/* width:100%; */
-		/* height: calc( var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
-		min-height: 0; */
- 
+  height: 230mm !important;
 }
+
+section{
+  
+}
+
+.introColloque-1,
+.introColloque-2{
+  color: white;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; */
+
+  /* display: flex;
+  flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	height: 100%;
+	flex: 1; 
+	padding: 0; */
+}
+
+
+[data-template="introColloque1"] .surtitre{
+
+}
+
+[data-template="introColloque1"] .titre{
+/* margin-bottom: auto; */
+}
+
+[data-template="introColloque1"] .avec{
+/* margin-bottom: auto; */
+}
+
+[data-template="introColloque1"] .lieu{
+
+}
+

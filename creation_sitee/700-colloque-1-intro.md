@@ -1,15 +1,29 @@
 ---
 title: colloqueIntro
 draft: false
-template: introColloque
-class: introColloque-1
+template: modularGrid
+gridCol: 12
+gridRow: 36
+gridColGutter: 3mm
+gridRowGutter: 3mm
+class: introColloque-1 colloque
 ---
 
 
- Journée d’études n°1 (extraits choisis)  {.surtitre}
-## « Autour de la création située. Paysage, architecture, art, littérature ».   {.titre}
+{% markdown "./inclure/colloque-1-surtitre.md", { 
+  printCol: 1,
+  printWidth: 12,
+  printRow: 1,
+  printHeight: 3
+  class: surtitre
+} %}
 
-Avec Corène Caubel ; Blandine Galtier ; Anne Laure Boyer ; Marc Pichelin, Ouïe/Dire ; Juliette Duchange et Marion Ponsard, les espaces verts ; Sophie Poirier {.avec}
 
-Ecole Nationale Supérieure d’Architecture et de Paysage, Bordeaux, juin 2021\. {.lieu}
+
+
+
+
+
+
+
 

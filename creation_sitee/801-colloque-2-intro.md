@@ -1,8 +1,8 @@
 ---
 title: colloque-2-intro
 draft: false
-template: introColloque
-class: introColloque-2
+template: introColloque2
+class: introColloque-2 colloque
 ---
 
 
