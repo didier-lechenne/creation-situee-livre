@@ -1,93 +1,81 @@
-@page introColloque1 { 
 
+@page introColloque1:left,
+@page introColloque2:left {
+    margin: 15mm 25.5mm 34mm 15mm;
+}
+
+@page introColloque1:right,
+@page introColloque2:right {
+    margin: 15mm 15mm 34mm 25.5mm;
 }
 
 @page introColloque1:left {
-    margin-top: 15mm;
-    margin-bottom: 34mm;
-    margin-left: 15mm;
-    margin-right: 25.5mm;
     background-color: #444E60;
 }
 
 @page introColloque1:right {
-    margin-top: 15mm;
-    margin-bottom: 34mm;
-    margin-left: 25.5mm;
-    margin-right: 15mm;
     background-color: #fff;
 }
 
 
-@page introColloque2 { 
-
-}
-
-@page introColloque2:left {
-    margin-top: 15mm;
-    margin-bottom: 34mm;
-    margin-left: 15mm;
-    margin-right: 25.5mm;
-    background-color: rgba(84, 79, 71, 1);
-}
-
+@page introColloque2:left,
 @page introColloque2:right {
-    margin-top: 15mm;
-    margin-bottom: 34mm;
-    margin-left: 25.5mm;
-    margin-right: 15mm;
     background-color: rgba(84, 79, 71, 1);
 }
 
+/* Styles de marge PagedJS */
+.pagedjs_colloque1_page .pagedjs_margin-content::after,
+.pagedjs_colloque2_page .pagedjs_margin-content::after {
+    color: white;
+}
 
+.pagedjs_colloque1_first_page .pagedjs_margin-content,
+.pagedjs_colloque2_first_page .pagedjs_margin-content{
+display:none;
+}
 
+/* Templates */
+[data-template="introColloque1"],
 [data-template="introColloque2"] {
-  page: introColloque2;
-	page-break-before: always;
+    /* page-break-before: always; */
 }
 
 [data-template="introColloque1"] {
-  page: introColloque1;
-	page-break-before: always;
-  height: 230mm !important;
+    /* page: introColloque1; */
+    /* height: 230mm !important; */
 }
 
-section{
-  
+[data-template="introColloque2"] {
+    /* page: introColloque2; */
 }
 
+/* Styles de contenu */
 .introColloque-1,
-.introColloque-2{
-  color: white;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center; */
+.introColloque-2 {
+    color: white;
+}
 
-  /* display: flex;
-  flex-direction: column;
-	justify-content: start;
-	align-items: center;
-	height: 100%;
-	flex: 1; 
-	padding: 0; */
+.colloque .centre h2 {
+    font-size: 27pt;
+    line-height: 100%;
+    margin-bottom:var(--gutter);
+        
+}
+
+.colloque .centre p {
+    color: #DBD0B1;
 }
 
 
-[data-template="introColloque1"] .surtitre{
-
+.colloque .surtitre,
+.colloque .centre,
+.colloque .centre h2,
+.colloque .lieu {
+    text-align: center;
+    font-family: var(--heading);
 }
 
-[data-template="introColloque1"] .titre{
-/* margin-bottom: auto; */
+.colloque .surtitre {
+    text-transform: uppercase;
+    font-family: var(--heading);
 }
-
-[data-template="introColloque1"] .avec{
-/* margin-bottom: auto; */
-}
-
-[data-template="introColloque1"] .lieu{
-
-}
-

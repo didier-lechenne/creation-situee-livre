@@ -2,7 +2,7 @@
 title: chap3
 template: default
 class: chapter
-draft: true
+draft: false
 ---
 
 <breakpage/>

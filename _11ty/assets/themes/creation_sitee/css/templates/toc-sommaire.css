@@ -57,8 +57,8 @@
 
 .toc #list-toc-generated .toc-element a {
 	font-family: var(--heading);
-	font-size: 25pt;
-	line-height: 140%;
+	font-size: 9pt;
+	line-height: 120%;
 /* ────────────────────────────────────────
 	↑ espacement entre les les élements de la liste en %
 	cela peut être une valeure fixe en mm, pt ect.

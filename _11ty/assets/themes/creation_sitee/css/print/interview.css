@@ -1,15 +1,22 @@
 @page interview {
-  margin-top: 10mm;
-  margin-bottom: 10mm;
-  margin-left: 50mm;
-  margin-right: 25mm;
+  margin-top: 15mm;
+  margin-bottom: 34mm;
+  margin-left: 76.7mm;
+  margin-right: 15mm;
 }
+
+/* @page interview:left {
+  margin-top: 15mm;
+  margin-bottom: 34mm;
+  margin-left: 15mm;
+  margin-right: 76.7mm;
+} */
 
 .interview {
 	page: interview;
-	font-family: var(--labeur);
-	font-size: 9pt;
-	line-height: 12pt;
+  page-break-before: always;
+	page-break-after: always;
+
 }
 
 
@@ -19,12 +26,16 @@
 }
 
 .interview p {
-	--indent: 10em;
-	margin-left: -10em;
+	--indent: 76.7mm;
+	margin-left: -76.7mm;
 	max-width: none;
 	padding-left: var(--indent);
-	/* widows: 1 !important; */
+  text-indent: unset;
+  margin-bottom: calc(var(--gutter) / 2);
+}
 
+.interview p:first-child  {
+  text-indent: unset;
 }
 
 
@@ -34,6 +45,6 @@
     width: 0;
     position: absolute;
     text-align: right;
-    text-decoration:none;
-    font-weight: 800;
+    text-decoration: none;
+   
 }

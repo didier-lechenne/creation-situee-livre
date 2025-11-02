@@ -1,13 +1,43 @@
 ---
 title: colloque-2-intro
 draft: false
-template: introColloque2
+template: modularGrid
+gridCol: 12
+gridRow: 36
+gridColGutter: 0mm
+gridRowGutter: 0mm
 class: introColloque-2 colloque
 ---
 
+<breakpage/>
 
-## Journée d’étude n°2 (extraits choisis)  
-« Retour sur des créations situées. Programmation, chantier, gestion, réception »  
-Centre International d’Art et de Paysage de Vassivière, octobre 2021\.
-\-  
-Avec Liliana Motta ; Gilbert Fillinger ; Marie-Anne Chambost ; Marianne Lanavère, Lucie You et Guillaume Baudin ; Clément Boudin ; Marion Ponsard ; Pomme Boucher
+{% markdown "./inclure/colloque-2-surtitre.md", { 
+  printCol: 1,
+  printWidth: 12,
+  printRow: 1,
+  printHeight: 2,
+  class: "surtitre",
+  alignSelf: "start"
+} %}
+
+
+{% markdown "./inclure/colloque-2-centre.md", {
+printCol: 2,
+printWidth: 10,
+printRow: 2,
+printHeight: 34,
+alignSelf: "center",
+class: "centre"
+} %}
+
+
+{% markdown "./inclure/colloque-2-lieu.md", {
+printCol: 1,
+printWidth: 12,
+printRow: 35,
+printHeight: 2,
+alignSelf: "end",
+class: "lieu"
+} %}
+
+<breakpage/>

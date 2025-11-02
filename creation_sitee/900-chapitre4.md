@@ -2,7 +2,7 @@
 title: chap4
 template: default
 class: chapter
-draft: true
+draft: false
 ---
 
 <breakpage/>
@@ -51,3 +51,5 @@ Loin de nous l’idée de construire un modèle de représentations, ces deux ap
 [^7]:  Parc St John Perse, Reims. Paysagiste : Jacques Simon © Collage photos Jacques Simon.
 
 [^8]:  Les étudiants ayant participé au séminaire sont Arthur Cavero, Charlotte Donnenwirth, Isée Doutreloux, Faustine Ducros, Hugo Dufour, Duygu Durmaz, Ainhoa Elissalde, Coraline Ginet, Virgile Haëck, Corentin Hamelin, Andrea Heim, Clémentine Loubrieu, Bruno Pancrazi, Camille Pelletant, Auriane Roux, Maëlian Soulier. Ils étaient alors en master 2 du cursus de Paysage à l’ENSAP Bordeaux.
+
+<breakpage/>
