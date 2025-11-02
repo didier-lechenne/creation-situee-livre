@@ -223,9 +223,9 @@
   [data-template="modularGrid"] {
     page: modularGrid;
     page-break-before: always;
-    page-break-after: always;
+    
      page-break-inside: avoid !important;
-     min-height: 100% !important;
+     
 
     --g-column-count: var(--grid-col, 12);
     --g-column-gutter: var(--grid-col-gutter, 0mm);
@@ -237,8 +237,10 @@
     grid-template-rows: repeat(var(--g-row-count), 1fr);
     column-gap: var(--g-column-gutter);
     row-gap: var(--g-row-gutter);
+
+    /* height: auto !important; */
     height: calc(var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
-    /* min-height: 0; */
+    
     padding-top: 0;
     padding-bottom: 0;
   }

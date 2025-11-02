@@ -1,7 +1,8 @@
 [data-template="chapitre"] {
   page: chapitre;
-  /* page-break-before: always; */
-  height: calc(var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom));
+  color: white;
+
+  /* height: calc(var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom)); */
 }
 
 @page chapitre:left {
@@ -9,6 +10,7 @@
     margin-bottom: 34mm;
     margin-left: 15mm;
     margin-right: 76.7mm;
+    /* background-color: rgb(68, 78, 96); */
 }
 
 @page chapitre:right {
@@ -16,4 +18,31 @@
     margin-bottom: 34mm;
     margin-left: 76.7mm;
     margin-right: 15mm;
+    /* background-color: rgb(68, 78, 96); */
+}
+
+.pagedjs_left_page.pagedjs_chapitre_page > :has(.chapitre) {
+  background-color: rgb(68, 78, 96);
+}
+
+.pagedjs_left_page.pagedjs_chapitre_page > :has(.chapitre) .pagedjs_bleed-right  {
+  background-color: white;
+}
+
+[data-template="chapitre"] .auteur{
+  font-family: var(--heading);
+  /* font-weight: 900; */
+  font-size: 9.5pt;
+  margin-bottom: calc(var(--gutter) * 2);
+  text-transform: uppercase;
+}
+
+[data-template="chapitre"] h2{
+  /* font-family: var(--labeur);
+  font-weight: 900;
+  font-size: 24pt;
+  line-height: 110%;
+  margin-bottom: calc(var(--gutter) * 2); */
+  margin-bottom: calc(var(--gutter) * 2);
+
 }

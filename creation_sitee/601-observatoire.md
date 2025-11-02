@@ -142,3 +142,4 @@ Les points de synthèse que nous venons d’évoquer, le processus de conception
 
 [^22]:  Marot Sébastien, *op. cit.*
 
+<breakpage/>

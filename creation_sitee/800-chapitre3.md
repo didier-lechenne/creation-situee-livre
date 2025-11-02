@@ -234,3 +234,4 @@ L’ancrage socio-spatial des œuvres situées, le travail d’enquête en immer
 
 [^67]:  Zetlaoui-Léger et Fenker, « Maîtrise d’usage ».
 
+<breakpage/>

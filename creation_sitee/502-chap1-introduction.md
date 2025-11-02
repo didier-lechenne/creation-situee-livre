@@ -4,8 +4,7 @@ class: chapter
 draft: false
 ---
 
-## Une introduction méthodologique  
-## Hélène Soulier {.toc-ignore .auteur}
+
 
 ### D’où sommes-nous partis ?
 

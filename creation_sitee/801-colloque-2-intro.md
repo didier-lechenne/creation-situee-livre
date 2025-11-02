@@ -9,6 +9,7 @@ gridRowGutter: 0mm
 class: introColloque-2 colloque
 ---
 
+
 <breakpage/>
 
 {% markdown "./inclure/colloque-2-surtitre.md", { 
@@ -24,19 +25,20 @@ class: introColloque-2 colloque
 {% markdown "./inclure/colloque-2-centre.md", {
 printCol: 2,
 printWidth: 10,
-printRow: 2,
+printRow: 11,
 printHeight: 5,
 alignSelf: "center",
 class: "centre"
 } %}
 
-
 {% markdown "./inclure/colloque-2-lieu.md", {
 printCol: 1,
 printWidth: 12,
-printRow: 6,
-printHeight: 2,
+printRow: 24,
+printHeight: 3,
 alignSelf: "end",
 class: "lieu"
 } %}
 
+
+<breakpage/>

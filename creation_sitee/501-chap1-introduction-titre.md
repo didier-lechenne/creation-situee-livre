@@ -7,7 +7,7 @@ template: chapitre
 
 
 
-## Observatoire des pratiques de la création située, entre approche multidisciplinaire, désir de territoire et incertitude
+## Une introduction méthodologique 
 
 Hélène SOULIER {.toc-ignore .auteur}
 
