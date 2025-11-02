@@ -1,7 +1,6 @@
 [data-template="chapitre"] {
   page: chapitre;
-  page-break-before: always;
-  page-break-after: always;
+  /* page-break-before: always; */
   height: calc(var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom));
 }
 
