@@ -220,13 +220,11 @@
     margin: 10mm;
   }
 
-  [data-template="modularGrid"],
-  .modularGrid {
-   
-    page: modularGrid !important;
+  [data-template="modularGrid"] {
+    page: modularGrid;
+    page-break-before: always;
 
-  page-break-before: always !important;
- 
+
 
     --g-column-count: var(--grid-col, 12);
     --g-column-gutter: var(--grid-col-gutter, 0mm);
@@ -243,6 +241,10 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  [data-template="modularGrid"]:not(.introColloque-1):not(.introColloque-2) {
+    /* page: modulargrid !important; */
+}
 
   .modularGrid .pagedjs_full-page_content {
     left: calc((var(--pagedjs-margin-left) + 6mm) * -1) !important;

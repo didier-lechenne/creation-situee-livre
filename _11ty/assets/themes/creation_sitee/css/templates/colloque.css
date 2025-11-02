@@ -1,4 +1,4 @@
- @page colloque1 {  
+ /* @page colloque1 {  
   background-color: rgba(68, 78, 96, 1);
 }
 
@@ -44,12 +44,12 @@
 [data-template="colloque2"]{
   page: colloque2;
   color: white;
-}
+} */
 
 [data-template="colloque2"],
 [data-template="colloque1"] {
 
-  page-break-after: always;
+
   font-family: var(--heading);
   font-weight: 400;
 
