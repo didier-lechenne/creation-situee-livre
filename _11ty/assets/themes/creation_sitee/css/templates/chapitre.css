@@ -44,7 +44,7 @@
   font-size: 24pt;
   line-height: 110%;
   margin-bottom: calc(var(--gutter) * 2); */
-  margin-bottom: calc(var(--gutter) * 2);
+  margin-bottom: calc(var(--gutter) * 1);
   color: white;
 
 }

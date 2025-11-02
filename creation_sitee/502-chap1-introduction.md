@@ -204,3 +204,6 @@ Le Centre international d’art et du paysage est structure ressource depuis 200
 [^45]:  Ramos Aurélien, *Faire jardiner sans jardin : mécanismes et limites des dispositifs municipaux de jardinage tactique dans la rue*, sous la direction de Martine Bouchier, Nanterre, 2021\.
 
 
+{% image "./images/degrade/chap2.svg", { 
+ class:"fullpage-spread"
+} %}
