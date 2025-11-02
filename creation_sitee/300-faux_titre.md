@@ -3,8 +3,8 @@ title: Faux titre
 template: modularGrid
 gridCol: 12
 gridRow: 36
-gridColGutter: "0"
-gridRowGutter: 0px
+gridColGutter: 0mm
+gridRowGutter: 0mm
 show: print
 class: fauxtitre
 toc: ignore

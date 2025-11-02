@@ -5,7 +5,7 @@ class: chapter
 draft: false
 ---
 
-<breakpage/>
+
 
 
 Après avoir observé la diversité des pratiques de la création située en donnant la parole à des concepteurs issus de différents champs de la création, la deuxième journée d’étude, organisée en octobre 2021, avait pour objet d’interroger le processus de production d’une création située.   
@@ -229,3 +229,5 @@ L’ancrage socio-spatial des œuvres situées, le travail d’enquête en immer
 [^66]:  Jean-Marc Besse, *La nécessité du paysage* (Marseille: Parenthèses, 2018).
 
 [^67]:  Zetlaoui-Léger et Fenker, « Maîtrise d’usage ».
+
+<breakpage/>

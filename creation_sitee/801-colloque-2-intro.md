@@ -9,7 +9,6 @@ gridRowGutter: 0mm
 class: introColloque-2 colloque
 ---
 
-<breakpage/>
 
 {% markdown "./inclure/colloque-2-surtitre.md", { 
   printCol: 1,

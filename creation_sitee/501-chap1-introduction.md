@@ -203,3 +203,6 @@ Le Centre international d’art et du paysage est structure ressource depuis 200
 [^44]:  Soulier Hélène, *La friche urbaine : déchet ou ressource ?,* doctorat sous la direction de Jean-Louis Cohen, Université de Paris 8, 2006\.
 
 [^45]:  Ramos Aurélien, *Faire jardiner sans jardin : mécanismes et limites des dispositifs municipaux de jardinage tactique dans la rue*, sous la direction de Martine Bouchier, Nanterre, 2021\.
+
+
+<breakpage/>

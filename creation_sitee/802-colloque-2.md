@@ -7,7 +7,6 @@ gridColGutter: 4.06mm
 class: colloque
 ---
 
-<breakpage/>
 
 <div class="span-all header-colloque">
 
