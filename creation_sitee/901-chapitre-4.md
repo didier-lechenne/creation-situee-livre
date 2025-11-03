@@ -50,17 +50,6 @@ Loin de nous l’idée de construire un modèle de représentations, ces deux ap
 [^8]:  Les étudiants ayant participé au séminaire sont Arthur Cavero, Charlotte Donnenwirth, Isée Doutreloux, Faustine Ducros, Hugo Dufour, Duygu Durmaz, Ainhoa Elissalde, Coraline Ginet, Virgile Haëck, Corentin Hamelin, Andrea Heim, Clémentine Loubrieu, Bruno Pancrazi, Camille Pelletant, Auriane Roux, Maëlian Soulier. Ils étaient alors en master 2 du cursus de Paysage à l’ENSAP Bordeaux.
 
 
-{% image "./images/chap4/2-images/2-DATA-ETUDIANTS/fig-IV-10.jpg", { 
- class:"fullpage-spread",
- caption: "Fig.IV.10. Datavisualisation Recto, Etudiants de Master 2, ENSAP Bordeaux (formation Paysage)"
-} %}
+
 
 <breakpage/>
-
-{% image "./images/chap4/2-images/2-DATA-ETUDIANTS/fig-IV-11.jpg", { 
- class:"fullpage-spread",
- caption: "FIg.IV.11. Datavisualisation Verso, Etudiants de Master 2, ENSAP Bordeaux (formation Paysage)"
-} %}
-
-<breakpage/>
-

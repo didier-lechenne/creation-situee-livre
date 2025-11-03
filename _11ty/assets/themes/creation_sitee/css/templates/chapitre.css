@@ -24,7 +24,7 @@
 }
 
 
-
+.chapitre .auteur,
 [data-template="chapitre"] .auteur{
   font-family: var(--heading);
   /* font-weight: 900; */
@@ -33,6 +33,15 @@
   text-transform: uppercase;
 }
 
+
+.manifeste .auteur{
+  margin-bottom: calc(var(--gutter) * 17 + 1mm);
+
+}
+
+
+
+.chapitre h2,
 [data-template="chapitre"] h2{
   /* font-family: var(--labeur);
   font-weight: 900;

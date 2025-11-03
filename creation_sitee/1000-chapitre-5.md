@@ -11,4 +11,3 @@ draft: false
  class:"fullpage-spread"
 } %}
 
-<breakpage/>
