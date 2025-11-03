@@ -2,6 +2,7 @@
 <!-- _11ty/_layouts/chapitre.njk -->
 <section id="{{ p.fileSlug | cleanTitle | slug }}" 
          data-template="chapitre"
+         {% if p.data.bgColor %}data-bg-color="{{ p.data.bgColor }}"{% endif %}
          style="{% if p.data.bgColor %}--bg-color: {{ p.data.bgColor }}; {% endif %}"
          {% if p.data.show %}data-show="{{ p.data.show }}"{% endif %}
          {% if p.data.toc %}data-toc="{{ p.data.toc }}"{% endif %}

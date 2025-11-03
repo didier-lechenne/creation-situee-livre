@@ -216,8 +216,24 @@
     opacity: 1;
   }
 
+  @page modularGrid:left {
+    margin-top: 15mm;
+    margin-bottom: 15mm;
+    margin-left: 15mm;
+    margin-right: 15mm;
+}
+
+@page modularGrid:right {
+    margin-top: 15mm;
+    margin-bottom: 15mm;
+    margin-left: 15mm;
+    margin-right: 15mm;
+}
+
+
   @page modularGrid {
-    margin: 10mm;
+    --folio: none;
+   
     background-color: var(--bg-color, white);
   }
 
@@ -245,17 +261,6 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
-
-
-section[data-template="modularGrid"]:not([data-split-from]) {
-    /* break-before: page; */
-}
-
-section[data-template="modularGrid"][data-split-from] {
-    /* display: none !important; */
-}
-
 
   .modularGrid .pagedjs_full-page_content {
     left: calc((var(--pagedjs-margin-left) + 6mm) * -1) !important;

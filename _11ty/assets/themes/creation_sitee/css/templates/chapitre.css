@@ -2,7 +2,6 @@
   page: chapitre;
   color: white;
   page-break-before: always;
-
   height: calc(var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom));
 }
 
@@ -11,8 +10,8 @@
     margin-bottom: 34mm;
     margin-left: 15mm;
     margin-right: 76.7mm;
-    /* background-color: var(--bg-color, transparent); */
-    background-color: rgb(68, 78, 96);
+    background-color: var(--bg-color, white);
+    --folio: none;
 }
 
 @page chapitre:right {
@@ -20,17 +19,11 @@
     margin-bottom: 34mm;
     margin-left: 76.7mm;
     margin-right: 15mm;
-    /* background-color: var(--bg-color, transparent); */
-    background-color: rgb(68, 78, 96);
+    background-color: var(--bg-color, white);
+    --folio: none;
 }
 
-.pagedjs_left_page.pagedjs_chapitre_page > :has(.chapitre) {
- 
-}
 
-/* .pagedjs_left_page.pagedjs_chapitre_page > :has(.chapitre) .pagedjs_bleed-right  {
-  background-color: white;
-} */
 
 [data-template="chapitre"] .auteur{
   font-family: var(--heading);

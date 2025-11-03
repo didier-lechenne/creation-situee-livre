@@ -1,12 +1,10 @@
  @page colloque1 {  
-  
   background-color: var(--bg-color, white);
-  /* background-color: rgba(68, 78, 96, 1); */
 }
 
  @page colloque2 {  
   background-color: var(--bg-color, white);
-  /* background-color: rgba(84, 79, 71, 1); */
+
 }
 
 @page colloque1:left {
@@ -14,6 +12,10 @@
     margin-bottom: 15mm;
     margin-left: 15mm;
     margin-right: 25.5mm;
+    
+    @bottom-left {
+        color: white !important;
+    }
 }
 
 @page colloque1:right {
@@ -21,6 +23,10 @@
     margin-bottom: 15mm;
     margin-left: 25.5mm;
     margin-right: 15mm;
+    
+    @bottom-right {
+        color: white !important;
+    }
 }
 
 @page colloque2:left {
@@ -28,6 +34,10 @@
     margin-bottom: 15mm;
     margin-left: 15mm;
     margin-right: 25.5mm;
+    
+    @bottom-left {
+        color: white !important;
+    }
 }
 
 @page colloque2:right {
@@ -35,6 +45,10 @@
     margin-bottom: 15mm;
     margin-left: 25.5mm;
     margin-right: 15mm;
+    
+    @bottom-right {
+        color: white !important;
+    }
 }
 
 [data-template="colloque1"] {
@@ -63,8 +77,6 @@
   columns: var(--grid-col);
   column-gap: var(--grid-col-gutter);
   column-fill: auto;
-
-  
 }
 
 

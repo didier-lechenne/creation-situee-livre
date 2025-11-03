@@ -9,6 +9,9 @@
     margin-bottom: 34mm;
     margin-left: 15mm;
     margin-right: 25.5mm;
+    @bottom-left {
+        color: white !important;
+    }
 }
 
 @page textCol:right {
@@ -16,33 +19,25 @@
     margin-bottom: 34mm;
     margin-left: 25.5mm;
     margin-right: 15mm;
+    @bottom-right {
+        color: white !important;
+    }
 }
 
 [data-template="textCol"] {
   page: textCol;
-  
-  
+   
 }
 
-
-
-
 [data-template="textCol"] {
-
   page-break-before: always;
-
   font-family: var(--heading);
   font-weight: 400;
-
   --g-column-count: var(--grid-col, 2);
   --g-column-gutter: var(--grid-col-gutter, 0mm);
-
   columns: var(--grid-col);
   column-gap: var(--grid-col-gutter);
   column-fill: auto;
-
-  
-
 }
 
 
