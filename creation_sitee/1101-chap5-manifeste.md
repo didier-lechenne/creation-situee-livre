@@ -21,7 +21,7 @@ Dans l’histoire du paysage, le manifeste le plus célèbre est sans doute celu
 [^4]:  Clément Gilles. (2004). *Manifeste du Tiers paysage*, Ed. Sens & Tonka.
 
 
-{% image "./images/degrade/manifeste.jpg", { 
+{% image "./images/manifeste.jpg", { 
  class:"fullpage-spread"
 } %}
 

@@ -1,18 +1,15 @@
 :root {
-  --fullcontent-margin-top: 10mm;
-  --fullcontent-margin-bottom: 10mm;
-  --fullcontent-margin-left: 10mm;
-  --fullcontent-margin-right: 10mm;
+  --fullcontent-margin-top: 3.5mm;
+  --fullcontent-margin-bottom: 3.5mm;
+  --fullcontent-margin-left: 3.5mm;
+  --fullcontent-margin-right: 3.5mm;
 }
 
 /* Containers pour les spreads */
 .pagedjs_page_fullContentLeft .pagedjs_full-content-spread_container {
   margin: 0;
   width: calc(var(--pagedjs-pagebox-width) - var(--fullcontent-margin-left));
-  height: calc(
-    var(--pagedjs-pagebox-height) - var(--fullcontent-margin-top) -
-      var(--fullcontent-margin-bottom)
-  ) !important;
+  height: calc(    var(--pagedjs-pagebox-height) - var(--fullcontent-margin-top) - var(--fullcontent-margin-bottom)  ) !important;
   top: calc(var(--fullcontent-margin-top) - var(--pagedjs-margin-top));
   left: calc(-1 * var(--pagedjs-margin-left) + var(--fullcontent-margin-left));
   /* overflow: hidden; */
@@ -23,13 +20,8 @@
 .pagedjs_page_fullContentRight .pagedjs_full-content-spread_container {
   margin: 0;
   width: calc(var(--pagedjs-pagebox-width) - var(--fullcontent-margin-right));
-  height: calc(
-    var(--pagedjs-pagebox-height) - var(--fullcontent-margin-top) -
-      var(--fullcontent-margin-bottom)
-  ) !important;
-  right: calc(
-    -1 * var(--pagedjs-margin-right) + var(--fullcontent-margin-right)
-  );
+  height: calc( var(--pagedjs-pagebox-height) - var(--fullcontent-margin-top) - var(--fullcontent-margin-bottom)  ) !important;
+  right: calc(  -1 * var(--pagedjs-margin-right) + var(--fullcontent-margin-right)  );
   top: calc(var(--fullcontent-margin-top) - var(--pagedjs-margin-top));
   position: absolute;
   /* overflow: hidden; */
@@ -43,9 +35,7 @@
 }
 
 .pagedjs_page_fullContentRight .pagedjs_full-content-spread_content {
-  left: calc(
-    -1 * var(--pagedjs-pagebox-width) + var(--fullcontent-margin-right)
-  );
+  left: calc(    -1 * var(--pagedjs-pagebox-width) + var(--fullcontent-margin-right)  );
   position: absolute;
 }
 
@@ -58,46 +48,25 @@
 
 /* Page gauche */
 .pagedjs_left_page .pagedjs_full-content_content {
-  width: calc(
-    var(--pagedjs-pagebox-width) - var(--fullcontent-margin-left) -
-      var(--fullcontent-margin-right)
-  );
-  height: calc(
-    var(--pagedjs-pagebox-height) - var(--fullcontent-margin-top) -
-      var(--fullcontent-margin-bottom)
-  ) !important;
+  width: calc(    var(--pagedjs-pagebox-width) - var(--fullcontent-margin-left) - var(--fullcontent-margin-right)  );
+  height: calc(    var(--pagedjs-pagebox-height) - var(--fullcontent-margin-top) - var(--fullcontent-margin-bottom)  ) !important;
   left: calc(-1 * var(--pagedjs-margin-left) + var(--fullcontent-margin-left));
   top: calc(var(--fullcontent-margin-top) - var(--pagedjs-margin-top));
 }
 
 /* Page droite */
 .pagedjs_right_page .pagedjs_full-content_content {
-  width: calc(
-    var(--pagedjs-pagebox-width) - var(--fullcontent-margin-left) -
-      var(--fullcontent-margin-right)
-  );
-  height: calc(
-    var(--pagedjs-pagebox-height) - var(--fullcontent-margin-top) -
-      var(--fullcontent-margin-bottom)
-  ) !important;
-  right: calc(
-    -1 * var(--pagedjs-margin-right) + var(--fullcontent-margin-right)
-  );
+  width: calc(    var(--pagedjs-pagebox-width) - var(--fullcontent-margin-left) - var(--fullcontent-margin-right)  );
+  height: calc(    var(--pagedjs-pagebox-height) - var(--fullcontent-margin-top) - var(--fullcontent-margin-bottom)  ) !important;
+  right: calc(    -1 * var(--pagedjs-margin-right) + var(--fullcontent-margin-right)  );
   top: calc(var(--fullcontent-margin-top) - var(--pagedjs-margin-top));
 }
 
 /* Hack pour image de couverture */
 .pagedjs_right_page .pagedjs_full-content_content.cover {
-  width: calc(
-    var(--pagedjs-pagebox-width) + 2 * var(--bleed-images)
-  ) !important;
-  height: calc(
-    var(--pagedjs-pagebox-height) + 2 * var(--bleed-images)
-  ) !important;
-  left: calc(
-    var(--pagedjs-margin-left) - var(--pagedjs-margin-right) -
-      var(--bleed-images)
-  ) !important;
+  width: calc(    var(--pagedjs-pagebox-width) + 2 * var(--bleed-images)  ) !important;
+  height: calc(    var(--pagedjs-pagebox-height) + 2 * var(--bleed-images)  ) !important;
+  left: calc(    var(--pagedjs-margin-left) - var(--pagedjs-margin-right) - var(--bleed-images)  ) !important;
   top: calc(-1 * var(--bleed-images)) !important;
 }
 

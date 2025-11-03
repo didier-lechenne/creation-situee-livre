@@ -6,8 +6,9 @@
 }
 
 .colloque .centre h2 {
-    font-size: 27pt;
-    line-height: 100%;
+    font-family: var(--heading);
+    font-size: var(--heading-size);
+    line-height: var(--heading-line-height);
     margin-bottom:var(--gutter);
         
 }

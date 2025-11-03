@@ -4,13 +4,9 @@ show: print
 draft: false
 ---
 
-
-<nav  id="nav-toc"></nav>
-
-
+<breakpage/>
 
 {% image "./images/degrade/chap1.jpg", { 
  class:"fullpage-spread"
 } %}
 
-<breakpage />

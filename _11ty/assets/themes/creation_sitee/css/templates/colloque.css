@@ -108,6 +108,10 @@ p.like-h3{
    color: #DBD0B1;
 }
 
+p.like-h3:first-child{
+  margin-top: 0 !important;
+}
+
 [data-template="colloque1"] p + h3,
 [data-template="colloque2"] p + h3 {
   margin-top: calc(var(--gutter) * 3) !important;

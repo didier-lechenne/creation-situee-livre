@@ -1,6 +1,53 @@
+:root {
+  --fullcontent-margin-top: 3.5mm;
+  --fullcontent-margin-bottom: 3.5mm;
+  --fullcontent-margin-left: 3.5mm;
+  --fullcontent-margin-right: 3.5mm;
+}
+
 .fig-call{
   font-family: var(--heading);
   font-size: var(--footnote-size);
   line-height: 100%;
   /* font-weight: var(--labeur-weight); */
 }
+
+.page-5{
+    --pagedjs-full-page: 5;
+}
+
+@page fauxtitre:left {
+  margin-top: 0mm;
+  margin-bottom: 0mm;
+  margin-left: 0mm;
+  margin-right: 0mm;
+
+   @bottom-left {
+        display: none;
+    }
+    
+    @bottom-right {
+        display: none;
+    }
+}
+
+@page fauxtitre:right {
+  margin-top: 0mm;
+  margin-bottom: 0mm;
+  margin-left: 0mm;
+  margin-right: 0mm;
+
+   @bottom-left {
+        display: none;
+    }
+    
+    @bottom-right {
+        display: none;
+    }
+}
+
+
+.fauxtitre{
+    page: fauxtitre;
+}
+
