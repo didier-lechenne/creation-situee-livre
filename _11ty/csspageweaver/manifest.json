@@ -20,7 +20,7 @@
 
         "hideFolios": {
             "help": "Unnumbered pages (e.g., 80, 81)",
-            "pages": []
+            "pages": [97, 104, 87, 55]
         },
  
         "inlineNotes": {
