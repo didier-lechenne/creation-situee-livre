@@ -39,6 +39,22 @@
 
 }
 
+.chapitre ol {
+  font-family: var(--heading);
+  /* font-weight: 900; */
+  font-size: 9.5pt;
+  margin:0;
+  padding:0;
+  text-transform: uppercase;
+  margin-left: calc(var(--gutter) * 1);
+}
+
+.chapitre ol li{
+  margin:0;
+  padding:0;
+  margin-bottom: calc(var(--gutter) / 4);
+}
+
 
 
 .chapitre h2,

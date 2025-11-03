@@ -1,8 +1,8 @@
 :root {
-  --fullcontent-margin-top: 3.5mm;
-  --fullcontent-margin-bottom: 3.5mm;
-  --fullcontent-margin-left: 3.5mm;
-  --fullcontent-margin-right: 3.5mm;
+  --fullcontent-margin-top: 0mm;
+  --fullcontent-margin-bottom: 0mm;
+  --fullcontent-margin-left: 0mm;
+  --fullcontent-margin-right: 0mm;
 }
 
 /* Containers pour les spreads */

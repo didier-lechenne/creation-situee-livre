@@ -1,11 +1,14 @@
 ---
-title: chap(-manifeste)
+title: pour-un-manifeste
 template: default
 class: chapter manifeste chapitre
 draft: false
 ---
 
 <breakpage/>
+
+
+
 
 ## Pour un Manifeste de la création située  
 Camille de Singly {.toc-ignore .auteur}

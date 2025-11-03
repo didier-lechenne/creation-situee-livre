@@ -125,6 +125,7 @@ phase d’arpentage, phase de gestation et phase de cristallisation. »
 
 « Et dans ces questions de territoire, il y a une question, moi, qui m’est venue aussi, c’était : en fait, à qui ça appartient un lieu comme ça ? Les lieux dont vous avez pu parler, les uns les autres, quand on s’installe là, à qui ça appartient ? Est-ce que ça appartient à ceux, comme moi, qui sont plutôt des rêveurs qui se l’approprient, qui l’aiment un peu, comme ça, pour des raisons très intimes ? Est-ce que ça appartient à ceux qui ont habité là ? Est-ce que ça appartient aux décideurs ? On voit bien comme c’était compliqué, justement, cette question-là aussi. Techniquement, à qui ça appartient ? Est-ce que ça appartient autant à ceux qui ont eu un grand souvenir de vacances en habitant là ? »
 
+<breakpage/>
 
 {% image "./images/degrade/chap3.jpg", { 
  class:"fullpage-spread"

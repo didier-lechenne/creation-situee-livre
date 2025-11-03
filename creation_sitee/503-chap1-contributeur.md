@@ -8,7 +8,6 @@ class: bibliographie
 ---
 
 
-
 Le projet rassemble trois établissements de la région Nouvelle Aquitaine : le laboratoire Passages (UMR 5319) site ENSAP, l’Ecole Nationale Supérieure d’Architecture et de Paysage et le Centre international d’Art et du Paysage de Vassivière. L’équipe rassemble des chercheurs issus d’un laboratoire identifié dans la région et des praticiens et historiens issus de la société civile mais enseignants dans des institutions d’enseignement supérieur et souhaitant intégrer la recherche appliquée dans ce projet. L’ancrage des pratiques créatives, artistiques et/ou socioculturelles dans le territoire est le fondement de ce consortium.
 
 <breakcolumn/>

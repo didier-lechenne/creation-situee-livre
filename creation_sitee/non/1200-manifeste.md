@@ -2,7 +2,7 @@
 title: manifeste
 template: default
 class: chapter
-draft: true
+draft: false
 ---
 
 <breakpage/>

@@ -5,8 +5,6 @@ class: chapter
 draft: false
 ---
 
-
-
 Le premier aspect de l’intérêt pour la représentation est un élément intrinsèque à ce que nous entendons par le fait de « chercher » dans le monde de la création et du sensible. Étant tous concernés par la conception ou la direction artistique, tous plus ou moins spécialistes des questions de représentations ou même auteurs de représentations, nous avons immédiatement fait le choix d’aborder la restitution de la recherche par un ouvrage qui lui aussi incarne la problématique de la représentation. Le fait de faire coexister plusieurs types d’écriture (scientifique, manifeste, extraits de verbatim) est la première décision que nous avons prise, le texte scientifique n’étant pas pour nous la seule voie d’expression d’une recherche[^1], d’où certains choix quant à la forme de l’ouvrage et nous y avons spontanément ajouté la question de l’image et de la monstration, à l’intérieur de laquelle se loge une interrogation sur la nature de la représentation des créations situées.
 
 La création située ne peut pas être abordée sans toucher à la notion de récit que les artistes et la société en général font des œuvres. Ici, il n’est pas question d’un récit sous la forme d’un discours, que l’on peut lire dans la diffusion des œuvres, discours issu des artistes eux-mêmes, des critiques d’art ou de la presse spécialisée ou non ; il est question du récit qui circule dans les images produites à partir des œuvres. Parmi les images émises dans les disciplines que nous observons, certaines sont des images de conception au sens large du terme, extraites du processus de création, avec ou sans modification à des fins de transmission, certaines sont des images (souvent photographiques) réalisées une fois que la création est achevée et diffusent un état initial de l’œuvre, figeant indéfiniment une œuvre « toute neuve » sur les réseaux sociaux, internet et dans la presse spécialisée. En dehors de certaines œuvres à protocole qui invitent les spectateurs à générer de nouvelles images d’une création dans un mode contributif, seules ces représentations sont diffusées. Nous n’avons finalement comme biais de connaissance d’une œuvre uniquement des images volontairement créées à dessein. La question s’est donc rapidement posée de savoir quelles sont ces images, quel contenu elles véhiculent et quelles sont les variations de messages dans les récits iconographiques émanant de l’artiste ou créateur, du photographe commandité ou du critique d’art, d’architecture et de paysage. 
@@ -48,8 +46,6 @@ Loin de nous l’idée de construire un modèle de représentations, ces deux ap
 [^7]:  Parc St John Perse, Reims. Paysagiste : Jacques Simon © Collage photos Jacques Simon.
 
 [^8]:  Les étudiants ayant participé au séminaire sont Arthur Cavero, Charlotte Donnenwirth, Isée Doutreloux, Faustine Ducros, Hugo Dufour, Duygu Durmaz, Ainhoa Elissalde, Coraline Ginet, Virgile Haëck, Corentin Hamelin, Andrea Heim, Clémentine Loubrieu, Bruno Pancrazi, Camille Pelletant, Auriane Roux, Maëlian Soulier. Ils étaient alors en master 2 du cursus de Paysage à l’ENSAP Bordeaux.
-
-
 
 
 <breakpage/>
