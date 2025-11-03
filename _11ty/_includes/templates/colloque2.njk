@@ -1,8 +1,9 @@
 
-<!-- _11ty/_layouts/chapitre.njk -->
+<!-- _11ty/_layouts/colloque2.njk -->
 <section id="{{ p.fileSlug | cleanTitle | slug }}" 
-         data-template="chapitre"
+         data-template="colloque2"
          style="{% if p.data.bgColor %}--bg-color: {{ p.data.bgColor }}; {% endif %}"
+         {% if p.data.bgColor %}data-bg-color="{{ p.data.bgColor }}" {% endif %}
          {% if p.data.show %}data-show="{{ p.data.show }}"{% endif %}
          {% if p.data.toc %}data-toc="{{ p.data.toc }}"{% endif %}
          {% if p.data.moveTo %}data-page-move-to="{{ p.data.moveTo }}" {% endif %}
@@ -14,6 +15,3 @@
   {{ p.templateContent | safe  }} 
 
 </section>
-
-
-

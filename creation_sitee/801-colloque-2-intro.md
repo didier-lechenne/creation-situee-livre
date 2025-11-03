@@ -7,6 +7,7 @@ gridRow: 16
 gridColGutter: 0mm
 gridRowGutter: 0mm
 class: introColloque-2 colloque
+bgColor: rgba(84, 79, 71, 1)
 ---
 
 

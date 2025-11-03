@@ -1,6 +1,6 @@
 .toc {
 	page: sommaire;
-	page-break-after: always;
+	page-break-before: always;
 	display: flex;
 	justify-content: center;
 	height: calc(var(--pagedjs-pagebox-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top));

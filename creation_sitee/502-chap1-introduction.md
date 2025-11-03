@@ -191,4 +191,3 @@ Le travail de recherche repose sur l’analyse à la fois des productions situé
 
 [^45]:  Ramos Aurélien, *Faire jardiner sans jardin : mécanismes et limites des dispositifs municipaux de jardinage tactique dans la rue*, sous la direction de Martine Bouchier, Nanterre, 2021\.
 
-<breakpage/>

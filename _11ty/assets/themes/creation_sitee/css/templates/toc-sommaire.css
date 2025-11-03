@@ -37,7 +37,7 @@
 
 [data-template="toc"] {
 	page: tabledesmatieres;
-	page-break-after: always;
+	/* page-break-after: always; */
 	page-break-before: always;
 	/* display: flex;
 	justify-content: center; */

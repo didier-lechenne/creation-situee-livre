@@ -1,9 +1,12 @@
  @page colloque1 {  
-  background-color: rgba(68, 78, 96, 1);
+  
+  background-color: var(--bg-color, white);
+  /* background-color: rgba(68, 78, 96, 1); */
 }
 
  @page colloque2 {  
-  background-color: rgba(84, 79, 71, 1);
+  background-color: var(--bg-color, white);
+  /* background-color: rgba(84, 79, 71, 1); */
 }
 
 @page colloque1:left {
@@ -48,7 +51,8 @@
 
 [data-template="colloque2"],
 [data-template="colloque1"] {
-
+  page-break-before: always;
+  page-break-after: always;
 
   font-family: var(--heading);
   font-weight: 400;
@@ -114,6 +118,4 @@ p.like-h3{
   column-span: all;
 }
 
-.bibliographie p:first-of-type {
-  margin-top: 0 !important;
-}
+

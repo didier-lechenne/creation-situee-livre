@@ -7,7 +7,7 @@ template: chapitre
 
 
 
-## Une introduction méthodologique 
+## Mécaniques et jeux d’acteurs d’une démarche créative relationnelle, décloisonnée et hybride  
 
-Hélène SOULIER {.toc-ignore .auteur}
+Aurélien RAMOS {.toc-ignore .auteur}
 

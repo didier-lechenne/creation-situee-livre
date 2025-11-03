@@ -218,13 +218,13 @@
 
   @page modularGrid {
     margin: 10mm;
+    background-color: var(--bg-color, white);
   }
 
   [data-template="modularGrid"] {
     page: modularGrid;
     page-break-before: always;
-    
-    page-break-inside: avoid !important;
+    page-break-after: always;
      
 
     --g-column-count: var(--grid-col, 12);
@@ -240,14 +240,22 @@
 
     /* height: auto !important; */
     height: calc(var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
-    
+    /* min-height: 0; */
+
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  [data-template="modularGrid"]:not(.introColloque-1):not(.introColloque-2) {
-    /* page: modulargrid !important; */
+
+
+section[data-template="modularGrid"]:not([data-split-from]) {
+    /* break-before: page; */
 }
+
+section[data-template="modularGrid"][data-split-from] {
+    /* display: none !important; */
+}
+
 
   .modularGrid .pagedjs_full-page_content {
     left: calc((var(--pagedjs-margin-left) + 6mm) * -1) !important;

@@ -1,5 +1,5 @@
  @page textCol {  
-
+  background-color: var(--bg-color, white);
 }
 
 
@@ -21,7 +21,7 @@
 [data-template="textCol"] {
   page: textCol;
   
-
+  
 }
 
 
@@ -29,7 +29,7 @@
 
 [data-template="textCol"] {
 
-  page-break-after: always;
+  page-break-before: always;
 
   font-family: var(--heading);
   font-weight: 400;
@@ -45,26 +45,60 @@
 
 }
 
+
+
+
 [data-template="textCol"] h3{
   margin-top:0;
   margin-bottom: calc(var(--gutter) / 2);
   transform: translateY(0) !important; 
-  
 }
 
+.colloque1,
+.colloque2 {
+  color: white;
+}
+
+.colloque1 h3{
+  color: #DBD0B1;
+}
+
+.colloque2 h3{
+  color: #DBD0B1;
+}
+
+p.like-h3{
+  margin-top: calc(var(--gutter) * 1) !important;
+  margin-bottom: calc(var(--gutter) / 2);
+  transform: translateY(0) !important;
+  margin-left: calc(var(--gutter))!important;
+  letter-spacing: 0.05em;
+  text-indent:0 !important;
+  line-height: 110%;
+  color: #DBD0B1;
+}
+
+p.like-h3:first-child,
+p.like-h3:first-of-type{
+  margin-top: 0 !important;
+}
+
+
+[data-template="textCol"] p + h3 {
+  margin-top: calc(var(--gutter) * 3) !important;
+}
 
 [data-template="textCol"] .header-colloque{
-  margin-bottom: calc(var(--gutter) * 4);
-    max-width: 65ch;
-    font-family: var(--labeur);
+  margin-bottom: calc(var(--gutter) * 3);
+  max-width: 65ch;
+  font-family: var(--labeur);
 }
 
-
+[data-template="textCol"] p{
+  orphans: 2;
+  widows: 2;
+}
 
 .span-all {
   column-span: all;
-}
-
-[data-template="textCol"] p:first-of-type {
-  margin-top: 0 !important;
 }

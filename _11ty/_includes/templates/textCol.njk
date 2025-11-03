@@ -1,6 +1,7 @@
 
 <!-- _11ty/_layouts/textCol.njk -->
 <section id="{{ p.fileSlug | cleanTitle | slug }}" 
+ {% if p.data.bgColor %}data-bg-color="{{ p.data.bgColor }}"{% endif %}
          style="{% if p.data.gridCol %}--grid-col: {{ p.data.gridCol }};{% endif %}{% if p.data.gridColGutter %}--grid-col-gutter: {{ p.data.gridColGutter }};{% endif %}"
          data-template="textCol"
          {% if p.data.show %}data-show="{{ p.data.show }}"{% endif %}

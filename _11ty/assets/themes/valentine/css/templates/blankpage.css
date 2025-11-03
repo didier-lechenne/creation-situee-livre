@@ -37,7 +37,7 @@
 		page: blankpage;
 		
 		page-break-before: always;
-		page-break-after: always;
+		/* page-break-after: always; */
 		/* width:100%; */
 		height: calc( var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom) - var(--pagedjs-bleed-top) - var(--pagedjs-bleed-bottom) );
 		min-height: 0;

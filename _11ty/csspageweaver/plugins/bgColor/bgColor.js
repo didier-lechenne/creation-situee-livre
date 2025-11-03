@@ -6,19 +6,15 @@ export default class nrbPages extends Handler {
     super(chunker, polisher, caller);
   }
 
-    afterRendered(pages) {
-        // Appliquer les couleurs après le rendu
-        const sectionsWithBgColor = document.querySelectorAll('[data-bg-color]');
-        
-        sectionsWithBgColor.forEach(section => {
+afterRendered(pages) {
+    pages.forEach(page => {
+        const section = page.element.querySelector('[data-bg-color]');
+        if (section) {
             const bgColor = section.getAttribute('data-bg-color');
-            const pageElement = section.closest('.pagedjs_blankpage_page');
-            
-            if (pageElement && bgColor) {
-                pageElement.style.setProperty('--bg-color', bgColor);
-            }
-        });
-    }
+            page.element.style.setProperty('--bg-color', bgColor);
+        }
+    });
+}
   
 
 

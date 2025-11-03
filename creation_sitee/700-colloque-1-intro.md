@@ -7,6 +7,7 @@ gridRow: 16
 gridColGutter: 0mm
 gridRowGutter: 0mm
 class: introColloque-1 colloque
+bgColor: rgba(68, 78, 96, 1)
 ---
 
 
@@ -38,4 +39,5 @@ printHeight: 2,
 alignSelf: "end",
 class: "lieu"
 } %}
+
 
