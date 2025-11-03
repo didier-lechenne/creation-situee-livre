@@ -7,3 +7,4 @@ views:
     order:
       - draft
       - file.name
+    sort: []

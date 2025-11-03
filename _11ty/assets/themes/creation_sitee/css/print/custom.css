@@ -55,3 +55,37 @@
   --pagedjs-full-content: spread;
   --pagedjs-full-content: 18;
 }
+
+
+
+.intervenants h3{
+  margin: 0;
+  padding: 0;
+}
+
+.intervenants p{
+  margin-top: calc( var(--gutter)  / 2 );
+  font-family: var(--heading);
+  text-indent: 0;
+  /* font-size: var(--footnote-size); */
+  /* line-height: var(--footnote-line-height); */
+  /* font-weight: var(--footnote-weight); */
+}
+
+.intervenants .figcaption{
+  font-family: var(--heading);
+  font-size: var(--footnote-size);
+  line-height: var(--footnote-line-height);
+  font-weight: 300;
+}
+
+.intervenants p.like-h3:first-child,
+.intervenants p.like-h3:first-of-type{
+  /* margin-top: 0 !important; */
+}
+
+
+.intervenants em {
+    line-height: unset !important;
+    text-indent: 0 !important;
+}

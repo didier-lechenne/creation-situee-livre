@@ -1,0 +1,4 @@
+### Sophie Poirier, *Le Signal*, Inculte, 2022   
+
+« Un jour de novembre 2014, l’écrivain Sophie Poirier découvre Le Signal en compagnie de l’artiste plasticien Olivier Crouzel. » Construit à la fin des années 1960 à Soulac-sur-Mer, face à l’océan, cet immeuble est victime de l’érosion et ses habitants sont expulsés. Pendant plusieurs années, Sophie Poirier suit l’évolution de cet immeuble progressivement abandonné, vidé. Les nombreux témoignages recueillis, les nombreuses histoires de vie reconstruites la conduisent à écrire un livre.  
+<span class="fig-call">\[Fig. II.11\]</span>

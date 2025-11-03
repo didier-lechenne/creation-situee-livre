@@ -1,0 +1,3 @@
+### Blandine Galtier et Hélène Soulier, *Archéologie du blanc*, 2019–2012  
+
+*Archéologie du blanc* est une recherche menée sur la disparition des friches urbaines, ce « blanc sur la carte de nos villes » des zones délaissées. Elle s’ancre dans la friche ferroviaire de Cracovie située quartier des Aubiers à Bordeaux. A la suite d’une exploration du site menée sur plusieurs mois, et d’une collecte plurielle de traces, relevés et paroles, l’artiste Blandine Galtier et la paysagiste Hélène Soulier ont créé un ensemble de pièces écrites et plastiques. Leur monstration passe par l’exposition.

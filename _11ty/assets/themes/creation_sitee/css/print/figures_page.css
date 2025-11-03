@@ -39,7 +39,7 @@
 }
 
 .figures_page .content figcaption::before {
-    content: "↑ ";
+    /* content: "↑ "; */
 }
 
 .figure_call {

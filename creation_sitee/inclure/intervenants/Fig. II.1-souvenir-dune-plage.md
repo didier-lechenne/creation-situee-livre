@@ -1,0 +1,3 @@
+### Corène Caubel, *Souvenir d’une plage, mythologie d’un possible littoral*, Thouars, 2019  
+
+Œuvre pérenne, *Souvenir d’une plage, mythologie d’un possible littoral* « livre le récit métaphorique du très lointain passé maritime de Thouars et de ses environs » (Corène Caubel). Elle se déploie sur trois communes de la Vallée du Thouet, avec des installations spécifiques, « Les cabines de plage des remparts », « La pêcherie des vignes » et « Le phare des Sablons ». Elle a été conçue par l’artiste et paysagiste conceptrice Corène Caubel en étroite concertation avec les trois communes (habitants, élus, etc.), et avec les ressources locales (matériaux et entreprises).  

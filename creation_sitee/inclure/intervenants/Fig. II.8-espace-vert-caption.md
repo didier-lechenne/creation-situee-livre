@@ -1,0 +1,2 @@
+<span class="fig-call">\[Fig. II.8, fig. II.9 et fig. II.10 \]</span>Espaces Verts (Juliette Duchange et Marion Ponsard), *Un jardin dans la forêt,* Masgrangeas, Royère-de-Vassivière, 2019  
+Crédit photos : Juliette Duchange et Marion Ponsard.

@@ -1,12 +1,6 @@
 ---
-title: chap-2-interveants
-class: chapter
 draft: true
 ---
-
-Blandine Galtier et Hélène Soulier, *Archéologie du blanc*, 2019–2012  
-*Archéologie du blanc* est une recherche menée sur la disparition des friches urbaines, ce « blanc sur la carte de nos villes » des zones délaissées. Elle s’ancre dans la friche ferroviaire de Cracovie située quartier des Aubiers à Bordeaux. A la suite d’une exploration du site menée sur plusieurs mois, et d’une collecte plurielle de traces, relevés et paroles, l’artiste Blandine Galtier et la paysagiste Hélène Soulier ont créé un ensemble de pièces écrites et plastiques. Leur monstration passe par l’exposition.  
-<span class="fig-call">\[Fig. II.1 et fig. II.2\]</span>
 
 Corène Caubel, *Souvenir d’une plage, mythologie d’un possible littoral*, Thouars, 2019  
 Œuvre pérenne, *Souvenir d’une plage, mythologie d’un possible littoral* « livre le récit métaphorique du très lointain passé maritime de Thouars et de ses environs » (Corène Caubel). Elle se déploie sur trois communes de la Vallée du Thouet, avec des installations spécifiques, « Les cabines de plage des remparts », « La pêcherie des vignes » et « Le phare des Sablons ». Elle a été conçue par l’artiste et paysagiste conceptrice Corène Caubel en étroite concertation avec les trois communes (habitants, élus, etc.), et avec les ressources locales (matériaux et entreprises).  

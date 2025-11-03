@@ -12,7 +12,7 @@ figure.image {
 }
 
 .figcaption:not([data-type="markdown"])::before {
-  content: "↑ ";
+  /* content: "↑ "; */
 }
 
 

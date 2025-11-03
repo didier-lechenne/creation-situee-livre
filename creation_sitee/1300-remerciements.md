@@ -5,6 +5,8 @@ class: chapter chapitre
 draft: false
 ---
 
-## Remerciements
+### Remerciements
+
+### Colophon
 
 <breakpage/>
