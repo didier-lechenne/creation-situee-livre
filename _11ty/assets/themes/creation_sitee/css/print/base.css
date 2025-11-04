@@ -51,8 +51,8 @@ section:not(.colloque) {
 }
 
 section p {
-  orphans: 2;
-  widows: 2;
+  orphans: 1;
+  widows: 1;
   margin-top: 0;
   margin-bottom: 0;
   text-indent: var(--gutter);

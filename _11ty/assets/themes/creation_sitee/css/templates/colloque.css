@@ -126,8 +126,8 @@ p.like-h3:first-child{
 
 [data-template="colloque2"] p,
 [data-template="colloque1"] p{
-  orphans: 0 !important;
-  widows: 0 !important; 
+  /* orphans: 0 !important;
+  widows: 0 !important;  */
 }
 
 .span-all {

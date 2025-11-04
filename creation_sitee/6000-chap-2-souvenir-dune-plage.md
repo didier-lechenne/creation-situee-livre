@@ -38,3 +38,14 @@ printHeight: 5,
 alignSelf: "end",
 class: "figcaption"
 } %}
+
+
+
+{% markdown "./inclure/intervenants/Fig. II.1.md", {
+printCol: 1,
+printWidth: 24,
+printRow: 21,
+printHeight: 2,
+alignSelf: "end",
+class: "figcaption call-figcaption"
+} %}

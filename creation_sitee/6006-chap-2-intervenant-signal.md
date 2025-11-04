@@ -21,11 +21,20 @@ alignSelf: "start"
 {% grid "./images/chap2/Fig.II.11.jpg", {
 printCol: 1,
 printWidth: 24,
-printRow: 23,
+printRow: 25,
 printHeight: 25,
 imgX: 0,
 imgY: -0.4784688995215311,
 imgW: 100
+} %}
+
+{% markdown "./inclure/intervenants/Fig. II.11.md", {
+printCol: 1,
+printWidth: 3,
+printRow: 20,
+printHeight: 5,
+alignSelf: "end",
+class: "figcaption call-figcaption"
 } %}
 
 {% markdown "./inclure/intervenants/Fig. II.11-signal-caption.md", {

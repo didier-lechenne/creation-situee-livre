@@ -89,3 +89,58 @@
     line-height: unset !important;
     text-indent: 0 !important;
 }
+
+[frontmatter-title="chap-1-introduction"] p{
+  letter-spacing: calc(5 * -0.001em) !important;
+}
+
+
+[frontmatter-title="chap-2"] p{
+  letter-spacing: calc(1 * -0.001em) !important;
+}
+
+[frontmatter-title="colloque-1"] p{
+  letter-spacing: calc(1 * -0.001em) !important;
+}
+
+[frontmatter-title="chap-3"] p{
+  letter-spacing: calc(0 * -0.001em) !important;
+}
+
+[frontmatter-title="colloque-2"] p{
+  letter-spacing: calc(2 * -0.001em) !important;
+}
+
+[frontmatter-title="chap-4"] p{
+  letter-spacing: calc(1 * -0.001em) !important;
+}
+
+
+[frontmatter-title="chap-3"] p .marge-b{
+  margin-top: calc(var(--gutter) / 2) !important;
+  display: inline-block;
+  text-indent: 0 !important;
+  font-family: var(--heading);
+  margin-right: 0 !important;
+}
+
+
+[frontmatter-title="chap-3"] h3 + p:has(> .marge-b),
+[frontmatter-title="chap-3"]  p:has(> .marge-b) {
+  text-indent: 0 !important;
+}
+
+
+
+[frontmatter-title="chap-3"] p:first-child .marge-b{
+  margin-top: 0 !important;
+}
+
+
+/* p:nth-last-of-type(2) {
+  color: red;
+}
+
+p:nth-last-child(2) {
+  color: red;
+} */

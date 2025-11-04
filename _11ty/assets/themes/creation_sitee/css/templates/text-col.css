@@ -90,8 +90,9 @@ p.like-h3:first-of-type{
 }
 
 [data-template="textCol"] p{
-  orphans: 2;
-  widows: 2;
+  orphans: 1; /* Minimum de lignes en bas de colonne */
+  widows: 1; /* Minimum de lignes en haut de colonne */
+  
 }
 
 .span-all {

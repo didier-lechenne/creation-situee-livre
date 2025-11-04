@@ -1,5 +1,4 @@
 ### Anne-Laure Boyer, *Déménagements*, 2008–2011.  
 
 *Déménagements* est un travail artistique réalisé par Anne Laure Boyer entre 2008 et 2011 à Floirac, à côté de Bordeaux, à l’occasion d’une opération de démolition et reconstruction de logements sociaux.   
-L’artiste a constitué un corpus de formes plastiques plurielles : vidéos de démolitions et de déménagements, séries de photographies de portraits et d’objets et meubles récupérés, regroupés dans plusieurs ensembles : « Déménagements », « Permutations », « La boutique souvenirs », « L’appartement ». Ils ont été présentés dans des expositions et édités dans un livre, *Déménagements*, publié en 2012\.  
-<span class="fig-call">\[Fig. II.4 et fig. II.5\]</span>
+L’artiste a constitué un corpus de formes plastiques plurielles : vidéos de démolitions et de déménagements, séries de photographies de portraits et d’objets et meubles récupérés, regroupés dans plusieurs ensembles : « Déménagements », « Permutations », « La boutique souvenirs », « L’appartement ». Ils ont été présentés dans des expositions et édités dans un livre, *Déménagements*, publié en 2012\. 
