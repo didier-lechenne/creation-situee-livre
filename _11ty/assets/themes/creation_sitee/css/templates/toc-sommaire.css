@@ -1,23 +1,25 @@
 @page tabledesmatieres:left {
-  margin-top: 15mm;
+  /* margin-top: 15mm;
   margin-bottom: 34mm;
   margin-left: 15mm;
-  margin-right: 15mm;
+  margin-right: 15mm; */
+  margin-right: 25mm;
 
   @bottom-left {
-    display: none;
+    /* display: none; */
   }
   
   @bottom-right {
-    display: none;
+    /* display: none; */
   }
 }
 
 @page tabledesmatieres:right {
-  margin-top: 15mm;
+  /* margin-top: 15mm;
   margin-bottom: 34mm;
   margin-left: 15mm;
-  margin-right: 15mm;
+  margin-right: 15mm; */
+  margin-left: 25mm;
 
   @bottom-left {
     display: none;
@@ -57,22 +59,30 @@
 
 .toc #list-toc-generated .toc-element a {
   font-family: var(--heading);
-  font-size: 9pt;
-  line-height: 120%;
+  font-size: var(--labeur-size);
+  line-height: var(--labeur-line-height);
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  flex-wrap: wrap;
 }
+
+
 
 .toc #list-toc-generated .toc-element a::after {
   content: target-counter(attr(href), page);
   margin-left: auto;
-  padding-left: 1em;
+  padding-left: calc(var(--alinea) * 2);
 }
 
 /* Retraits par niveau hiérarchique */
 .toc #list-toc-generated .toc-element-level-1 a {
   margin-left: 0;
+  padding-top: calc(var(--labeur-line-height) / 1);
+}
+
+.toc #list-toc-generated .toc-element-level-1:first-of-type a {
+  margin-left: 0;
+  padding-top: 0;
 }
 
 .toc #list-toc-generated .toc-element-level-2 a {
@@ -84,19 +94,12 @@
 }
 
 .toc #list-toc-generated li {
-  padding-top: unset;
-  padding-bottom: unset;
+  padding-top: calc(var(--labeur-line-height) / 4);
+}
+
+.toc #list-toc-generated li:first-child,
+.toc #list-toc-generated li.auteur {
+  padding-top: 0;
   margin-inline-start: unset;
 }
 
-h1.toc-only {
-  display: none;
-}
-
-h2.toc-only {
-  display: none;
-}
-
-h3.toc-only {
-  display: none;
-}

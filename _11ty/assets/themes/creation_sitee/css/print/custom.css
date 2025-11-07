@@ -195,10 +195,20 @@ section.manifeste p{
 }
 
 
-
-
-
 .moveto8 {
   /* --pagedjs-full-page: 8; */
   /* width: 100% !important; */
+}
+
+
+h1.toc-only {
+  display: none;
+}
+
+h2.toc-only {
+  display: none;
+}
+
+h3.toc-only {
+  display: none;
 }

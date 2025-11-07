@@ -16,15 +16,22 @@ export default class tableOfContent extends Handler {
     this.position = cssPageWeaver.features.tableOfContent.parameters?.position; 
   }
 
-  beforeParsed(content) {
-    createToc({
-      content: content,
-      container: this.tocContainer, 
-      titleElements: this.tocTitles,
-      position: this.position
-    });
+beforeParsed(content) {
+  // Masquer les h1 avec classe toc-only après génération TDM
+  createToc({
+    content: content,
+    container: this.tocContainer, 
+    titleElements: this.tocTitles,
+    position: this.position
+  });
+  
+  content.querySelectorAll('h1.toc-only, h2.toc-only, h3.toc-only').forEach(el => {
+    el.style.display = 'none';
+  });
 
-  }
+}
+
+
 }
 
 
@@ -51,6 +58,11 @@ function createToc(config) {
 
   // Fonction pour vérifier si un élément doit être ignoré
   function shouldIgnoreElement(element) {
+
+    if (!element.classList.contains('toc-only')) {
+      return true;
+    }
+
     // Vérifier class="toc-ignore" sur l'élément
     if (element.classList.contains('toc-ignore')) {
       return true;
@@ -125,19 +137,17 @@ function createToc(config) {
       }
     }
 
-if(config.position && config.position === "before"){
-  let titleText = tocElement.cloneNode(true);
-  titleText.querySelectorAll('br').forEach(br => br.remove());
+    if(config.position && config.position === "before"){
+    
+    let titleText = tocElement.cloneNode(true);
+    titleText.querySelectorAll('br').forEach(br => br.remove());
 
-  tocNewLi.innerHTML =
-  '<a class="toc-page-before" href="#' + tocElement.id + '">' + titleText.innerHTML + '</a>';
-} else {
-  let titleText = tocElement.cloneNode(true);
-  titleText.querySelectorAll('br').forEach(br => br.remove());
-
-  tocNewLi.innerHTML =
-  '<a class="toc-page-after" href="#' + tocElement.id + '">' + titleText.innerHTML + '</a>';
-}
+      tocNewLi.innerHTML =
+      '<a class="toc-page-before" href="#' + tocElement.id + '">' + tocElement.innerHTML + '</a>';
+    }else{
+      tocNewLi.innerHTML =
+      '<a class="toc-page-after" href="#' + tocElement.id + '">' + tocElement.innerHTML + '</a>';
+    }
 
 
     tocUl.appendChild(tocNewLi)
