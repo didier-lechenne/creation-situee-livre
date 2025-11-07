@@ -24,14 +24,7 @@
 }
 
 
-.chapitre .auteur,
-[data-template="chapitre"] .auteur{
-  font-family: var(--heading);
-  /* font-weight: 900; */
-  font-size: 9.5pt;
-  margin-bottom: calc(var(--labeur-baseline) * 2);
-  text-transform: uppercase;
-}
+
 
 
 
@@ -62,5 +55,19 @@
   line-height: 110%;
   margin-bottom: calc(var(--gutter) * 2); */
   line-height: 110%;
+  /* line-height: calc( var(--labeur-baseline) * 2); */
   margin-bottom: calc(var(--gutter) * 1);
+}
+
+
+.chapitre .auteur,
+[data-template="chapitre"] .auteur{
+  font-family: var(--heading);
+  /* font-weight: 900; */
+  font-size: 9.5pt;
+  margin-bottom: calc(var(--labeur-baseline) * 2);
+  text-transform: uppercase;
+  text-indent: 0;
+  letter-spacing: 0 !important;
+  margin-bottom: 0 !important;
 }

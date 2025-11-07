@@ -1,8 +1,9 @@
 ---
 title: chap-1-introduction
-class: chapter
+class: chapter chapitre
 draft: false
 ---
+
 
 
 ### D’où sommes-nous partis ?
@@ -88,7 +89,7 @@ Camille de Singly est docteure en histoire de l’art contemporain et diplômée
 A cette équipe de chercheurs ont été associés de manière très resserrée très tôt dans le processus de recherche Didier Lechenne et Marine Lecardeur (UBLO) en tant que designer graphique et paysagiste illustratrice, respectivement pour la conception de l’ouvrage et pour la tentative d’un protocole de dessin des œuvres de la Création Située. Didier Lechenne exerce en tant que designer graphique, développeur et enseignant à l’EBABx. Après avoir obtenu son diplôme de l’École Nationale Supérieure des Arts Décoratifs de Paris, il a co-fondé les ateliers Labomatic et Ultralab. Depuis lors, il développe une activité indépendante de graphiste et de développeur, mettant son expertise au service de diverses structures publiques ou privées. Son champ d’action comprend la création de sites internet, d’objets numériques, d’interfaces, de publications et d’identités visuelles. En parallèle de son enseignement, il mène une veille active, des recherches et des critiques dans le domaine du design des nouveaux médias. Parmi ses réalisations, on peut citer Rosab.net (une publication numérique), « Le design c’est ? » en collaboration avec Jeanne Queheillard, Talitres (un label discographique indépendant français, site internet) et la direction artistique du 308 pour l’Ordre des Architectes de la Nouvelle Aquitaine. Marine Lecardeur est paysagiste, diplômée de l’ENSAP de Bordeaux en 2013\. Elle part faire ses premières années professionnelles au sein d’une agence d’architecture montréalaise et participe principalement à la maîtrise d’œuvre d’espaces publics, de cours d’écoles et de concours d’architecture. Elle expérimente avec son collectif Montréalais ALLLY autour du réemploi dans la construction, fabrique et imagine des installations éphémères dans l’espace public. A son retour en France en 2016, elle travaille en tant que chef de projet au sein de l’agence parisienne Mutabilis, puis intègre en novembre 2018 l’agence Base Bordeaux, elle intervient à des étapes variées de projets et assure également le suivi de chantier dans des projets de maîtrise d’œuvre. Depuis 2021, elle est paysagiste et illustratrice indépendante, et crée Ublo. Développant parallèlement à son parcours professionnel sa technique pour l’illustration et le dessin, ce dernier est devenu un vrai média, un langage de communication.   
 Enfin, pour la retranscription des deux journées d’étude mentionnées plus haut et afin de recueillir un corpus de textes des intervenants du colloque, nous avons eu recours aux compétences de Stéphanie Malabry, diplômée de l’ESIT (École Supérieure d’Interprètes et de Traducteurs), traductrice de l’anglais et de l’allemand vers le français, spécialisée dans le multimédia et l’audiovisuel (voice-over et sous-titrage).
 
-<breakpage/>
+
 
 ### que pouvons-nous attendre de la recherche ?
 
