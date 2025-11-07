@@ -1,1 +1,1 @@
- Journée d’études n°1 (extraits choisis)
+Journée d’études n°1 (extraits choisis)

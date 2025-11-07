@@ -2,11 +2,11 @@
 title: faux-titre
 class: fauxtitre
 toc: ignore
-draft: false
+draft: true
 ---
 
 
 {% image "./images/faux-titre.jpg", { 
- class: "floatpage-top "
+ class: "floatpage-top"
 } %}
 

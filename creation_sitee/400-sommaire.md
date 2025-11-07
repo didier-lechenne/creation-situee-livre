@@ -4,9 +4,15 @@ show: print
 draft: false
 ---
 
-<breakpage/>
+<nav markdown="1" id="nav-toc"></nav>
+
+
+
+
+
+
+
 
 {% image "./images/degrade/chap1.jpg", { 
- class:"fullpage-spread"
+ class:"fullpage-spread "
 } %}
-

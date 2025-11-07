@@ -1,5 +1,5 @@
 {
-    "plugins": [  "baseline", "ragadjust", "inlineNotes", "sidenotes",  "pageMove" ,  "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak",  "invisibleSpaces",    "editor",  "marginBox",   "hideFolios", "reloadInPlace"],
+    "plugins": [  "baseline", "tableOfContent", "ragadjust", "inlineNotes", "sidenotes",  "pageMove" ,  "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak",  "invisibleSpaces",    "editor",  "marginBox",   "hideFolios", "reloadInPlace"],
 
     "pluginsParameters":{
 
@@ -10,7 +10,7 @@
 
         "tableOfContent": {
             "tocContainer": "#nav-toc",
-            "tocTitles": [ "h2"]
+            "tocTitles": [ "h1", "h2"]
          },
 
         "ragadjust": {

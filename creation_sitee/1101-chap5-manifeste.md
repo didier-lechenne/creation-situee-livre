@@ -11,7 +11,7 @@ draft: false
 <div class="manifeste-marge">
 
 ## Pour un Manifeste de la création située  
-Camille de Singly {.toc-ignore .auteur}
+## Camille de Singly { .auteur}
 
 </div>
 
@@ -33,5 +33,9 @@ Dans l’histoire du paysage, le manifeste le plus célèbre est sans doute celu
 {% image "./images/manifeste.jpg", { 
  class:"fullpage-spread"
 } %}
+
+## Le manifeste {.toc-only}
+## Guillaume BAUDIN, Marine FROELIGER, Alexandra MCINTOSH, Aurélien RAMOS, Karine RAVAUD, Camille de SINGLY, Hélène SOULIER et Lucie YOU {.toc-only}
+ 
 
 <breakpage/>

@@ -194,3 +194,11 @@ section.manifeste p{
   widows: 1 !important;
 }
 
+
+
+
+
+.moveto8 {
+  /* --pagedjs-full-page: 8; */
+  /* width: 100% !important; */
+}

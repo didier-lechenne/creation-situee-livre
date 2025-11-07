@@ -11,3 +11,4 @@ draft: false
  class:"fullpage-spread"
 } %}
 
+# V. Le manifeste de la création située {.toc-only}

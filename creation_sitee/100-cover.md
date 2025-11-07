@@ -6,10 +6,10 @@ draft: false
 
 
 {% image "./images/couverture.jpg", { 
- class:"fullpage-cover"
+ class: "cover"
 } %}
 
 
 {% image "./images/couv_2.jpg", { 
- class:"fullpage-spread"
+ class: "fullpage-spread"
 } %}

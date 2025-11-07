@@ -125,13 +125,19 @@ function createToc(config) {
       }
     }
 
-    if(config.position && config.position === "before"){
-      tocNewLi.innerHTML =
-      '<a class="toc-page-before" href="#' + tocElement.id + '">' + tocElement.innerHTML + '</a>';
-    }else{
-      tocNewLi.innerHTML =
-      '<a class="toc-page-after" href="#' + tocElement.id + '">' + tocElement.innerHTML + '</a>';
-    }
+if(config.position && config.position === "before"){
+  let titleText = tocElement.cloneNode(true);
+  titleText.querySelectorAll('br').forEach(br => br.remove());
+
+  tocNewLi.innerHTML =
+  '<a class="toc-page-before" href="#' + tocElement.id + '">' + titleText.innerHTML + '</a>';
+} else {
+  let titleText = tocElement.cloneNode(true);
+  titleText.querySelectorAll('br').forEach(br => br.remove());
+
+  tocNewLi.innerHTML =
+  '<a class="toc-page-after" href="#' + tocElement.id + '">' + titleText.innerHTML + '</a>';
+}
 
 
     tocUl.appendChild(tocNewLi)

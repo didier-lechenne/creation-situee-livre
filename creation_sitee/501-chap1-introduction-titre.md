@@ -5,9 +5,8 @@ draft: false
 template: chapitre
 ---
 
-<breakpage/>
+# I. Qu’est-ce qu’un territoire de la création située ? {.toc-only}
 
 ## Une introduction méthodologique 
-
-Hélène SOULIER {.toc-ignore .auteur}
+## Hélène SOULIER { .auteur}
 

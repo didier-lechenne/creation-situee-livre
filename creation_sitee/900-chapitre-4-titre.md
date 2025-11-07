@@ -7,5 +7,5 @@ template: chapitre
 
 
 ## Représenter les créations situées  
-Hélène Soulier {.toc-ignore .auteur}
+## Hélène Soulier { .auteur}
 

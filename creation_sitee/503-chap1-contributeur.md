@@ -40,4 +40,4 @@ Le Centre international d’art et du paysage est structure ressource depuis 200
  class:"fullpage-spread"
 } %}
 
-
+# II. L’interdisciplinarité des pratiques de la création située {.toc-only}

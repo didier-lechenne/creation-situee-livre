@@ -11,7 +11,7 @@ bgColor: rgba(84, 79, 71, 1)
 moveTo: 86
 ---
 
-
+## Journée d’études n°2 (extraits choisis) {.toc-only}
 
 {% markdown "./inclure/colloque-2-surtitre.md", {
 printCol: 1,
@@ -31,6 +31,8 @@ printHeight: 6,
 alignSelf: "center",
 class: "centre"
 } %}
+
+## Avec Liliana Motta ; Gilbert Fillinger ; Marie-Anne Chambost ; Marianne Lanavère, Lucie You et Guillaume Baudin ; Clément Boudin ; Marion Ponsard ; Pomme Boucher {.toc-only}
 
 {% markdown "./inclure/colloque-2-lieu.md", {
 printCol: 1,

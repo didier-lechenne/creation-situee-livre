@@ -264,37 +264,107 @@ this.specificPage.forEach(entry => {
     }
 
     // SPECIFIC PAGE ------------------------------------
-    let pageNum = pageElement.id.split("page-")[1];
-    pageNum = parseInt(pageNum);
+// SPECIFIC PAGE ------------------------------------
+let pageNum = pageElement.id.split("page-")[1];
+pageNum = parseInt(pageNum);
 
-    this.specificPageClone.forEach((entry) => {
-      const obj = JSON.parse(entry);
-      let targetedPage = obj.page;
-      let prevPage = parseInt(targetedPage) - 1;
+this.specificPageClone.forEach((entry) => {
+  const obj = JSON.parse(entry);
+  let targetedPage = obj.page;
+  let prevPage = parseInt(targetedPage) - 1;
+  let elem = obj.elemClone;
 
-      let elem = obj.elemClone;
+  // Créer un élément temporaire pour vérifier les classes
+  let tempDiv = document.createElement('div');
+  tempDiv.innerHTML = elem;
+  let tempElem = tempDiv.firstElementChild;
+  
+  // Vérifier si c'est un spread
+  let isSpread = tempElem.classList.contains('pagedjs_full-spread-elem');
 
-      if (targetedPage == 1 && pageNum == 1) {
-        // Utiliser la page 1 existante au lieu de créer une nouvelle page
-        let container = document.createElement("div");
-        container.classList.add("pagedjs_full-page_content");
-        container.innerHTML = elem;
+  if (targetedPage == 1 && pageNum == 1) {
+    if (isSpread) {
+      // Gérer comme un spread sur page 1
+      let imgLeft, imgRight;
+      
+      if (tempElem.querySelector('img')) {
+        let containerLeft = document.createElement("div");
+        containerLeft.classList.add("pagedjs_full-spread_container");
+        let containerLeftInside = document.createElement("div");
+        containerLeftInside.classList.add("pagedjs_full-spread_content");
+        containerLeft.appendChild(containerLeftInside).innerHTML = elem;
+        imgLeft = containerLeft;
 
-        pageElement
-          .querySelector(".pagedjs_page_content")
-          .insertAdjacentElement("afterbegin", container);
-        pageElement.classList.add("pagedjs_page_fullPage");
-      } else if (prevPage == pageNum) {
-        let container = document.createElement("div");
-        container.classList.add("pagedjs_full-page_content");
-        container.innerHTML = elem;
-        let fullPage = chunker.addPage();
-
-        fullPage.element
-          .querySelector(".pagedjs_page_content")
-          .insertAdjacentElement("afterbegin", container);
-        fullPage.element.classList.add("pagedjs_page_fullPage");
+        let containerRight = document.createElement("div");
+        containerRight.classList.add("pagedjs_full-spread_container");
+        let containerRightInside = document.createElement("div");
+        containerRightInside.classList.add("pagedjs_full-spread_content");
+        containerRight.appendChild(containerRightInside).innerHTML = elem;
+        imgRight = containerRight;
       }
-    });
+
+      pageElement.querySelector(".pagedjs_page_content")
+        .insertAdjacentElement("afterbegin", imgLeft);
+      pageElement.classList.add("pagedjs_page_fullLeft");
+
+      let fullPageRight = chunker.addPage();
+      fullPageRight.element.querySelector(".pagedjs_page_content")
+        .insertAdjacentElement("afterbegin", imgRight);
+      fullPageRight.element.classList.add("pagedjs_page_fullRight");
+    } else {
+      // Page simple existante
+      let container = document.createElement("div");
+      container.classList.add("pagedjs_full-page_content");
+      container.innerHTML = elem;
+      pageElement.querySelector(".pagedjs_page_content")
+        .insertAdjacentElement("afterbegin", container);
+      pageElement.classList.add("pagedjs_page_fullPage");
+    }
+  } else if (prevPage == pageNum) {
+    if (isSpread) {
+      // Créer un spread
+      let imgLeft, imgRight;
+      
+      let containerLeft = document.createElement("div");
+      containerLeft.classList.add("pagedjs_full-spread_container");
+      let containerLeftInside = document.createElement("div");
+      containerLeftInside.classList.add("pagedjs_full-spread_content");
+      containerLeftInside.innerHTML = elem;
+      containerLeft.appendChild(containerLeftInside);
+      imgLeft = containerLeft;
+
+      let containerRight = document.createElement("div");
+      containerRight.classList.add("pagedjs_full-spread_container");
+      let containerRightInside = document.createElement("div");
+      containerRightInside.classList.add("pagedjs_full-spread_content");
+      containerRightInside.innerHTML = elem;
+      containerRight.appendChild(containerRightInside);
+      imgRight = containerRight;
+
+      let fullPage = chunker.addPage();
+      fullPage.element.querySelector(".pagedjs_page_content")
+        .insertAdjacentElement("afterbegin", imgLeft);
+      fullPage.element.classList.add("pagedjs_page_fullLeft");
+
+      let fullPageRight = chunker.addPage();
+      fullPageRight.element.querySelector(".pagedjs_page_content")
+        .insertAdjacentElement("afterbegin", imgRight);
+      fullPageRight.element.classList.add("pagedjs_page_fullRight");
+    } else {
+      // Page simple
+      let container = document.createElement("div");
+      container.classList.add("pagedjs_full-page_content");
+      container.innerHTML = elem;
+      let fullPage = chunker.addPage();
+      fullPage.element.querySelector(".pagedjs_page_content")
+        .insertAdjacentElement("afterbegin", container);
+      fullPage.element.classList.add("pagedjs_page_fullPage");
+    }
+  }
+});
+
+
+
+
   }
 }

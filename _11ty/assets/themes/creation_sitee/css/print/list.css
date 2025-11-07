@@ -5,14 +5,14 @@
   --list-indent: calc(var(--labeur-baseline) * 1); /* 11.5pt */
 }
 
-ul {
+ul:not(#list-toc-generated) {
   list-style-type: '\200B';
   padding-inline-start: var(--list-indent);
   margin-block-start: 0;
   margin-block-end: calc(var(--labeur-baseline) / 2); /* 5.75pt */
 }
 
-ul li {
+ul:not(#list-toc-generated) li:not(.toc-element) {
   padding-top: calc(var(--labeur-baseline) / 2);
   padding-bottom: 0;
   line-height: var(--labeur-line-height); /* 11.5pt */
@@ -20,14 +20,14 @@ ul li {
   text-align: start;
 }
 
-ul li::marker {
+ul:not(#list-toc-generated) li:not(.toc-element)::marker {
   color: transparent;
   content: '';
 }
 
 
 
-ul li::before {
+ul:not(#list-toc-generated) li:not(.toc-element)::before {
   content: '–';
   position: absolute;
   left: calc(-1 * var(--list-indent));
@@ -40,7 +40,7 @@ ul li::before {
 }
 
 /* Puces rondes */
-ul.round-bullets li::before {
+ul:not(#list-toc-generated).round-bullets li:not(.toc-element)::before {
   content: '';
   /* background-color: var(--list-marker-color); */
   border-radius: 50%;

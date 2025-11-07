@@ -1,21 +1,16 @@
 @page tabledesmatieres:left {
-  
   margin-top: 15mm;
   margin-bottom: 34mm;
   margin-left: 15mm;
   margin-right: 15mm;
-  --pagedjs-margin-top: 15mm;
-  --pagedjs-margin-left: 15mm;
-  --pagedjs-margin-right: 15mm;
-  --pagedjs-margin-bottom: 34mm;
 
-   @bottom-left {
-        display: none;
-    }
-    
-    @bottom-right {
-        display: none;
-    }
+  @bottom-left {
+    display: none;
+  }
+  
+  @bottom-right {
+    display: none;
+  }
 }
 
 @page tabledesmatieres:right {
@@ -24,100 +19,84 @@
   margin-left: 15mm;
   margin-right: 15mm;
 
-   @bottom-left {
-        display: none;
-    }
-    
-    @bottom-right {
-        display: none;
-    }
+  @bottom-left {
+    display: none;
+  }
+  
+  @bottom-right {
+    display: none;
+  }
 }
-
-
-
 
 [data-template="toc"] {
-	page: tabledesmatieres;
-	/* page-break-after: always; */
-	page-break-before: always;
-	/* display: flex;
-	justify-content: center; */
-	  /* height: calc(var(--pagedjs-pagebox-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top) );
- 	display: block; */
+  page: tabledesmatieres;
+  page-break-before: right;
 }
 
-
 .toc #nav-toc {
-	/* display: flex;
-	justify-content: start;
-	align-items: center;
-	height: 100%;
-	flex: 1; 
-	padding: 0; */
-/* height: calc(var(--pagedjs-pagebox-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top) );
-  display: block; */
+  font-family: var(--heading);
+  font-size: var(--labeur-size);
+  line-height: var(--labeur-line-height);
+  text-align: left;
 }
 
 .toc #list-toc-generated {
-	list-style: none;
-	padding: 0;
-	margin: 0; 
-	text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  text-align: left;
 }
 
-
-
-
-
 .toc a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .toc #list-toc-generated li:first-child {
-	margin-top: 0em;
+  margin-top: 0;
 }
 
 .toc #list-toc-generated .toc-element a {
-	font-family: var(--heading);
-	font-size: 9pt;
-	line-height: 120%;
-/* ────────────────────────────────────────
-	↑ espacement entre les les élements de la liste en %
-	cela peut être une valeure fixe en mm, pt ect.
-   ──────────────────────────────────────── */
-	display: block; 
-	text-align: center; 
+  font-family: var(--heading);
+  font-size: 9pt;
+  line-height: 120%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .toc #list-toc-generated .toc-element a::after {
-	content: target-counter( attr(href), page ); 
-	margin-left: var(--gutter);
+  content: target-counter(attr(href), page);
+  margin-left: auto;
+  padding-left: 1em;
+}
+
+/* Retraits par niveau hiérarchique */
+.toc #list-toc-generated .toc-element-level-1 a {
+  margin-left: 0;
+}
+
+.toc #list-toc-generated .toc-element-level-2 a {
+  margin-left: var(--alinea);
+}
+
+.toc #list-toc-generated .toc-element-level-3 a {
+  margin-left: calc(var(--alinea) * 2);
 }
 
 .toc #list-toc-generated li {
-    padding-top: unset ;
-    padding-bottom: unset ;
-    margin-inline-start: unset ;
+  padding-top: unset;
+  padding-bottom: unset;
+  margin-inline-start: unset;
 }
 
-
-.toc #list-toc-generated li:nth-of-type(1) {
-	margin-bottom: var(--gutter);
+h1.toc-only {
+  display: none;
 }
-/* ────────────────────────────────────────
-   ↑ CIBLE le 1er élément de liste dans la TOC
-   
-   .toc #list-toc-generated = Conteneur de la table des matières
-   li:nth-of-type(1) = Premier <li> parmi tous les <li>
-   margin-bottom: var(--gutter) = Ajoute un espacement en bas
-   
-   Rendu visuel :
-   [1. Premier chapitre    ]
-   [                       ] ← Espace ajouté
-   [2. Deuxième chapitre   ]
-   [3. Troisième chapitre  ]
-   ──────────────────────────────────────── */
 
-.toc #list-toc-generated li:nth-last-of-type(3) {
-	margin-top: var(--gutter);
+h2.toc-only {
+  display: none;
+}
+
+h3.toc-only {
+  display: none;
 }
