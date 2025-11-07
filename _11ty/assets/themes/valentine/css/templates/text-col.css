@@ -46,8 +46,6 @@
 .bibliographie h3 {
   font-family: var(--heading);
   font-weight: bold;
-    /* column-span: all;
-    max-width: 100% !important; */
 }
 
 
@@ -59,11 +57,6 @@
 [data-template="bibliographie"] p,
 .bibliographie p {
   break-inside: avoid;
-  /* hyphens: none!important; */
-  margin-top: 1ch;
-  margin-bottom: 1ch;
 }
 
-.bibliographie p:first-of-type {
-  margin-top: 0 !important;
-}
+

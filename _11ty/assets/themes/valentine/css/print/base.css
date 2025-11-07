@@ -75,13 +75,9 @@ table {
 
 main p {
   text-rendering: optimizeLegibility;
-  font-feature-settings: "liga", "dlig";
-
+  /* font-feature-settings: "liga", "dlig"; */
   orphans: 3;
   widows: 2;
-
-  word-break: break-word;
-
   -webkit-hyphens: auto !important;
   -moz-hyphens: auto !important;
   hyphens: auto !important;

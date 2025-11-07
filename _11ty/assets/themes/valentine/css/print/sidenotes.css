@@ -13,7 +13,7 @@
       left: 1cm;
       text-align: right;
       width: 1.25cm;
-      text-indent: 0;
+      text-indent: 0 !important;
     }
     .imagenote_wrapper.printleft {
       padding-right: calc(var(--gutter) + 1.625cm);
@@ -22,7 +22,7 @@
       position: absolute;
       right: .5cm;
       width: 1.25cm;
-      text-indent: 0;
+      text-indent: 0 !important;
     }
     .imagenote {
       width: 100%;

@@ -20,3 +20,5 @@ draft: false
 {% image "./images/chap4/1-RAFAEL-TRAPET/trapet_5_6.jpg", { 
  class:"fullpage-spread"
 } %}
+
+

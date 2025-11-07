@@ -1,9 +1,31 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  min-width: 0;
-  min-height: 0;
+html {
+    box-sizing: border-box;
+    text-decoration-skip-ink: auto;
+}
+
+body, html{
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-smooth: never;
+    -moz-font-smooth: never;
+    widows: 1;
+    orphans: 1;
 }
 
 
@@ -46,21 +68,19 @@ html {
 }
 
 section:not(.colloque) {
-
   /* height: calc(var(--pagedjs-pagebox-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top) ); */
 }
 
-section p {
-  orphans: 1;
-  widows: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-indent: var(--gutter);
+section  p {
+  widows: 3;
+  orphans: 3;
+  text-indent: var(--alinea);
   hyphens: auto !important;
-  hyphenate-limit-chars: 7 4 3;
-  overflow-wrap: break-word;
-
+  hyphenate-limit-chars: 6 3 3;
+  /* line-height: var(--labeur-line-height); */
 }
+
+
 
 section > p:first-of-type {
   text-indent: 0 !important;
@@ -79,56 +99,61 @@ section p:first-child {
 section h2 {
   font-family: var(--heading);
   font-size: var(--heading-size);
-  line-height: var(--heading-line-height);
+  /* line-height: var(--heading-line-height); */
   font-weight: var(--heading-weight);
   text-align: left;
-  margin: 0;
-  padding: 0;
+  padding-bottom: calc( var(--labeur-line-height) * 1);
 }
 
 
+section h2.auteur {
+  padding-bottom: calc( var(--labeur-line-height) * 8);
+}
 
 
 section h3 {
   font-family: var(--heading);
   font-size: var(--labeur-size);
-  /* line-height: 100%; */
   font-weight: var(--labeur-bold-weight);
-  /* text-indent: var(--gutter); */
   text-transform: uppercase;
   text-align: left;
-  margin: 0;
-  padding: 0;
-  /* margin-bottom: calc( var(--gutter) / 3); */
-  transform: translateY(calc( var(--gutter) / -3));
-  margin-top: calc( var(--labeur-baseline) * 1.5 );
-  margin-left: calc( var(--gutter) );
-  letter-spacing: 0.05em; 
+  padding-top: calc(var(--labeur-baseline) * 1);
+  padding-bottom: calc(var(--labeur-baseline) * 1);
+  padding-left: var(--alinea);
+  position: relative;
+  top: 10px;
+
+  break-inside: avoid;
 }
 
 section h3:first-child {
-   margin-top: 0 !important;
-   transform: translateY(0) !important;
-}
-
-section[data-split-to] h3:first-child {
-   margin-top: 0 !important;
-   transform: none !important;
-   margin-bottom: calc( var(--gutter) / 3);
+   padding-top: 0 !important;
 }
 
 
-
-
-section.default h2 {
-  margin-bottom: calc( var(--gutter) * 1);
-  line-height:100% !important;
-} 
-
-section.default h2.auteur {
-  margin-bottom: calc( var(--gutter) * 8);
-  /* line-height:100% !important; */
+section h3.top-zero {
+  top: 0 !important;
+  padding-top: 0 !important;
+  text-indent: 0 !important;
 }
+
+section h3 + p {
+   text-indent: 0 !important;
+}
+
+
+
+section h4 {
+    font-family: var(--heading);
+    font-weight: normal;
+    padding-left: var(--alinea);
+    padding-top: calc(var(--labeur-baseline) * 1);
+    padding-bottom: 0;
+    position: relative;
+    top: -5px;
+    font-style: italic;
+}
+
 
 
 blockquote {
@@ -155,10 +180,6 @@ strong {
 
 em {
     font-style: italic;
-    line-height: 9pt;
-     /* transform: translateY(calc( var(--gutter) / -4)); */
-     text-indent: 0!important;
-     /* display:inline-block; */
 }
 
 

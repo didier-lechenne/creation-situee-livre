@@ -41,13 +41,14 @@ imgW: 107.76491374901195
 
 
 {% markdown "./inclure/intervenants/Fig. II.2-archeologie-du-blanc-caption.md", {
-printCol: 20,
-printWidth: 5,
+printCol: 19,
+printWidth: 6,
 printRow: 39,
 printHeight: 14,
 alignSelf: "end",
 class: "figcaption"
 } %}
+
 
 
 {% markdown "./inclure/intervenants/Fig. II.2.md", {

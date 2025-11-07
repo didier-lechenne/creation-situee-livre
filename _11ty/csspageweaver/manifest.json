@@ -1,5 +1,5 @@
 {
-    "plugins": [  "baseline", "inlineNotes", "sidenotes",  "footnotesFix",   "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak", "ragadjust", "invisibleSpaces",   "tableOfContent",   "marginBox",   "hideFolios", "reloadInPlace"],
+    "plugins": [  "baseline", "ragadjust", "inlineNotes", "sidenotes",  "pageMove" ,  "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak",  "invisibleSpaces",    "editor",  "marginBox",   "hideFolios", "reloadInPlace"],
 
     "pluginsParameters":{
 
@@ -14,13 +14,13 @@
          },
 
         "ragadjust": {
-            "selectors": "h1,h2,h3,h4,h5,h6, li, ol, blockquote",
+            "selectors": "h1,h2,h3,h4,h5,h6,blockquote,li,ol, .intervenants p, p",
             "exeptions": ["short_prepositions"]
          },
 
         "hideFolios": {
-            "help": "Unnumbered pages (e.g., 80, 81)",
-            "pages": [97, 104, 87, 55]
+            "help": "[ 80, 81, 120 ]",
+            "pages": [25, 45, 55, 95, 86, 105, 103,  111, 113, 115, 117, 119, 121 ]
         },
  
         "inlineNotes": {

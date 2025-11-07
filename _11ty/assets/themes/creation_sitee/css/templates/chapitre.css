@@ -11,7 +11,7 @@
     margin-left: 15mm;
     margin-right: 76.7mm;
     /* background-color: var(--bg-color, white); */
-    --folio: none;
+    /* --folio: none; */
 }
 
 @page chapitre:right {
@@ -20,7 +20,7 @@
     margin-left: 76.7mm;
     margin-right: 15mm;
     /* background-color: var(--bg-color, white); */
-    --folio: none;
+    /* --folio: none; */
 }
 
 
@@ -29,15 +29,12 @@
   font-family: var(--heading);
   /* font-weight: 900; */
   font-size: 9.5pt;
-  margin-bottom: calc(var(--gutter) * 2);
+  margin-bottom: calc(var(--labeur-baseline) * 2);
   text-transform: uppercase;
 }
 
 
-.manifeste .auteur{
-  margin-bottom: calc(var(--gutter) * 17 + 1mm);
 
-}
 
 .chapitre ol {
   font-family: var(--heading);

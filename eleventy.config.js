@@ -81,16 +81,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setServerOptions(serverOptions);
 
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .normalize('NFD')                   
-    .replace(/[\u0300-\u036f]/g, '')     
-    .replace(/[^a-z0-9\s-]/g, '')       
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim('-')
-}
+  // === FONCTION UTILITAIRE ===
+  function slugify(text) {
+    return text
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .trim('-')
+  }
 
   // === CONFIGURATION DES DOSSIERS ===
   return {

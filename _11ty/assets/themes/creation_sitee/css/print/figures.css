@@ -25,11 +25,7 @@ figure.image {
 }
 
 
-.call-figcaption p{
-  padding-top: calc(1mm) !important;
-  padding-bottom: calc(1mm) !important;
-  margin: 0 !important;
-}
+
 
 
 .figcaption strong em,

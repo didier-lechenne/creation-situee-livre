@@ -15,7 +15,7 @@ const arts = ["un", "une", "le", "la", "les", "du", "de", "des", "au", "aux"];
 const dets = ["ce", "ces", "cet", "cette", "mes", "tes", "ses", "mon", "ton", "ma", "ta", "son", "sa", "notre", "votre", "leur", "nos", "vos", "leurs"];
 const prons = ["je", "tu", "il", "elle", "on", "nous", "vous", "ils", "elles"];
 const conjs = ["mais", "où", "et", "donc", "or", "ni", "car", "ou", "que"];
-const short = ["à", "y", "en", "de", "sur", "par", "a", "et", "il"];
+const short = ["à", "y", "en", "de", "sur", "le", "a", "et", "il",  "la",  "du" ];
 const preps = ["après", "avant", "avec", "chez", "concernant", "contre", "dans", "depuis", "derrière", "dès", "durant", "entre", "hormis", "jusqu’à", "jusque", "loin", "malgré", "moyennant", "outre", "parmi", "pour", "près", "sans", "selon", "sous", "suivant", "touchant", "très", "vers"];
 
 // English prepositionsoverlay_hook

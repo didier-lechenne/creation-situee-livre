@@ -46,3 +46,11 @@ printHeight: 5,
 alignSelf: "end",
 class: "figcaption call-figcaption"
 } %}
+
+
+<breakpage/>
+
+{% image "./images/degrade/chap3.jpg", { 
+ class:"fullpage-spread"
+} %}
+

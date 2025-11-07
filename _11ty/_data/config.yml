@@ -30,21 +30,39 @@ height: 260
 # === GENERAL MARGINS (mm) ===
 margin_top: 15
 margin_right: 15
-margin_bottom: 34
+margin_bottom: 25.8
 margin_left: 76.7
 
 # === LEFT PAGE MARGINS (mm) ===
 page_left_margin_top: 15
 page_left_margin_right: 76.7
-page_left_margin_bottom: 34
+page_left_margin_bottom: 25.8
 page_left_margin_left: 15
 
 
 # === RIGHT PAGE MARGINS (mm) ===
 page_right_margin_top: 15
 page_right_margin_right: 15
-page_right_margin_bottom: 34
+page_right_margin_bottom: 25.8
 page_right_margin_left: 76.7
+
+# === GENERAL MARGINS (mm) ===
+# margin_top: 20
+# margin_right: 15
+# margin_bottom: 25
+# margin_left: 76.7
+
+# === LEFT PAGE MARGINS (mm) ===
+# page_left_margin_top: 20
+# page_left_margin_right: 76.7
+# page_left_margin_bottom: 25
+# page_left_margin_left: 15
+
+# === RIGHT PAGE MARGINS (mm) ===
+# page_right_margin_top: 20
+# page_right_margin_right: 15
+# page_right_margin_bottom: 25
+# page_right_margin_left: 76.7
 
 
 # === LAYOUT OPTIONS ===

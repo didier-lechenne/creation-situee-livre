@@ -7,7 +7,6 @@ gridRow: 52
 gridColGutter: 0mm
 gridRowGutter: 0mm
 class: intervenants
-bgColor: rgba(255, 255, 255, 1)
 ---
 
 {% markdown "./inclure/intervenants/Fig. II.1-souvenir-dune-plage.md", {
@@ -32,7 +31,7 @@ imgW: 109.19535700661906
 
 {% markdown "./inclure/intervenants/Fig. II.1-souvenir-dune-plage-caption.md", {
 printCol: 1,
-printWidth: 6,
+printWidth: 7,
 printRow: 48,
 printHeight: 5,
 alignSelf: "end",

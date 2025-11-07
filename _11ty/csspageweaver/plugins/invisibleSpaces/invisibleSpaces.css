@@ -36,8 +36,8 @@ body[data-invisible-spaces="true"] .invisible-break {
   /* position: relative; */
   /* width: 2ch;
   margin-right: -2ch; */
-  display: inline-block;
-  line-height: 0 !important;
+  /* display: inline-block; */
+  /* line-height: 0 !important; */
 }
 
 body[data-invisible-spaces="true"] .invisible-break::after {
@@ -72,7 +72,7 @@ body[data-invisible-spaces="true"] .has-paragraph-end::after {
 }
 
 /* Masquer à l'impression */
-/* @media print {
+@media print {
   .invisible-nbsp,
   .invisible-narrow-nbsp,
   .invisible-thin,
@@ -86,4 +86,4 @@ body[data-invisible-spaces="true"] .has-paragraph-end::after {
   .has-paragraph-end::after {
     content: none !important;
   }
-} */
+}

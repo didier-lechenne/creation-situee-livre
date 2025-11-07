@@ -1,4 +1,5 @@
 @media print {
+    @import "print/normalize.css";
   /* ===================
    IMPORTATION DES POLICES DE CARACTERES AU FORMAT WEB
    =================== */

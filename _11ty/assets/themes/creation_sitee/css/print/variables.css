@@ -7,6 +7,9 @@
 
   --text-color: rgba(0, 0, 0, 1);
 
+  --alinea: 6mm ;
+
+
   /* --heading-size: calc(var(--labeur-size) * 2);
   --heading-line-height: calc(var(--labeur-line-height) * 2);
   --heading-weight: normal; */
@@ -14,7 +17,7 @@
   /* --heading-size: 13.8pt;       
   --heading-line-height: 23pt;   */
 
-  
+    
   --heading-size: 17.25pt;       /* 1.5 × baseline */
   --heading-line-height: 23pt;   /* 2 × baseline */
 
@@ -24,7 +27,8 @@
   --labeur-line-height: 11.5pt;
   --labeur-weight: 400; 
   --labeur-bold-weight: 600;
-  --labeur-baseline: 11.5pt; /* 4.06 mm 15.33 px (à 96 DPI standard) */
+  --labeur-baseline: 11.5pt; 
+  /* 4.06 mm 15.33 px (à 96 DPI standard) */
 
   --footnote-size: 6pt;
   --footnote-line-height: 7.2pt;
@@ -38,8 +42,19 @@
   --caption-weight: 300;
   --caption-bold-weight: 400;
 
-  
+
   --gutter: var(--labeur-baseline);
+
+  /* === LETTER SPACING === */
+  /* Système unifié pour le contrôle de l'espacement des lettres */
+  /* Valeurs négatives pour resserrer, positives pour écarter */
+
+  --ls-none: 0;                        /* Pas d'espacement (0) */
+  --ls-tight-1: -0.001em;              /* Très léger resserrement (-1) */
+  --ls-tight-2: -0.002em;              /* Léger resserrement (-2) */
+  --ls-tight-3: -0.003em;              /* Resserrement moyen (-3) */
+  --ls-tight-3-5: -0.0035em;           /* Resserrement accentué (-3.5) */
+  --ls-tight-4: -0.004em;              /* Fort resserrement (-4) */
 
 }
 

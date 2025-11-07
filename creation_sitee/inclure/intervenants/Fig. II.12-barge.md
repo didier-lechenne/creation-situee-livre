@@ -1,3 +1,3 @@
-### Dans le Sens de Barge, *Barge*, depuis 2016   
+### Dans le Sens de Barge, *Barge*,<br/>depuis 2016   
 
 Barge se définit comme « un projet de lieu fluvial d’art et de cultures contemporaines » naviguant « le long de la Seine et de ses affluents, des confins de l’Ile-de-France au Havre ». Embarcation double, bateau à propulsion hydrogène, il accueille un espace d’exposition et de rencontre, des résidences artistiques, etc. Il prend des formes variées, avec des invités et des projets spécifiques (« Utopies Fluviales », « Razzle-Dazzle » avec Jean-Baptiste Sauvage, « Le silence des coquilles » avec Julia Borderie & Éloïse Le Gallo, etc.) et opère des escales de partage.

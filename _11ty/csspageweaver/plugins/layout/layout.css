@@ -231,16 +231,16 @@
 }
 
 
+
   @page modularGrid {
-    --folio: none;
-   
-    background-color: var(--bg-color, white);
+    /* --folio: none; */
+    background-color: var(--bg-color, white) !important;
   }
 
   [data-template="modularGrid"] {
     page: modularGrid;
     page-break-before: always;
-    page-break-after: always;
+    
      
 
     --g-column-count: var(--grid-col, 12);

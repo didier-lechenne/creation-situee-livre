@@ -30,5 +30,6 @@
 }
 
 br + *, [data-previous-break-after="column"] {
-  margin-top: 0ch !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
