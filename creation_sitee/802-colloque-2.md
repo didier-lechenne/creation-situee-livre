@@ -91,8 +91,3 @@ Je voulais finir là-dessus… Ça, c’est une image d’un autre projet… une
 
 
 
-{% image "./images/degrade/chap4.jpg", { 
- class:"fullpage-spread"
-} %}
-
-# IV. La représentation de la création située. Autour de Vassivière Utopia (2019-2021) {.toc-only}

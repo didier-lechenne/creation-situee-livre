@@ -37,6 +37,10 @@ body {
   font-weight: var(--labeur-weight);
   color: var(--text-color);
   text-rendering: optimizeLegibility;
+  
+  font-feature-settings: 'liga', 'clig';
+  font-variant-ligatures: common-ligatures;
+
 }
 
 article,
@@ -78,6 +82,8 @@ section  p {
   hyphens: auto !important;
   hyphenate-limit-chars: 6 3 3;
   /* line-height: var(--labeur-line-height); */
+
+  
 }
 
 

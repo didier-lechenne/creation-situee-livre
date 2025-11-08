@@ -49,9 +49,3 @@ class: "figcaption call-figcaption"
 
 
 <breakpage/>
-
-{% image "./images/degrade/chap3.jpg", { 
- class:"fullpage-spread"
-} %}
-
-# III. Le processus de la création située  {.toc-only}

@@ -44,7 +44,7 @@ La présente recherche repose sur l’hypothèse selon laquelle le territoire co
 
 
 
-### comment la recherche s’est-elle<br/>construite dans le temps ?
+### comment la recherche s’est-elle<br/>construite dans le temps ?
 
 La première action de la recherche fut de prendre connaissance *in situ* des neuf œuvres du programme Vassivière Utopia, réalisées à l’initiative du Centre International d’Art et de Paysage de l’île de Vassivière (CIAPV) lors de trois appels à projets successifs entre 2018 et 2020, sous la direction de Marianne Lanavère. Ce projet, Vassivière Utopia correspond au désir de l’équipe du CIAPV de sortir de l’île de Vassivière pour tenter d’insuffler de nouvelles expérimentations et des approches sensibles pour proposer avec les habitants un regard autre sur le paysage et chercher les moyens d’articuler art et société. Le programme fut conçu comme une extension hors les rives du Bois de sculptures et le parcours s’est enrichi pendant trois ans de neuf œuvres[^41] réparties sur neuf communes situées autour du lac, conçues par des collectifs ou des créateurs uniques alliant les disciplines d’architecture, paysage, arts plastiques et enrichies de compétences singulières selon les projets (maçonnerie traditionnelle, techniques de construction en pisée, etc). C’est pendant ce parcours de découverte des œuvres que des questionnements complémentaires à ceux évoqués lors des master classes pédagogiques sont apparus, confrontés que nous étions aux dispositifs réalisés et très divers.
 
@@ -181,7 +181,7 @@ Enfin, les retours souhaités sont d’ordre pédagogique. L’équipe de recher
 
 [^36]:  Voir Boyadjian Anne, « Architecture et paysage : un tissage de l’espace, de la matière et du temps », *Cahiers Thématiques*, n°13, éd. ENSAPL, 2014, pp. 69–82 et Davodeau Hervé, Geisler Elise, Montembault David et Leconte Louise, « La participation par les architectes et les paysagistes : vers une hybridation des pratiques », *Cahiers Thématiques*, n°13, éd. ENSAPL, 2014, pp. 171–184.
 
-[^37]:  Négrier Emmanuel, « Le paysage, territoire de l’art ? : La mise en oeuvre de Regards Croisés ». *Regards croisés sur les paysages, projets d’artistes dans trois Parcs Naturels Régionaux en Rhône-Alpes*, p.139–159, 2008\.
+[^37]:  Négrier Emmanuel, « Le paysage, territoire de l’art ? : La mise en œuvre de Regards Croisés ». *Regards croisés sur les paysages, projets d’artistes dans trois Parcs Naturels Régionaux en Rhône-Alpes*, p.139–159, 2008\.
 
 [^38]:  Nous entendons par «création située, l’ensemble de productions artistiques et paysagistes qui sont générées par un questionnement à partir d’un lieu et dont la finalité ne peut avoir de sens que dans ce lieu, par opposition à des productions reproductibles et transportables.
 

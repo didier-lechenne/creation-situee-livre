@@ -1,10 +1,10 @@
 ---
-draft: false
+draft: true
 ---
 
 
 {% image "./images/degrade/chap1.jpg", { 
- class:"chap1 droite"
+ class:"goto9"
 } %}
 
 

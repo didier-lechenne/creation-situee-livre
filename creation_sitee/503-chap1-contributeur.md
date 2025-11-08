@@ -35,9 +35,3 @@ Le Centre international d’art et du paysage est un centre d’art contemporain
 Le Centre international d’art et du paysage est structure ressource depuis 2002 du PREAC « art & paysage » de l’Éducation nationale – Académie de Limoges. Il est partenaire depuis 2018 de l’École du Jardin Planétaire de Limoges / Licence Professionnelle « Aménagement paysager, design des milieux anthropisés » de la Faculté des Sciences Humaines de Limoges. Il est membre des réseaux nationaux d.c.a (association de développement des centres d’art contemporain) et Arts en résidence, ainsi que du réseau régional d’arts visuels Astre.
 
 
-
-{% image "./images/degrade/chap2.svg", { 
- class:"fullpage-spread"
-} %}
-
-# II. L’interdisciplinarité des pratiques de la création située {.toc-only}
