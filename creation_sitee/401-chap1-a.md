@@ -4,5 +4,5 @@ draft: false
 
 
 {% image "./images/degrade/chap1.jpg", { 
- class:"fullpage-spread"
+ class:"chap1 gauche"
 } %}

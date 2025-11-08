@@ -5,7 +5,7 @@ draft: false
 template: chapitre
 ---
 
-# I. Qu’est-ce qu’un territoire de la création située ? {.toc-only}
+
 
 ## Une introduction méthodologique {.toc-ignore}
 
