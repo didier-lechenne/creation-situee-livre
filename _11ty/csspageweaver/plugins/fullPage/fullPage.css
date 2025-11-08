@@ -1,4 +1,3 @@
-
 .pagedjs_page_fullLeft .pagedjs_full-spread_container{
     margin: 0;
     width: calc(var(--pagedjs-pagebox-width) + var(--bleed-images));
@@ -17,7 +16,6 @@
     left: calc(var(--pagedjs-margin-left)*-1);
     overflow: hidden;
   }
-
   .pagedjs_full-spread_content{
     margin: 0;
     width: calc(var(--pagedjs-pagebox-width)*2 + var(--bleed-images)*2);
@@ -49,48 +47,3 @@
     height: calc(var(--pagedjs-pagebox-height) + var(--bleed-images) * 2)!important;
     left: calc(var(--pagedjs-margin-left)*-1);
   }
-
-  /* hack pour une image full en cover */
- #page-1  .pagedjs_full-page_content {
-    width: calc(var(--pagedjs-pagebox-width) + var(--bleed-images) + var(--bleed-images));
-    height: calc(var(--pagedjs-pagebox-height) + var(--bleed-images) * 2) !important;
-    left: calc(var(--pagedjs-margin-left) - var(--pagedjs-margin-right) + var(--bleed-images)  * -1) !important;
-}
-
-.pagedjs_full-content img,
-.pagedjs_full-spread_container img {
-    width: 200%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; 
-}
-
-.pagedjs_full-content figure,
-.pagedjs_full-spread_container figure {
-    margin: 0;
-    padding: 0;
-    width: 200%;
-    height: 100%;
-}
-
-
-
-.pagedjs_full-page_content img,
-.pagedjs_full-page_content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; 
-}
-
-.pagedjs_full-page_content figure,
-.pagedjs_full-page_content figure {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-

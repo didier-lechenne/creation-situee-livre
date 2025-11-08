@@ -194,9 +194,29 @@ section.manifeste p{
   widows: 1 !important;
 }
 
+#figure{
+  --pagedjs-full-page: page;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
 
-.moveto8 {
-  /* --pagedjs-full-page: 8; */
+img {
+    object-fit: cover;
+    object-position: 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+figure.chap {
+ 
+  /* width: 100% !important; */
+}
+
+.chap.page-droite {
+  /* --pagedjs-full-page: page */
   /* width: 100% !important; */
 }
 

@@ -5,9 +5,11 @@
  */
 import { Handler } from "../../../lib/paged.esm.js";
 
-let bleedFull = "6mm";
+
+let bleedFull = '6mm';
 
 export default class fullPage extends Handler {
+
   constructor(chunker, polisher, caller) {
     super(chunker, polisher, caller);
     this.selectorFullSpread = new Set();
@@ -16,37 +18,41 @@ export default class fullPage extends Handler {
     this.fullPageEls = new Set();
     this.selectorFullRight = new Set();
     this.fullRightEls = new Set();
-    this.selectorFullLeft = new Set();
+    this.selectorFullLeft= new Set();
     this.fullLeftEls = new Set();
     this.usedPagedEls = new Set();
     this.specificPage = new Set();
     this.specificPageClone = new Set();
   }
 
+
+
   onDeclaration(declaration, dItem, dList, rule) {
     // Read customs properties
     if (declaration.property == "--pagedjs-full-page") {
       // get selector of the declaration (NOTE: need csstree.js)
       let selector = csstree.generate(rule.ruleNode.prelude);
-      // Push selector in correct set
+      // Push selector in correct set 
       if (declaration.value.value.includes("page")) {
         this.selectorFullPage.add(selector);
-      } else if (declaration.value.value.includes("spread")) {
+      }else if(declaration.value.value.includes("spread")) {
         this.selectorFullSpread.add(selector);
-      } else if (declaration.value.value.includes("right")) {
+      }else if(declaration.value.value.includes("right")) {
         this.selectorFullRight.add(selector);
-      } else if (declaration.value.value.includes("left")) {
+      }else if(declaration.value.value.includes("left")) {
         this.selectorFullLeft.add(selector);
-      } else {
+      }else{
         let obj = { page: declaration.value.value, elem: selector };
         this.specificPage.add(JSON.stringify(obj));
+
       }
     }
   }
 
-  afterParsed(parsed) {
-    // console.log("FULL PAGE loaded");
+  afterParsed(parsed){
 
+    console.log("FULL PAGE loaded");
+ 
     // ADD pagedjs classes to elements
     for (let item of this.selectorFullPage) {
       let elems = parsed.querySelectorAll(item);
@@ -73,35 +79,29 @@ export default class fullPage extends Handler {
       }
     }
 
+
     // SPECIFIC PAGE ------------------------------------
-this.specificPage.forEach(entry => {
-  const obj = JSON.parse(entry);
-  const elements = parsed.querySelectorAll(obj.elem);
-  if (elements.length > 0) {
-    elements[0].classList.add("pagedjs_full-page-specific");
-    const clone = elements[0].cloneNode(true);
+    this.specificPage.forEach(entry => {
+      const obj = JSON.parse(entry);
+      const elements = parsed.querySelectorAll(obj.elem);
+      if (elements.length > 0) {
+        // pourquoi c’est ajouté même si l’élément n’existe pas ?
+        elements[0].classList.add("pagedjs_full-page-specific");
+        const clone = elements[0].cloneNode(true); 
+        obj.elemClone = clone.outerHTML; 
+        elements[0].remove();
+      }
+      this.specificPageClone.add(JSON.stringify(obj));
+    });
     
-    // Créer un nouvel objet avec elemClone
-    const newObj = {
-      page: obj.page,
-      elem: obj.elem,
-      elemClone: clone.outerHTML
-    };
-    
-    elements[0].remove();
-    this.specificPageClone.add(JSON.stringify(newObj)); // ← Sauvegarder le nouvel objet
-  }
-});
 
   }
+
 
   renderNode(clone, node) {
     // FULL SPREAD
     // if you find a full page element, move it in the array
-    if (
-      node.nodeType == 1 &&
-      node.classList.contains("pagedjs_full-spread-elem")
-    ) {
+    if (node.nodeType == 1 && node.classList.contains("pagedjs_full-spread-elem")) {
       this.fullSpreadEls.add(node);
       this.usedPagedEls.add(node);
 
@@ -110,43 +110,36 @@ this.specificPage.forEach(entry => {
     }
 
     // FULL PAGE
-    if (
-      node.nodeType == 1 &&
-      node.classList.contains("pagedjs_full-page-left-elem")
-    ) {
+    if (node.nodeType == 1 && node.classList.contains("pagedjs_full-page-left-elem")) {
       this.fullLeftEls.add(node);
       this.usedPagedEls.add(node);
       clone.style.display = "none";
-    } else if (
-      node.nodeType == 1 &&
-      node.classList.contains("pagedjs_full-page-right-elem")
-    ) {
+    }else if (node.nodeType == 1 && node.classList.contains("pagedjs_full-page-right-elem")) {
       this.fullRightEls.add(node);
       this.usedPagedEls.add(node);
       clone.style.display = "none";
-    } else if (
-      node.nodeType == 1 &&
-      node.classList.contains("pagedjs_full-page-elem")
-    ) {
+    }else if (node.nodeType == 1 && node.classList.contains("pagedjs_full-page-elem")) {
       this.fullPageEls.add(node);
       this.usedPagedEls.add(node);
       clone.style.display = "none";
     }
+
   }
 
   afterPageLayout(pageElement, page, breakToken, chunker) {
-    if (page.id == "page-1") {
-      let allPages = document.querySelector(".pagedjs_pages");
-      allPages.style.setProperty("--bleed-images", bleedFull);
-    }
 
+    if(page.id == "page-1"){
+      let allPages = document.querySelector(".pagedjs_pages");
+      allPages.style.setProperty('--bleed-images',  bleedFull);
+    }
+    
     // ADD --pagedjs-fold on body if doesn't exist
-    if (pageElement.classList.contains("pagedjs_first_page")) {
+    if(pageElement.classList.contains("pagedjs_first_page")){
       let body = document.getElementsByTagName("body")[0];
       let style = window.getComputedStyle(body);
-      let fold = style.getPropertyValue("--pagedjs-fold");
-      if (!fold) {
-        body.style.setProperty("--pagedjs-fold", "0mm");
+      let fold = style.getPropertyValue('--pagedjs-fold');
+      if(!fold){
+        body.style.setProperty('--pagedjs-fold', '0mm')
       }
     }
 
@@ -154,10 +147,12 @@ this.specificPage.forEach(entry => {
     // if there is an element in the fullSpreadEls Set, (goodbye arrays!)
 
     for (let img of this.fullSpreadEls) {
+
       if (page.element.classList.contains("pagedjs_right_page")) {
+
         let imgLeft;
         let imgRight;
-
+        
         if (img.nodeName == "IMG") {
           /* Add outside + inside container if the element is an img */
           let containerLeft = document.createElement("div");
@@ -171,10 +166,9 @@ this.specificPage.forEach(entry => {
           containerRight.classList.add("pagedjs_full-spread_container");
           let containerRightInside = document.createElement("div");
           containerRightInside.classList.add("pagedjs_full-spread_content");
-          containerRight
-            .appendChild(containerRightInside)
-            .appendChild(img.cloneNode(true));
+          containerRight.appendChild(containerRightInside).appendChild(img.cloneNode(true));
           imgRight = containerRight;
+
         } else {
           /* Add outside container if the element is an img */
           let containerLeft = document.createElement("div");
@@ -187,6 +181,7 @@ this.specificPage.forEach(entry => {
           img.classList.add("pagedjs_full-spread_content");
           containerRight.appendChild(img.cloneNode(true));
           imgRight = containerRight;
+          
         }
 
         // put the first element on the page
@@ -205,15 +200,17 @@ this.specificPage.forEach(entry => {
         img.style.removeProperty("display");
 
         this.fullSpreadEls.delete(img);
+        
       }
     }
+
 
     // FULL PAGE
     // if there is an element in the fullPageEls Set
     for (let img of this.fullPageEls) {
       let container = document.createElement("div");
-      container.classList.add("pagedjs_full-page_content");
-      container.appendChild(img);
+        container.classList.add("pagedjs_full-page_content");
+        container.appendChild(img);
       let fullPage = chunker.addPage();
 
       fullPage.element
@@ -228,10 +225,11 @@ this.specificPage.forEach(entry => {
     // FULL Left PAGE
     // if there is an element in the fullLeftEls Set
     for (let img of this.fullLeftEls) {
+
       if (page.element.classList.contains("pagedjs_right_page")) {
         let container = document.createElement("div");
-        container.classList.add("pagedjs_full-page_content");
-        container.appendChild(img);
+          container.classList.add("pagedjs_full-page_content");
+          container.appendChild(img);
         let fullPage = chunker.addPage();
 
         fullPage.element
@@ -247,10 +245,11 @@ this.specificPage.forEach(entry => {
     // FULL RIGHT PAGE
     // if there is an element in the fullRightEls Set
     for (let img of this.fullRightEls) {
+
       if (page.element.classList.contains("pagedjs_left_page")) {
         let container = document.createElement("div");
-        container.classList.add("pagedjs_full-page_content");
-        container.appendChild(img);
+          container.classList.add("pagedjs_full-page_content");
+          container.appendChild(img);
         let fullPage = chunker.addPage();
 
         fullPage.element
@@ -263,108 +262,32 @@ this.specificPage.forEach(entry => {
       }
     }
 
+
+
     // SPECIFIC PAGE ------------------------------------
-// SPECIFIC PAGE ------------------------------------
-let pageNum = pageElement.id.split("page-")[1];
-pageNum = parseInt(pageNum);
-
-this.specificPageClone.forEach((entry) => {
-  const obj = JSON.parse(entry);
-  let targetedPage = obj.page;
-  let prevPage = parseInt(targetedPage) - 1;
-  let elem = obj.elemClone;
-
-  // Créer un élément temporaire pour vérifier les classes
-  let tempDiv = document.createElement('div');
-  tempDiv.innerHTML = elem;
-  let tempElem = tempDiv.firstElementChild;
+    let pageNum = pageElement.id.split('page-')[1];
+    pageNum = parseInt(pageNum);
   
-  // Vérifier si c'est un spread
-  let isSpread = tempElem.classList.contains('pagedjs_full-spread-elem');
+    this.specificPageClone.forEach(entry => {
+      const obj = JSON.parse(entry);
+      let targetedPage = obj.page;
+      let prevPage = parseInt(targetedPage) - 1;
 
-  if (targetedPage == 1 && pageNum == 1) {
-    if (isSpread) {
-      // Gérer comme un spread sur page 1
-      let imgLeft, imgRight;
-      
-      if (tempElem.querySelector('img')) {
-        let containerLeft = document.createElement("div");
-        containerLeft.classList.add("pagedjs_full-spread_container");
-        let containerLeftInside = document.createElement("div");
-        containerLeftInside.classList.add("pagedjs_full-spread_content");
-        containerLeft.appendChild(containerLeftInside).innerHTML = elem;
-        imgLeft = containerLeft;
+      let elem = obj.elemClone;
 
-        let containerRight = document.createElement("div");
-        containerRight.classList.add("pagedjs_full-spread_container");
-        let containerRightInside = document.createElement("div");
-        containerRightInside.classList.add("pagedjs_full-spread_content");
-        containerRight.appendChild(containerRightInside).innerHTML = elem;
-        imgRight = containerRight;
+      if(prevPage == pageNum){
+        let container = document.createElement("div");
+          container.classList.add("pagedjs_full-page_content");
+          container.innerHTML = elem;
+          let fullPage = chunker.addPage();
+
+          fullPage.element
+            .querySelector(".pagedjs_page_content")
+            .insertAdjacentElement("afterbegin", container);
+          fullPage.element.classList.add("pagedjs_page_fullPage");
       }
-
-      pageElement.querySelector(".pagedjs_page_content")
-        .insertAdjacentElement("afterbegin", imgLeft);
-      pageElement.classList.add("pagedjs_page_fullLeft");
-
-      let fullPageRight = chunker.addPage();
-      fullPageRight.element.querySelector(".pagedjs_page_content")
-        .insertAdjacentElement("afterbegin", imgRight);
-      fullPageRight.element.classList.add("pagedjs_page_fullRight");
-    } else {
-      // Page simple existante
-      let container = document.createElement("div");
-      container.classList.add("pagedjs_full-page_content");
-      container.innerHTML = elem;
-      pageElement.querySelector(".pagedjs_page_content")
-        .insertAdjacentElement("afterbegin", container);
-      pageElement.classList.add("pagedjs_page_fullPage");
-    }
-  } else if (prevPage == pageNum) {
-    if (isSpread) {
-      // Créer un spread
-      let imgLeft, imgRight;
-      
-      let containerLeft = document.createElement("div");
-      containerLeft.classList.add("pagedjs_full-spread_container");
-      let containerLeftInside = document.createElement("div");
-      containerLeftInside.classList.add("pagedjs_full-spread_content");
-      containerLeftInside.innerHTML = elem;
-      containerLeft.appendChild(containerLeftInside);
-      imgLeft = containerLeft;
-
-      let containerRight = document.createElement("div");
-      containerRight.classList.add("pagedjs_full-spread_container");
-      let containerRightInside = document.createElement("div");
-      containerRightInside.classList.add("pagedjs_full-spread_content");
-      containerRightInside.innerHTML = elem;
-      containerRight.appendChild(containerRightInside);
-      imgRight = containerRight;
-
-      let fullPage = chunker.addPage();
-      fullPage.element.querySelector(".pagedjs_page_content")
-        .insertAdjacentElement("afterbegin", imgLeft);
-      fullPage.element.classList.add("pagedjs_page_fullLeft");
-
-      let fullPageRight = chunker.addPage();
-      fullPageRight.element.querySelector(".pagedjs_page_content")
-        .insertAdjacentElement("afterbegin", imgRight);
-      fullPageRight.element.classList.add("pagedjs_page_fullRight");
-    } else {
-      // Page simple
-      let container = document.createElement("div");
-      container.classList.add("pagedjs_full-page_content");
-      container.innerHTML = elem;
-      let fullPage = chunker.addPage();
-      fullPage.element.querySelector(".pagedjs_page_content")
-        .insertAdjacentElement("afterbegin", container);
-      fullPage.element.classList.add("pagedjs_page_fullPage");
-    }
-  }
-});
-
-
-
+    });
+    
 
   }
 }
