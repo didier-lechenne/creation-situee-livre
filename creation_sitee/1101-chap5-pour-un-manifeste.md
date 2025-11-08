@@ -7,11 +7,12 @@ draft: false
 
 <breakpage/>
 
+## Pour un Manifeste de la création située<br/>Camille de SINGLY {.toc-only}
 
 <div class="manifeste-marge">
 
-## Pour un Manifeste de la création située  
-## Camille de Singly { .auteur}
+## Pour un Manifeste de la création située  {.toc-ignore}
+## Camille de SINGLY {.toc-ignore .auteur}
 
 </div>
 
@@ -30,12 +31,3 @@ Dans l’histoire du paysage, le manifeste le plus célèbre est sans doute celu
 [^4]:  Clément Gilles. (2004). *Manifeste du Tiers paysage*, Ed. Sens & Tonka.
 
 
-{% image "./images/manifeste.jpg", { 
- class:"fullpage-spread"
-} %}
-
-## Le manifeste {.toc-only}
-## Guillaume BAUDIN, Marine FROELIGER, Alexandra MCINTOSH, Aurélien RAMOS, Karine RAVAUD, Camille de SINGLY, Hélène SOULIER et Lucie YOU {.toc-only}
- 
-
-<breakpage/>

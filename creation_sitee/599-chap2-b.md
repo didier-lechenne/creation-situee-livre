@@ -8,4 +8,4 @@ template: chapitre
 
 
 
-# II. L’interdisciplinarité des pratiques de la création située {.toc-only}
+# L’interdisciplinarité des pratiques de la création située {.toc-only}

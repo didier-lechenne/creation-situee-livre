@@ -11,7 +11,7 @@ bgColor: rgba(84, 79, 71, 1)
 moveTo: 86
 ---
 
-## Journée d’études n°2 (extraits choisis) {.toc-only}
+## <span class="toc-surtitre">Journée d’études n°2 (extraits choisis)<br/></span>« Retour sur des créations situées. Programmation, chantier, gestion, réception »<span class="toc-participants"><br/>Avec Liliana Motta ; Gilbert Fillinger ; Marie-Anne Chambost ; Marianne Lanavère, Lucie You et Guillaume Baudin ; Clément Boudin ; Marion Ponsard ; Pomme Boucher </span> {.toc-only}
 
 {% markdown "./inclure/colloque-2-surtitre.md", {
 printCol: 1,
@@ -32,7 +32,6 @@ alignSelf: "center",
 class: "centre"
 } %}
 
-## Avec Liliana Motta ; Gilbert Fillinger ; Marie-Anne Chambost ; Marianne Lanavère, Lucie You et Guillaume Baudin ; Clément Boudin ; Marion Ponsard ; Pomme Boucher {.toc-only}
 
 {% markdown "./inclure/colloque-2-lieu.md", {
 printCol: 1,

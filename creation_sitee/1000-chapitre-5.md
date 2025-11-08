@@ -5,7 +5,7 @@ class: chapter
 draft: false
 ---
 
-# V. Le manifeste de la création située {.toc-only}
+# Le manifeste de la création située {.toc-only}
 
 <brekapage/>
 

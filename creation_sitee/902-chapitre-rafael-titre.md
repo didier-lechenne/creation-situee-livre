@@ -10,4 +10,4 @@ template: chapitre
 ## Rafaël TRAPET {.toc-ignore .auteur}
 
 
-## Photographies des œuvres de *Vassivière Utopia* (2019-2021), une commande du CIAPV Rafaël TRAPET {.toc-only}
+## Photographies des œuvres de *Vassivière Utopia* (2019-2021), une commande du CIAPV<br/>Rafaël TRAPET {.toc-only}

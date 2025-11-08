@@ -11,7 +11,7 @@ draft: true
 {% image "./images/chap4/3-UBLO/Fig.IV.12_1.jpg", {  class:"fullpage-spread"
 } %}
 
-##  1. La Clairière (édition 2018\) {.toc-only}
+###  1. La Clairière (édition 2018\) {.toc-only .toc-ignore}
 
 {% image "./images/chap4/3-UBLO/Fig.IV.12_2.jpg", {  class:"fullpage-spread"
 } %}

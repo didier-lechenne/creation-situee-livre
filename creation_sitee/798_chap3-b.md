@@ -8,4 +8,4 @@ template: chapitre
 
 
 
-# III. Le processus de la création située  {.toc-only}
+# Le processus de la création située  {.toc-only}
