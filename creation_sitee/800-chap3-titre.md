@@ -12,4 +12,4 @@ template: chapitre
 
 ## Aurélien RAMOS {.toc-ignore .auteur}
 
-## Mécaniques et jeux d’acteurs d’une démarche créative relationnelle, décloisonnée et hybride<br/>Aurélien RAMOS {.toc-only}
+## Mécaniques et jeux d’acteurs d’une démarche créative relationnelle, décloisonnée et hybride<br>Aurélien RAMOS {.toc-only}
