@@ -18,7 +18,7 @@
 	"parameters": {
 		"sample": null
 	},
-	"script": "script.js",
+	
 	"hook": "hook.js",
 	"stylesheet": "stylesheet.css"
 }

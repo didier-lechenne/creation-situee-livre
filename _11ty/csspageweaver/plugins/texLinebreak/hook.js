@@ -1,20 +1,37 @@
 /**
- * @name Blank is name of plugin
- * @file This file is a hook. It does nothing. It's just an example 
- * @author Jane Doe <jane@dooooooooooooo.oe>
- * @see { @link https://jsdoc.app/about-getting-started }
+ * @name TexLinebreak
+ * @file Implémentation de l'algorithme Knuth-Plass pour Paged.js
+ * @description Plugin qui applique l'algorithme de césure de ligne TeX pour une justification optimale
  */
 
 import { Handler } from "../../../lib/paged.esm.js";
 
-export default class YOUR_HOOK_NAME extends Handler {
 
+
+// Charger tex-linebreak2 depuis lib
+// let texLinebreak;
+
+// async function loadTexLinebreak() {
+//   if (!texLinebreak) {
+//     try {
+//       const module = await import('./lib/wrapper.js');
+//       texLinebreak = module.default || module;
+//       console.log('TexLinebreak module loaded:', typeof texLinebreak, Object.keys(texLinebreak || {}));
+//     } catch (error) {
+//       console.error('Erreur lors du chargement de texLinebreak:', error);
+//       throw error;
+//     }
+//   }
+//   return texLinebreak;
+// }
+
+export default class TexLinebreakHandler extends Handler {
   constructor(chunker, polisher, caller) {
     super(chunker, polisher, caller);
   }
 
-  beforeParsed(content) {
-    // Your logic
+  afterPageLayout(pageFragment, page) {
 
   }
+
 }

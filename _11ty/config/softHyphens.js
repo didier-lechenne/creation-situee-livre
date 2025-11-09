@@ -6,7 +6,7 @@ const { JSDOM } = require('jsdom');
 const h = new Hypher(french, {
   minWordLength: 6,
   leftmin: 3,
-  rightmin: 2
+  rightmin: 3
 });
 
 module.exports = function(eleventyConfig) {
@@ -19,11 +19,11 @@ module.exports = function(eleventyConfig) {
       const selectors = [];
       
       if (config['cesures_paragraphe'] === 'true') {
-        selectors.push('section[data-template] p', 'blockquote');
+        selectors.push('section[data-template] p', 'section[data-template] li', 'section[data-template] em', 'section[data-template] a', 'section[data-template] blockquote' );
       }
       
       if (config['cesures_footnotes'] === 'true') {
-        selectors.push('section.footnotes p');
+        selectors.push('section.footnotes p', 'section.footnotes em', 'section.footnotes a');
       }
       
       selectors.forEach(selector => {
