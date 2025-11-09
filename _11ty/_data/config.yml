@@ -71,7 +71,7 @@ marks: true
 
 # === CESURES OPTIONS ===
 cesures_footnotes: "false"
-cesures_paragraphe: "false"
+cesures_paragraphe: "true"
 
 # === NOTES OPTIONS ===
 print_notes: "bottom"

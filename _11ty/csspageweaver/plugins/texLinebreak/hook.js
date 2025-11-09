@@ -5,8 +5,7 @@
  */
 
 import { Handler } from "../../../lib/paged.esm.js";
-
-
+// import * as texLinebreak from "./lib/lib.js";
 
 // Charger tex-linebreak2 depuis lib
 // let texLinebreak;
@@ -30,7 +29,15 @@ export default class TexLinebreakHandler extends Handler {
     super(chunker, polisher, caller);
   }
 
-  afterPageLayout(pageFragment, page) {
+  afterPageLayout(content) {
+
+    const elementsToJustify = content.querySelectorAll('section p');
+    
+    if (elementsToJustify.length > 0) {
+      texLinebreak.texLinebreakDOM(elementsToJustify, {
+        align: 'left'
+      });
+    }
 
   }
 

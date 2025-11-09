@@ -83,7 +83,7 @@ section  p {
   hyphens: manual;
   /* hyphenate-limit-chars: 6 3 3; */
   /* line-height: var(--labeur-line-height); */
-  --line-width: 409.312px;
+  --line-width: 300px;
 
 }
 

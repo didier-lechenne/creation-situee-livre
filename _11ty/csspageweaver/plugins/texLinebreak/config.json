@@ -18,7 +18,7 @@
 	"parameters": {
 		"sample": null
 	},
-	
+	"script": "lib/lib.js",
 	"hook": "hook.js",
 	"stylesheet": "stylesheet.css"
 }
