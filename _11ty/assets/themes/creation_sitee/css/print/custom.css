@@ -127,11 +127,11 @@
 
 
 [frontmatter-title="chap-1-introduction"] p {
-  letter-spacing: calc(0 * -0.001em);
+  letter-spacing: calc(0 * -0.008em);
 }
 
 [frontmatter-title="chap-2"] p {
-  letter-spacing: calc(0 * -0.001em);
+  letter-spacing: calc(0 * -0.00em);
 }
 
 [frontmatter-title="colloque-1"] p {

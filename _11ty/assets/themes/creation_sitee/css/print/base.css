@@ -79,8 +79,12 @@ section  p {
   widows: 3;
   orphans: 3;
   /* text-indent: var(--alinea); */
+  /* hyphens: auto; */
   hyphens: manual;
-  /* hyphenate-limit-chars: 6 3 3; */
+  hyphenate-limit-chars: 6 3 3;
+  
+  /* letter-spacing: -0.005em !important; */
+ 
   /* --line-width: 300px; */
   /* width: 108.3mm; */
 

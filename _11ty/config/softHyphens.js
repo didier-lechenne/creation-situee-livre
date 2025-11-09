@@ -5,7 +5,7 @@ const { JSDOM } = require('jsdom');
 
 const h = new Hypher(french, {
   minWordLength: 6,
-  leftmin: 3,
+  leftmin: 4,
   rightmin: 3
 });
 
