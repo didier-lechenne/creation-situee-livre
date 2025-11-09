@@ -8,7 +8,7 @@ template: chapitre
 
 ## Relevés des œuvres de *Vassivière Utopia* (2024-2025)  {.toc-ignore}
   
-## Marine Lecardeur / UBLO  {.toc-ignore .auteur}
+## Marine LECARDEUR / UBLO  {.toc-ignore .auteur}
 
 
 1. La Clairière (édition 2018\)  
@@ -22,4 +22,4 @@ template: chapitre
 9. Trois petits patrimoines (édition 2020\)
 
 
-## Relevés des œuvres de *Vassivière Utopia* (2024-2025)<br/>Marine Lecardeur / UBLO {.toc-only}
+## Relevés des œuvres de *Vassivière Utopia* (2024-2025)<br/>Marine LECARDEUR / UBLO {.toc-only}

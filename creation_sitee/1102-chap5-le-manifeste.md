@@ -9,6 +9,6 @@ draft: false
 } %}
 
 
-## Le manifeste <br/> Guillaume BAUDIN, Marine FROELIGER, Alexandra MCINTOSH, Aurélien RAMOS, Karine RAVAUD, Camille de SINGLY, Hélène SOULIER et Lucie YOU{.toc-only}
+## Le manifeste <br/> Guillaume BAUDIN, Marine FROELIGER, Alexandra MCINTOSH, Aurélien RAMOS, Karine RAVAUD, Camille de SINGLY, Hélène SOULIER et Lucie YOU{.toc-only}
 
 <breakpage/>

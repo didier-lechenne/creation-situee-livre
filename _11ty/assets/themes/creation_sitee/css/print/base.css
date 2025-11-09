@@ -96,6 +96,8 @@ section p:first-child {
   text-indent: 0 !important;
 }
 
+smallcaps,
+.smallcaps,
 .small-caps {
   font-variant-caps: all-small-caps;
   line-height: 0;
