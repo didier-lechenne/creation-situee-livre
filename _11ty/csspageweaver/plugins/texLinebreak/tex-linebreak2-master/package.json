@@ -1,0 +1,70 @@
+{
+  "name": "tex-linebreak2",
+  "version": "0.8.4",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egilll/tex-linebreak2"
+  },
+  "main": "dist/lib.js",
+  "files": [
+    "dist/lib.js",
+    "dist/lib.LICENSE.txt",
+    "dist/lib.js.map",
+    "dist/index.d.ts"
+  ],
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "webpack --mode production",
+    "prepare": "yarn build",
+    "start": "webpack serve --mode development",
+    "prepublish": "yarn build && gh-pages -d dist --src '{demo\\.js,index\\.html}'",
+    "test": "karma start --single-run",
+    "test-watch": "karma start --auto-watch"
+  },
+  "dependencies": {
+    "debounce": "^1.2.1",
+    "linebreak": "^1.1.0",
+    "string-width": "4.2.2",
+    "typescript-memoize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/plugin-proposal-decorators": "^7.18.2",
+    "@babel/plugin-transform-runtime": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@microsoft/api-extractor": "^7.25.2",
+    "@types/chai": "^4.3.1",
+    "@types/debounce": "^1.2.1",
+    "@types/hyphen": "^1.6.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.6.0",
+    "babel-loader": "^8.2.5",
+    "chai": "^4.3.6",
+    "dts-bundle-generator": "^6.11.0",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "hyphenation.en-us": "^0.2.1",
+    "hypher": "^0.2.5",
+    "karma": "^6.4.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-diff-reporter": "^2.0.1",
+    "karma-mocha": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^5.0.0",
+    "mocha": "^10.2.0",
+    "prettier": "^2.7.1",
+    "puppeteer": "^14.4.1",
+    "terser-webpack-plugin": "^5.3.3",
+    "typescript": "^5.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2",
+    "webpack-license-plugin": "^4.2.2",
+    "webpack-shell-plugin-next": "^2.2.2",
+    "xorshift": "^1.2.0"
+  }
+}

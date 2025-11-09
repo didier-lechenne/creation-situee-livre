@@ -1,0 +1,24 @@
+{
+	"name": "texLinebreak",
+	"description": "It implements the Knuth-Plass line-breaking algorithm which is used by TeX.",
+	
+	"ui": {
+		"title": "tex-linebreak",
+		"description": "",
+		"template": "template.html",
+		"toggle": true,
+		"shortcut": [
+			{
+				"active": true,
+				"keys": ["B", "L", "A", "N", "K" ],
+				"description": ""
+			}
+		]
+	},
+	"parameters": {
+		"sample": null
+	},
+	"script": "script.js",
+	"hook": "hook.js",
+	"stylesheet": "stylesheet.css"
+}
