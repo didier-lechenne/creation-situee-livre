@@ -2,7 +2,7 @@
 title: la-clairière
 template: default
 class: chapter chapitre
-draft: false
+draft: true
 ---
 
 

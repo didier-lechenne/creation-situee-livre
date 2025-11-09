@@ -2,7 +2,7 @@
 title: plateforme
 template: default
 class: chapter chapitre
-draft: false
+draft: true
 ---
 
 

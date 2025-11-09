@@ -78,12 +78,11 @@ section:not(.colloque) {
 section  p {
   widows: 3;
   orphans: 3;
-
-  text-indent: var(--alinea);
+  /* text-indent: var(--alinea); */
   hyphens: manual;
   /* hyphenate-limit-chars: 6 3 3; */
-  /* line-height: var(--labeur-line-height); */
-  --line-width: 300px;
+  /* --line-width: 300px; */
+  /* width: 108.3mm; */
 
 }
 

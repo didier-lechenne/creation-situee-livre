@@ -1,7 +1,7 @@
 ---
 title: data-titre
 class: chapter chapitre
-draft: false
+draft: true
 template: chapitre
 ---
 

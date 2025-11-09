@@ -2,7 +2,7 @@
 title: chap-4
 template: default
 class: chapter
-draft: false
+draft: true
 ---
 
 Le premier aspect de l’intérêt pour la représentation est un élément intrinsèque à ce que nous entendons par le fait de « chercher » dans le monde de la création et du sensible. Étant tous concernés par la conception ou la direction artistique, tous plus ou moins spécialistes des questions de représentations ou même auteurs de représentations, nous avons immédiatement fait le choix d’aborder la restitution de la recherche par un ouvrage qui lui aussi incarne la problématique de la représentation. Le fait de faire coexister plusieurs types d’écriture (scientifique, manifeste, extraits de verbatim) est la première décision que nous avons prise, le texte scientifique n’étant pas pour nous la seule voie d’expression d’une recherche[^1], d’où certains choix quant à la forme de l’ouvrage et nous y avons spontanément ajouté la question de l’image et de la monstration, à l’intérieur de laquelle se loge une interrogation sur la nature de la représentation des créations situées.

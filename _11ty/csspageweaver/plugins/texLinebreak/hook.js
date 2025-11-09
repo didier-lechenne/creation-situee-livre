@@ -5,37 +5,23 @@
  */
 
 import { Handler } from "../../../lib/paged.esm.js";
-// import * as texLinebreak from "./lib/lib.js";
-
-// Charger tex-linebreak2 depuis lib
-// let texLinebreak;
-
-// async function loadTexLinebreak() {
-//   if (!texLinebreak) {
-//     try {
-//       const module = await import('./lib/wrapper.js');
-//       texLinebreak = module.default || module;
-//       console.log('TexLinebreak module loaded:', typeof texLinebreak, Object.keys(texLinebreak || {}));
-//     } catch (error) {
-//       console.error('Erreur lors du chargement de texLinebreak:', error);
-//       throw error;
-//     }
-//   }
-//   return texLinebreak;
-// }
 
 export default class TexLinebreakHandler extends Handler {
   constructor(chunker, polisher, caller) {
     super(chunker, polisher, caller);
   }
 
-  afterPageLayout(content) {
+  afterParsed(parsed) {
 
-    const elementsToJustify = content.querySelectorAll('section p');
+    const elementsToJustify = parsed.querySelectorAll('section p');
     
     if (elementsToJustify.length > 0) {
       texLinebreak.texLinebreakDOM(elementsToJustify, {
-        align: 'left'
+        justify: false,
+        align: 'left',
+        tolerance: 2,
+        lineWidth: 350,
+        ignoreFloatingElements: true,
       });
     }
 

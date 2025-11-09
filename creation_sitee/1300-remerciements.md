@@ -2,7 +2,7 @@
 title: remerciements
 template: default
 class: chapter chapitre
-draft: false
+draft: true
 ---
 
 ### Remerciements

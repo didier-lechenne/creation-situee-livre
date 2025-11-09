@@ -2,7 +2,7 @@
 title: chap-5
 template: default
 class: chapter
-draft: false
+draft: true
 ---
 
 # Le manifeste de la création située {.toc-only}

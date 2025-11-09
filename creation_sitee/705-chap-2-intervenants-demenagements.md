@@ -1,6 +1,6 @@
 ---
 title: chap-2-demenagements
-draft: false
+draft: true
 template: modularGrid
 gridCol: 24
 gridRow: 52

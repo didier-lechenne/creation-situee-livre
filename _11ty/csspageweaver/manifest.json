@@ -1,5 +1,5 @@
 {
-    "plugins": [  "baseline", "tableOfContent", "ragadjust", "inlineNotes", "sidenotes",  "pageMove" ,  "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak",  "invisibleSpaces",    "editor",  "marginBox",   "hideFolios", "reloadInPlace", "texLinebreak"],
+    "plugins": [  "baseline", "tableOfContent", "ragadjust", "inlineNotes", "sidenotes",  "pageMove" ,  "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak",  "invisibleSpaces",    "editor",  "marginBox",   "hideFolios", "reloadInPlace"],
 
     "pluginsParameters":{
 
