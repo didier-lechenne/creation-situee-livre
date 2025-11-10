@@ -1,7 +1,7 @@
 ---
 title: chap-1-titre
 class: chapter chapitre
-draft: false
+draft: true
 template: chapitre
 ---
 

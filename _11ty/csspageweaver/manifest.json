@@ -1,5 +1,5 @@
 {
-    "plugins": [  "baseline", "tableOfContent", "ragadjust", "inlineNotes", "sidenotes",  "pageMove" ,  "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak",  "invisibleSpaces",    "editor",  "marginBox",   "hideFolios", "reloadInPlace"],
+    "plugins": [  "baseline", "tableOfContent", "ragadjust", "inlineNotes", "sidenotes",  "pageMove" ,  "fullPage", "fullContent",  "floatPage",  "spread", "previewPage", "imposition", "layout",  "marker",   "bgColor", "urlBreak",  "invisibleSpaces",    "editor",  "marginBox",   "hideFolios", "reloadFromFolio", "reloadInPlace"],
 
     "pluginsParameters":{
 
@@ -34,7 +34,16 @@
             "position": "inside",
             "align": "section p:first-of-type",
             "reset": ".chapter"
+        },
+
+         "reloadFromFolio": {
+            "reloading": false,
+            "singlePage": true,
+            "fromFolio": 1,
+            "excludeHookFromReload": ["reloadInPlace"],
+            "excludeScriptFromReload": []
         }
+
 
     },
     
