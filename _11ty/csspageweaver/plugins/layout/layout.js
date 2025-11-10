@@ -3,7 +3,6 @@ import { TurndownService } from "./turndown.js";
 
 // Configuration centralisée
 const CONFIG = {
-  ZONES: { edge: 20, corner: 25 },
   CURSORS: {
     "start-start": "nw-resize",
     "start-end": "ne-resize",
@@ -28,14 +27,74 @@ const CONFIG = {
   ],
 };
 
-// Gestionnaire d'état centralisé
+class ResizeHandles {
+  constructor() {
+    this.handles = ['nw', 'n', 'ne', 'w', 'e', 'sw', 's', 'se'];
+  }
+
+  createHandles(element) {
+    if (element.querySelector('.resize-handle')) {
+      return;
+    }
+
+    this.handles.forEach(position => {
+      const handle = document.createElement('div');
+      handle.className = `resize-handle ${position}`;
+      handle.dataset.position = position;
+      handle.dataset.mode = this.getResizeMode(position);
+      element.appendChild(handle);
+    });
+  }
+
+  removeHandles(element) {
+    element.querySelectorAll('.resize-handle').forEach(handle => {
+      handle.remove();
+    });
+  }
+
+  setActiveHandle(element, mode) {
+    element.querySelectorAll('.resize-handle').forEach(handle => {
+      handle.classList.remove('active');
+      if (handle.dataset.mode === mode) {
+        handle.classList.add('active');
+      }
+    });
+  }
+
+  getResizeMode(position) {
+    const modeMap = {
+      'nw': 'start-start',
+      'n': 'start-middle',
+      'ne': 'start-end',
+      'w': 'middle-start',
+      'e': 'middle-end',
+      'sw': 'end-start',
+      's': 'end-middle',
+      'se': 'end-end'
+    };
+    return modeMap[position];
+  }
+
+  getHandleFromTarget(target) {
+    if (target.classList.contains('resize-handle')) {
+      return {
+        handle: target,
+        mode: target.dataset.mode
+      };
+    }
+    return null;
+  }
+}
+
+
+
 class LayoutState {
   constructor() {
     this.selectedElement = null;
     this.mode = "idle"; // idle, resizing, dragging
     this.resizeData = null;
     this.isShiftPressed = false;
-    // console.log('🏗️ LayoutState créé');
+    this.resizeHandles = new ResizeHandles();
   }
 
   select(element) {
@@ -60,17 +119,20 @@ class LayoutState {
     this.resizeData = { element, mode, mousePos, startValues };
     document.body.classList.add("grid-resizing");
     element.classList.add("resizing");
+    this.resizeHandles.setActiveHandle(element, mode);
     // console.log('🔧 Début redimensionnement:', mode);
   }
 
   endResize() {
-    if (this.mode !== "resizing" || !this.resizeData) return;
-
-    document.body.classList.remove("grid-resizing");
-    this.resizeData.element.classList.remove("resizing");
-    this.mode = "idle";
+    if (this.resizeData) {
+      this.resizeData.element.classList.remove('resizing');
+      this.resizeData.element.querySelectorAll('.resize-handle').forEach(handle => {
+        handle.classList.remove('active');
+      });
+      document.body.classList.remove('grid-resizing');
+    }
+    this.mode = 'idle';
     this.resizeData = null;
-    // console.log('✅ Fin redimensionnement');
   }
 
   startDrag(image) {
@@ -92,8 +154,8 @@ class LayoutState {
   cleanupElement(element) {
     element.classList.remove("resizable", "resizing", "selected", "hover");
     element.style.cursor = "default";
-    delete element.dataset.resizeMode;
-
+    // delete element.dataset.resizeMode;
+    this.resizeHandles.removeHandles(element);
     const moveButton = element.querySelector(".move-button");
     if (moveButton) moveButton.remove();
   }
@@ -126,43 +188,43 @@ class DOMUtils {
     return element && element.closest(".modularGrid") !== null;
   }
 
-  static getResizeZone(element, clientX, clientY) {
-    const rect = element.getBoundingClientRect();
-    const x = clientX - rect.left;
-    const y = clientY - rect.top;
+  // static getResizeZone(element, clientX, clientY) {
+  //   const rect = element.getBoundingClientRect();
+  //   const x = clientX - rect.left;
+  //   const y = clientY - rect.top;
 
-    const isNearLeft = x >= -CONFIG.ZONES.corner && x <= CONFIG.ZONES.corner;
-    const isNearRight =
-      x >= rect.width - CONFIG.ZONES.corner &&
-      x <= rect.width + CONFIG.ZONES.corner;
-    const isNearTop = y >= -CONFIG.ZONES.corner && y <= CONFIG.ZONES.corner;
-    const isNearBottom =
-      y >= rect.height - CONFIG.ZONES.corner &&
-      y <= rect.height + CONFIG.ZONES.corner;
+  //   const isNearLeft = x >= -CONFIG.ZONES.corner && x <= CONFIG.ZONES.corner;
+  //   const isNearRight =
+  //     x >= rect.width - CONFIG.ZONES.corner &&
+  //     x <= rect.width + CONFIG.ZONES.corner;
+  //   const isNearTop = y >= -CONFIG.ZONES.corner && y <= CONFIG.ZONES.corner;
+  //   const isNearBottom =
+  //     y >= rect.height - CONFIG.ZONES.corner &&
+  //     y <= rect.height + CONFIG.ZONES.corner;
 
-    const isEdgeLeft = x >= -CONFIG.ZONES.edge && x <= CONFIG.ZONES.edge;
-    const isEdgeRight =
-      x >= rect.width - CONFIG.ZONES.edge &&
-      x <= rect.width + CONFIG.ZONES.edge;
-    const isEdgeTop = y >= -CONFIG.ZONES.edge && y <= CONFIG.ZONES.edge;
-    const isEdgeBottom =
-      y >= rect.height - CONFIG.ZONES.edge &&
-      y <= rect.height + CONFIG.ZONES.edge;
+  //   const isEdgeLeft = x >= -CONFIG.ZONES.edge && x <= CONFIG.ZONES.edge;
+  //   const isEdgeRight =
+  //     x >= rect.width - CONFIG.ZONES.edge &&
+  //     x <= rect.width + CONFIG.ZONES.edge;
+  //   const isEdgeTop = y >= -CONFIG.ZONES.edge && y <= CONFIG.ZONES.edge;
+  //   const isEdgeBottom =
+  //     y >= rect.height - CONFIG.ZONES.edge &&
+  //     y <= rect.height + CONFIG.ZONES.edge;
 
-    // Coins
-    if (isNearLeft && isNearTop) return "start-start";
-    if (isNearRight && isNearTop) return "start-end";
-    if (isNearLeft && isNearBottom) return "end-start";
-    if (isNearRight && isNearBottom) return "end-end";
+  //   // Coins
+  //   if (isNearLeft && isNearTop) return "start-start";
+  //   if (isNearRight && isNearTop) return "start-end";
+  //   if (isNearLeft && isNearBottom) return "end-start";
+  //   if (isNearRight && isNearBottom) return "end-end";
 
-    // Bords
-    if (isEdgeLeft) return "middle-start";
-    if (isEdgeRight) return "middle-end";
-    if (isEdgeTop) return "start-middle";
-    if (isEdgeBottom) return "end-middle";
+  //   // Bords
+  //   if (isEdgeLeft) return "middle-start";
+  //   if (isEdgeRight) return "middle-end";
+  //   if (isEdgeTop) return "start-middle";
+  //   if (isEdgeBottom) return "end-middle";
 
-    return null;
-  }
+  //   return null;
+  // }
 
   static createMoveButton() {
     const button = document.createElement("div");
@@ -206,16 +268,57 @@ class InteractionManager {
     });
   }
 
-  handleClick(e) {
-    if (!document.body.classList.contains("layout")) return;
+  handleClick(e, manual = false) {
+    const targetElement = e.target.closest('[data-grid]');
+    
+    // ✅ NOUVEAU : Vérifier si on clique sur une poignée
+    const handleInfo = this.state.resizeHandles.getHandleFromTarget(e.target);
+    
+    if (handleInfo) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      if (targetElement) {
+        this.state.select(targetElement);
+        this.resizeManager.start(
+          targetElement, 
+          handleInfo.mode, 
+          { x: e.clientX, y: e.clientY }
+        );
+      }
+      return;
+    }
 
-    const element = DOMUtils.getGridElement(e.target);
-    if (!element || !DOMUtils.isInModularGrid(element)) return;
+    // Vérifier si c'est le bouton de déplacement
+    if (e.target.classList.contains('move-button')) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      if (targetElement) {
+        this.state.select(targetElement);
+        this.state.startDrag(targetElement, {
+          x: e.clientX,
+          y: e.clientY
+        });
+      }
+      return;
+    }
 
-    e.preventDefault();
-    e.stopPropagation();
-    // console.log('🖱️ Clic sur élément:', element.dataset.grid);
-    this.selectElement(element);
+    // Mode layout activé
+    if (document.body.classList.contains("layout")) {
+      if (targetElement) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // ✅ SIMPLIFIÉ : Plus de détection de zone
+        this.state.select(targetElement);
+        this.onElementSelected?.(targetElement);
+        
+      } else if (!manual) {
+        this.state.deselect();
+      }
+      return;
+    }
   }
 
   handleMouseOver(e) {
@@ -242,7 +345,7 @@ class InteractionManager {
     } else if (this.state.mode === "dragging") {
       this.handleImageDrag(e);
     } else {
-      this.updateCursor(e);
+      // this.updateCursor(e);
     }
   }
 
@@ -375,15 +478,15 @@ class InteractionManager {
   }
 
   
-shouldActivateElement(element, event) {
-  const isImage = element.dataset.grid === "image";
-  const isMarkdown = element.dataset.grid === "markdown";
-  
-  if (isImage) return event.shiftKey;
-  if (isMarkdown) return event.shiftKey;
-  
-  return true;  
-}
+  shouldActivateElement(element, event) {
+    const isImage = element.dataset.grid === "image";
+    const isMarkdown = element.dataset.grid === "markdown";
+    
+    if (isImage) return event.shiftKey;
+    if (isMarkdown) return event.shiftKey;
+    
+    return true;  
+  }
 
   activateElement(element) {
     if (!element.classList.contains("selected")) {
@@ -401,6 +504,7 @@ shouldActivateElement(element, event) {
 
   setupElementControls(element) {
     element.classList.add("resizable");
+    this.resizeHandles.createHandles(element);
     const moveButton = DOMUtils.createMoveButton();
     element.appendChild(moveButton);
 
@@ -409,16 +513,16 @@ shouldActivateElement(element, event) {
     }
   }
 
-  updateCursor(e) {
-    const element = DOMUtils.getGridElement(e.target);
-    if (!element) return;
+  // updateCursor(e) {
+  //   const element = DOMUtils.getGridElement(e.target);
+  //   if (!element) return;
 
-    const zone = DOMUtils.getResizeZone(element, e.clientX, e.clientY);
-    const cursor = CONFIG.CURSORS[zone] || "default";
+  //   const zone = DOMUtils.getResizeZone(element, e.clientX, e.clientY);
+  //   const cursor = CONFIG.CURSORS[zone] || "default";
 
-    element.style.cursor = cursor;
-    element.dataset.resizeMode = zone || "hover";
-  }
+  //   element.style.cursor = cursor;
+  //   element.dataset.resizeMode = zone || "hover";
+  // }
 
   toggleMoveButtons(show) {
     document.querySelectorAll(".move-button").forEach((button) => {

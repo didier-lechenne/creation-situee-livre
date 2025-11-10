@@ -1,6 +1,6 @@
 ---
 title: chap-2-barge
-draft: true
+draft: false
 template: modularGrid
 gridCol: 24
 gridRow: 52

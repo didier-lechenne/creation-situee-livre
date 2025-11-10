@@ -1,6 +1,6 @@
 ---
 title: colloqueIntro
-draft: true
+draft: false
 template: modularGrid
 gridCol: 12
 gridRow: 16

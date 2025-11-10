@@ -1,6 +1,6 @@
 ---
 title: chap-2-souvenir-dune-plage
-draft: true
+draft: false
 template: modularGrid
 gridCol: 24
 gridRow: 52

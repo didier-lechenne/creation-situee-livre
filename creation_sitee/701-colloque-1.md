@@ -1,6 +1,6 @@
 ---
 title: colloque-1
-draft: true
+draft: false
 template: textCol
 gridCol: 2
 gridColGutter: 4.06mm

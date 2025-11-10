@@ -1,6 +1,6 @@
 ---
 title: chap-2-archeologie-du-blanc
-draft: true
+draft: false
 template: modularGrid
 gridCol: 24
 gridRow: 52
