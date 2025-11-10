@@ -23,7 +23,7 @@ if(typeof cssPageWeaver_method == "undefined"){
     window.cssPageWeaver_method = {
         gui: true,
         dict: true,
-        render: "frame",
+        render: "simple",
     }
 }
 

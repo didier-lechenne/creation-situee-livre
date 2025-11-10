@@ -2,7 +2,7 @@
 title: faux-titre
 class: fauxtitre
 toc: ignore
-draft: true
+draft: false
 ---
 
 
